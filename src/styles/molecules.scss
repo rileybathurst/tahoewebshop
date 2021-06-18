@@ -1,0 +1,179 @@
+// relatively simple groups of UI elements functioning together as a unit. For example, a form label, search input, and button can join together to create a search form molecule.
+
+#portfolio > .label {
+  grid-column: 1;
+}
+
+#portfolio > article {
+  grid-row: 2;
+  grid-column: 2;
+  place-items: center;
+  max-width: 30em;
+  margin: 0 auto;
+
+  display: grid; // this might be overkill or needs sub grid to be easier to understand
+  place-items: center;
+
+  grid-auto-rows: min-content;
+}
+
+/* max width - smallish */
+#portfolio > article {
+  @media (max-width: 66em) {
+    grid-column: 1/4;
+    max-height: 30vh;
+  }
+}
+
+#portfolio > article:nth-child(2) {
+  @media (max-width: 66em) {
+    grid-row: 1;
+  }
+}
+
+#portfolio > article:nth-child(3) {
+  @media (max-width: 66em) {
+    grid-row: 2;
+  }
+}
+
+#portfolio > article:nth-child(4) {
+  @media (max-width: 66em) {
+    grid-row: 3;
+  }
+}
+
+/* min width - largish */
+#portfolio > article:nth-child(2) {
+  @media (min-width: 66em) {
+    grid-column: 1;
+  }
+}
+
+#portfolio > article:nth-child(3) {
+  @media (min-width: 66em) {
+    grid-column: 2;
+  }
+}
+
+#portfolio > article:nth-child(4) {
+  @media (min-width: 66em) {
+    grid-column: 3;
+  }
+}
+
+#portfolio > article h3 {
+  grid-row: 1;
+  grid-column: 1;
+  text-align: center;
+  align-self: end;
+}
+
+#portfolio > article a,
+#portfolio > article object {
+  grid-row: 1;
+  grid-column: 1;
+  max-width: 100vw;
+  max-height: 100%;
+}
+
+#portfolio > article > object {
+  z-index: -1;
+  max-width: 100%;
+}
+
+#portfolio > article > a > picture {
+  max-width: 100%;
+}
+
+#contact article {
+  grid-row: 2;
+  grid-column: 2;
+  justify-self: center;
+}
+.info {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.circles {
+  align-self: start;
+  grid-row: 1;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.circles svg,
+.circles video {
+  grid-row: 1;
+  grid-column: 1;
+  transition-duration: 5s;
+  transition-timing-function: ease-out;
+  border-radius: 50%;
+}
+
+.circles svg {
+  max-width: 100%;
+}
+
+.circles video {
+  max-width: 150px;
+  @media (min-width: 24em) {
+    max-width: 200px;
+  }
+}
+
+.circles text {
+  font-size: 1.5em;
+  letter-spacing: 0.12em; // not working
+//  text-decoration: underline; this doesnt work
+}
+
+.circles text a {
+  fill: $white;
+}
+
+.top-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.snap-scroll-container-coordinates {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: 10vh auto 0 auto;
+  -webkit-scroll-snap-type: mandatory;
+  scroll-snap-type: x mandatory;
+  -scroll-snap-destination: 50% 50%;
+  -webkit-scroll-snap-destination: 50% 50%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.child {
+  max-width: 80%;
+  max-height: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  scroll-snap-align: center;
+  scroll-snap-coordinate: 50% 50%;
+  -webkit-scroll-snap-coordinate: 50% 50%;
+}
+
+.child img,
+.child picture {
+  width: 100%;
+  max-height: 50em;
+  vertical-align: middle;
+}

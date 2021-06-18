@@ -1,0 +1,51 @@
+// Templates are page-level objects that place components into a layout and articulate the design’s underlying content structure.
+
+// scroll snap
+.y-scroll-snapping {
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+  height: 100vh;
+  flex-flow: column nowrap;
+  scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-type: mandatory;
+  scroll-snap-destination: 50% 50%;
+  -webkit-scroll-snap-destination: 50% 50%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.y-scroll-snapping > div,
+.y-scroll-snapping > header,
+.y-scroll-snapping > main,
+.y-scroll-snapping > section,
+.y-scroll-snapping > footer {
+  -webkit-scroll-snap-coordinate: 50% 50%;
+  scroll-snap-align: center;
+  flex: none;
+  height: 90%;
+  width: calc(100% - 4em);
+}
+
+.y-scroll-snapping > .single-page { // needs > for specificity
+  height: 100%;
+  height: calc(100% - 4em);
+}
+
+.module { // fix for mobile height where other elements end up over the top of the content
+  // https://codepen.io/team/css-tricks/pen/WKdJaB
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.light,
+.lake {
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 44em) 1fr;
+  padding: 2em;
+}
+
+#portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2em;
+}
