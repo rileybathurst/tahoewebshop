@@ -14,16 +14,12 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.y-scroll-snapping > div,
-.y-scroll-snapping > header,
-.y-scroll-snapping > main,
-.y-scroll-snapping > section,
-.y-scroll-snapping > footer {
+.y-scroll-snapping > * {
   -webkit-scroll-snap-coordinate: 50% 50%;
   scroll-snap-align: center;
   flex: none;
   height: 90%;
-  width: calc(100% - 4em);
+  // width: calc(100% - 4em); // move this as its about height not width
 }
 
 .y-scroll-snapping > .single-page { // needs > for specificity
@@ -31,18 +27,24 @@
   height: calc(100% - 4em);
 }
 
-.module { // fix for mobile height where other elements end up over the top of the content
-  // https://codepen.io/team/css-tricks/pen/WKdJaB
-  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
+.y-scroll-snapping > .any-height {
+  height: auto;
 }
 
-.light,
+// this is js I can work around it with css for now
+/* .module { // fix for mobile height where other elements end up over the top of the content
+  // https://codepen.io/team/css-tricks/pen/WKdJaB
+  // height: 100vh; // Use vh as a fallback for browsers that do not support Custom Properties
+  // height: calc(var(--vh, 1vh) * 100);
+} */
+
+/* .light,
 .lake {
-  display: grid;
-  grid-template-columns: 1fr minmax(min-content, 44em) 1fr;
-  padding: 2em;
+  padding: 2rem;
+  height: calc(100vh - 4rem);
 }
+ */
+
 
 #portfolio {
   display: grid;

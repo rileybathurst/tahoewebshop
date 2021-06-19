@@ -1,21 +1,24 @@
 // Organisms are relatively complex UI components composed of groups of molecules and/or atoms and/or other organisms. These organisms form distinct sections of an interface.
 
-header {
+/* header {
   background: $light-fallback;
   background: $light;
-  height: 90vh;
 
   display: grid;
 //  grid-template-columns: 1fr minmax(min-content, 44em) 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 2em;
-}
+} */
 
-header nav {
-  writing-mode: vertical-rl;
+#top {
+  // writing-mode: vertical-lr; // this was to do with vertical but newer can work
   grid-row: 1;
   grid-column: 1/4;
   width: 100%;
+
+  nav {
+    width: 100%;
+  }
 }
 
 header ul {
@@ -53,10 +56,15 @@ header ul {
   text-align: center;
 }
 
-header .pedestal {
+.pedestal {
   grid-row: 3;
   align-self: end;
   justify-self: center;
+
+  a {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .p1 {
@@ -73,7 +81,7 @@ header .pedestal {
   margin: 0 auto;
 }
 
-main {
+/* .three--main {
   background: $lake-fallback;
   background: $lake;
   color: $white;
@@ -83,13 +91,13 @@ main {
   padding: 2em;
 }
 
-main a {
+.three--main a {
   color: $white;
 }
 
-main > h2 {
+.three--main > h2 {
   padding-top: 1em;
-}
+} */
 
 .focal {
   margin: 0 auto;
