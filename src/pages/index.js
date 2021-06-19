@@ -1,11 +1,13 @@
 import * as React from "react";
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
 import GradientCircle from "../components/gradient-circle";
+import Seo from "../components/seo";
 
-import DroneSelfie from "../images/droneSelfie"
+import DroneSelfie from "../images/droneSelfie";
 
 import "../styles/index.scss";
 
@@ -27,11 +29,33 @@ function AAW() {
   );
 }
 
+const LinearGradient = () => {
+  return (
+    <svg
+      title="gradient circle"
+      viewBox="0 0 200 200"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMinYMin meet"
+    >
+      <g>
+        <linearGradient
+          id="linear-gradient"
+          gradientTransform="rotate(90)"
+        >
+          <stop offset="0%" stopColor="rgba(242, 201, 76, 0.5)" stopOpacity="50%" />
+          <stop offset="100%" stopColor="rgba(242, 153, 74, 0.5)" stopOpacity="50%" />
+        </linearGradient>
+      </g>
+    </svg>
+  );
+};
+
 // markup
 const IndexPage = () => {
   return (
     <div class="y-scroll-snapping" dir="ltr">
-      <header class="light module ninety-vh">
+      <Seo title="Home" />
+      <header id="top" class="light module ninety-vh">
         <title>Home Page</title>
         <Nav />
         <div class="three--main">
@@ -103,10 +127,10 @@ const IndexPage = () => {
                       </article>
 
           <article>
-            <h3><a href="/portfolio.html#snowledge">Snowledge.co</a></h3>
-            <a href="/portfolio#snowledge" className="shadow">
-              {/* Needs a new snowledge image */}
-            </a>
+            <h3><Link to="/portfolio">Snowledge.co</Link></h3>
+            {/* <a href="/portfolio#snowledge" className="shadow">
+              Needs a new snowledge image
+            </a> */}
             <GradientCircle />
                       </article>
 

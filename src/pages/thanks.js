@@ -2,11 +2,13 @@ import * as React from "react";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
+import Seo from "../components/seo";
 
 // markup
 const ThanksPage = () => {
   return (
     <div className="light three full-page">
+      <Seo title="thanks" />
       <header id="top" >
         <Nav />
       </header>

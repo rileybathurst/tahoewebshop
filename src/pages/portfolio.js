@@ -1,13 +1,15 @@
 import * as React from "react"
 
-import Nav from "../components/nav"
-import Pedestal from "../components/pedestal"
-import GradientCircle from "../components/gradient-circle"
+import Nav from "../components/nav";
+import Pedestal from "../components/pedestal";
+import GradientCircle from "../components/gradient-circle";
+import Seo from "../components/seo";
 
 // markup
 const IndexPage = () => {
   return (
     <>
+    <Seo title="portfolio" />
     <div class="y-scroll-snapping" dir="ltr">
       <header id="top" class="module">
         <Nav />

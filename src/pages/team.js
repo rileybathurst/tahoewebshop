@@ -1,12 +1,14 @@
-import * as React from "react"
-import Nav from "../components/nav"
-import Pedestal from "../components/pedestal"
-import GradientCircle from "../components/gradient-circle"
+import * as React from "react";
+import Nav from "../components/nav";
+import Pedestal from "../components/pedestal";
+import GradientCircle from "../components/gradient-circle";
+import Seo from "../components/seo";
 
 // markup
 const IndexPage = () => {
   return (
     <>
+    <Seo title="team" />
     <div class="container y mandatory-scroll-snapping" dir="ltr">
       <header id="top" class="light three">
         <Nav />

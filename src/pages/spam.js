@@ -1,12 +1,14 @@
 import * as React from "react"
 
-import Nav from "../components/nav"
-import Pedestal from "../components/pedestal"
+import Nav from "../components/nav";
+import Pedestal from "../components/pedestal";
+import Seo from "../components/seo";
 
 // markup
 const IndexPage = () => {
   return (
     <>
+    <Seo title="spam" />
     <div class="container y mandatory-scroll-snapping" dir="ltr">
     <header id="top" class="light three">
       <Nav />
