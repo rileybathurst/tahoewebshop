@@ -10,10 +10,10 @@ const IndexPage = () => {
   return (
     <>
     <Seo title="features" />
-      <div class="y-scroll-snapping" dir="ltr">
+      <div className="y-scroll-snapping" dir="ltr">
         <header id="top">
           <Nav />
-          <div class="major">
+          <div className="major">
             <GradientCircle />
             <h1>Features</h1>
           </div>
@@ -21,10 +21,10 @@ const IndexPage = () => {
           <Pedestal />
         </header>
         <main id="local">
-          <h2 class="label">Local //</h2>
+          <h2 className="label">Local //</h2>
 
-          <div class="focal">
-            <h3 class="out">Drop by for a coffee.</h3>
+          <div className="focal">
+            <h3 className="out">Drop by for a coffee.</h3>
             <p>
               We really mean it, we're working in Tahoe City, we understand the
               power of the internet but also those face to face times can move
@@ -56,16 +56,16 @@ const IndexPage = () => {
               <a href="mailto:info@tahoewebshop.com">info@tahoewebshop.com</a>
             </h4>
           </div>
-          <p class="return">
+          <p className="return">
             <a href="#top">Tahoe Web Shop</a>
           </p>
         </main>
 
-        <section id="performance" class="light three">
-          <h2 class="label">Performance //</h2>
+        <section id="performance" className="light three">
+          <h2 className="label">Performance //</h2>
 
-          <div class="focal">
-            <h3 class="out">Speed is king.</h3>
+          <div className="focal">
+            <h3 className="out">Speed is king.</h3>
             <p>
               Performance runs deeper than how fast does the website load in the
               best conditions. a few moments of work up front can save hours
@@ -73,7 +73,7 @@ const IndexPage = () => {
             </p>
 
             <svg
-              class="rotating loader"
+              className="rotating loader"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 340 340"
             >
@@ -82,17 +82,17 @@ const IndexPage = () => {
               <circle cx="170" cy="170" r="85" stroke="#bb6a1b" />
             </svg>
           </div>
-          <p class="return">
+          <p className="return">
             <a href="#top">Tahoe Web Shop</a>
           </p>
         </section>
 
-        <section id="security" class="lake three">
-          <h2 class="label">Security //</h2>
+        <section id="security" className="lake three">
+          <h2 className="label">Security //</h2>
 
-          <div class="focal">
+          <div className="focal">
             {/* style="grid-row: 2; grid-column: 1/4;" */}
-            <h3 class="out">Keep it strong.</h3>
+            <h3 className="out">Keep it strong.</h3>
             <p>
               The good and the bad part of having a 24/7 store is that you have
               a 24/7 store which is open to customers and those less diseriable,
@@ -102,7 +102,7 @@ const IndexPage = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 -2 24 28"
-              class="paths"
+              className="paths"
             >
               <path
                 d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
@@ -117,7 +117,7 @@ const IndexPage = () => {
               />
             </svg>
           </div>
-          <p class="return">
+          <p className="return">
             <a href="#top">Tahoe Web Shop</a>
           </p>
         </section>

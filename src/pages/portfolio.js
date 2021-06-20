@@ -10,10 +10,10 @@ const IndexPage = () => {
   return (
     <>
     <Seo title="portfolio" />
-    <div class="y-scroll-snapping" dir="ltr">
-      <header id="top" class="module">
+    <div className="y-scroll-snapping" dir="ltr">
+      <header id="top" className="module">
         <Nav />
-        <div class="major">
+        <div className="major">
 
           <GradientCircle />
           <h1>Port-<br />
@@ -22,19 +22,19 @@ const IndexPage = () => {
 
         <Pedestal />
       </header>
-      <main id="pacrav" class="lake three">
-        <h2 class="label">Pacrav //</h2>
+      <main id="pacrav" className="lake three">
+        <h2 className="label">Pacrav //</h2>
 
-          <div class="raised">
-            <h3 class="out">Pacrav</h3>
+          <div className="raised">
+            <h3 className="out">Pacrav</h3>
             <p>Inspire Mobility, Empower Freedom. A physical therapy office in Reno, NV.</p>
             <p>A wordpress theme build with full width images and a virtual consultation form.</p>
           </div>
 
-          <div class="port">
-            <div class="snap-scroll-container-coordinates">
-              <div class="child shadow" >
-                {/* <picture class="child shadow">
+          <div className="port">
+            <div className="snap-scroll-container-coordinates">
+              <div className="child shadow" >
+                {/* <picture className="child shadow">
                   <source srcset="/static/pacrav-iPhoneX-mockup-1080x2216.webp" media="(min-width: 1080px)" type="image/webp">
                   <source srcset="/static/pacrav-iPhoneX-mockup-1080x2216.png" media="(min-width: 1080px)">
                   <source srcset="/static/pacrav-iPhoneX-mockup-960x1969.webp" media="(min-width: 960px)" type="image/webp">
@@ -48,8 +48,8 @@ const IndexPage = () => {
                 </picture> */}
               </div>
 
-              <div class="child shadow">
-                {/* <picture class="child shadow">
+              <div className="child shadow">
+                {/* <picture className="child shadow">
                   <source srcset="/static/pacrav-iPad-Mockup-1080x1411.webp" media="(min-width: 960px)" type="image/webp">
                   <source srcset="/static/pacrav-iPad-Mockup-1080x1411.png" media="(min-width: 960px)">
                   <source srcset="/static/pacrav-iPad-Mockup-960x1254.webp" media="(min-width: 720px)" type="image/webp">
@@ -63,8 +63,8 @@ const IndexPage = () => {
                 </picture> */}
               </div>
 
-              <div class="child shadow">
-                {/* <picture class="child shadow">
+              <div className="child shadow">
+                {/* <picture className="child shadow">
                   <source srcset="/static/pacrav-com-1080x573.webp" media="(min-width: 960px)" type="image/webp">
                   <source srcset="/static/pacrav-com-1080x573.png" media="(min-width: 960px)">
                   <source srcset="/static/pacrav-com-960x509.webp" media="(min-width: 720px)" type="image/webp">
@@ -79,22 +79,22 @@ const IndexPage = () => {
                 </div>{/* child */}
             </div> {/* .snap-scroll-container-coordinates */}
           </div> {/* .port */}
-        <p class="return"><a href="#top">Tahoe Web Shop</a></p>
+        <p className="return"><a href="#top">Tahoe Web Shop</a></p>
       </main>
 
-      <section id="aaw" class="light three">
-        <h2 class="label">AAW //</h2>
+      <section id="aaw" className="light three">
+        <h2 className="label">AAW //</h2>
 
-        <div class="raised">
-          <h3 class="out">Authentic Alignment Wellness</h3>
+        <div className="raised">
+          <h3 className="out">Authentic Alignment Wellness</h3>
           <p>Health coach Amanda Rolfe</p>
           <p>A wordpress theme built on an overlapping grid</p>
         </div>
 
-        <div class="port">
-            <div class="snap-scroll-container-coordinates">
-              <div class="child">
-                    {/* <picture class="child shadow">
+        <div className="port">
+            <div className="snap-scroll-container-coordinates">
+              <div className="child">
+                    {/* <picture className="child shadow">
                       <source srcset="/static/aaw-iphone-1080x2187.webp" media="(min-width: 960px)" type="image/webp">
                       <source srcset="/static/aaw-iphone-1080x2187.png" media="(min-width: 960px)">
                       <source srcset="/static/aaw-iphone-960x1944.webp" media="(min-width: 720px)" type="image/webp">
@@ -108,8 +108,8 @@ const IndexPage = () => {
                     </picture> */}
                     </div>
 
-                    <div class="child">
-                    {/* <picture class="child shadow ">
+                    <div className="child">
+                    {/* <picture className="child shadow ">
                       <source srcset="/static/AAW-ipad-1080x1528.webp" media="(min-width: 960px)" type="image/webp">
                       <source srcset="/static/AAW-ipad-1080x1528.png" media="(min-width: 960px)">
                       <source srcset="/static/AAW-ipad-960x1358.webp" media="(min-width: 882px)" type="image/webp">
@@ -125,8 +125,8 @@ const IndexPage = () => {
                     </picture> */}
                     </div>
 
-                    <div class="child">
-                    {/* <picture class="child shadow">
+                    <div className="child">
+                    {/* <picture className="child shadow">
                       <source srcset="/static/authenticalignmentwellness-com_how-i-got-into-coaching-1080x573.webp" media="(min-width: 960px)" type="image/webp">
                       <source srcset="/static/authenticalignmentwellness-com_how-i-got-into-coaching-1080x573.png" media="(min-width: 960px)">
                       <source srcset="/static/authenticalignmentwellness-com_how-i-got-into-coaching-960x509.webp" media="(min-width: 720px)" type="image/webp">
@@ -142,22 +142,22 @@ const IndexPage = () => {
               </div>{/* snap-scroll-container-coordinates */}
         </div>{/* port */}
 
-        <p class="return"><a href="#top">Tahoe Web Shop</a></p>
+        <p className="return"><a href="#top">Tahoe Web Shop</a></p>
       </section>
 
-      <section id="snowledge" class="lake three">
-        <h2 class="label">Snowledge //</h2>
+      <section id="snowledge" className="lake three">
+        <h2 className="label">Snowledge //</h2>
 
-        <div class="raised">
-          <h3 class="out">Snowledge</h3>
+        <div className="raised">
+          <h3 className="out">Snowledge</h3>
           <p>Snowledge is powder.</p>
           <p>Working with the team on the resort partners portal.</p>
         </div>
 
-        <div class="port">
-            <div class="snap-scroll-container-coordinates">
-                <div class="child">
-                {/* <picture class="child shadow">
+        <div className="port">
+            <div className="snap-scroll-container-coordinates">
+                <div className="child">
+                {/* <picture className="child shadow">
                   <source srcset="/static/snowledge-iphone-1080x2187.webp" media="(min-width: 1080px)" type="image/webp">
                   <source srcset="/static/snowledge-iphone-1080x2187.png" media="(min-width: 1080px)">
                   <source srcset="/static/snowledge-iphone-960x1944.webp" media="(min-width: 960px)" type="image/webp">
@@ -171,8 +171,8 @@ const IndexPage = () => {
                 </picture> */}
               </div>
 
-              <div class="child">
-                {/* <picture class="child shadow">
+              <div className="child">
+                {/* <picture className="child shadow">
                   <source srcset="/static/snowledge-ipad-1080x1528.webp" media="(min-width: 960px)" type="image/webp">
                   <source srcset="/static/snowledge-ipad-1080x1528.png" media="(min-width: 960px)">
                   <source srcset="/static/snowledge-ipad-960x1358.webp" media="(min-width: 882px)" type="image/webp">
@@ -188,8 +188,8 @@ const IndexPage = () => {
                 </picture> */}
               </div>
 
-              <div class="child">
-                {/* <picture class="child shadow">
+              <div className="child">
+                {/* <picture className="child shadow">
                   <source srcset="/static/snowledgedevservice-herokuapp-com_partners_dashboard-1080x573.webp" media="(min-width: 960px)" type="image/webp">
                   <source srcset="/static/snowledgedevservice-herokuapp-com_partners_dashboard-1080x573.png" media="(min-width: 960px)">
                   <source srcset="/static/snowledgedevservice-herokuapp-com_partners_dashboard-960x509.webp" media="(min-width: 720px)" type="image/webp">
@@ -205,7 +205,7 @@ const IndexPage = () => {
             </div>{/* .snap-scroll-container-coordinates */}
           </div>{/* port */}
 
-        <p class="return"><a href="#top">Tahoe Web Shop</a></p>
+        <p className="return"><a href="#top">Tahoe Web Shop</a></p>
       </section>
     </div>
     </>

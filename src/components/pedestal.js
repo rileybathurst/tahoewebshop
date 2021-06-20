@@ -3,14 +3,14 @@ import React from "react";
 
 const Pedestal = () => (
   <div className="three--footer">
-    <div class="pedestal p1">
+    <div className="pedestal p1">
       <a href="/features.html#local">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="48"
           height="48"
           viewBox="0 0 24 24"
-          class=""
+          className=""
         >
           <path
             d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
@@ -22,14 +22,14 @@ const Pedestal = () => (
       </a>
     </div>
 
-    <div class="pedestal p2">
+    <div className="pedestal p2">
       <a href="/features.html#performance">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="48"
           height="48"
           viewBox="0 0 24 24"
-          class=""
+          className=""
         >
           <path d="M0 0h24v24H0z" fill="none" />
           <path
@@ -41,14 +41,14 @@ const Pedestal = () => (
       </a>
     </div>
 
-    <div class="pedestal p3">
+    <div className="pedestal p3">
       <a href="/features.html#security">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="48"
           height="48"
           viewBox="0 0 24 24"
-          class=""
+          className=""
         >
           <path d="M0 0h24v24H0z" fill="none" />
           <path

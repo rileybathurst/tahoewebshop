@@ -9,11 +9,11 @@ import Seo from "../components/seo";
 // markup
 const NotFoundPage = () => {
   return (
-    <div class="y-scroll-snapping" dir="ltr">
+    <div className="y-scroll-snapping" dir="ltr">
       <Seo title="404" />
-      <header id="top" class="single-page">
+      <header id="top" className="single-page">
         <Nav />
-        <div class="major">
+        <div className="major">
           <GradientCircle />
           <h1>404</h1>
           <p>We are lost.</p>

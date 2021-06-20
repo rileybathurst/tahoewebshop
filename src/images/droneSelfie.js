@@ -1,7 +1,7 @@
 import React from "react";
 
 const DroneSelfie = ({ videoSrcURL, videoTitle, ...props }) => (
-  <video controls autoplay loop muted>
+  <video controls autoPlay loop muted>
     <source
       src="https://tahoewebshop.s3.us-west-1.amazonaws.com/drone-selfie.mp4"
       type="video/mp4"

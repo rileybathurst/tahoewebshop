@@ -217,6 +217,14 @@ button:hover {
     grid-row: 1/4;
     grid-column: 1/4;
     max-width: 44em;
+    // fill: rebeccapurple;
+  }
+
+  .main-stop {
+    stop-color: red;
+  }
+  .alt-stop {
+    stop-color: green;
   }
 
   h1 {

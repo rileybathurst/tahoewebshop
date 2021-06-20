@@ -9,10 +9,10 @@ const IndexPage = () => {
   return (
     <>
     <Seo title="spam" />
-    <div class="container y mandatory-scroll-snapping" dir="ltr">
-    <header id="top" class="light three">
+    <div className="container y mandatory-scroll-snapping" dir="ltr">
+    <header id="top" className="light three">
       <Nav />
-      <div class="grid-place-center">
+      <div className="grid-place-center">
       {/* style="grid-row: 2; grid-column: 1/4" */}
         <h1>Sorry</h1>
         <p>Your message is caught up in our spam filters.</p>

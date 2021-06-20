@@ -9,30 +9,30 @@ const IndexPage = () => {
   return (
     <>
     <Seo title="team" />
-    <div class="container y mandatory-scroll-snapping" dir="ltr">
-      <header id="top" class="light three">
+    <div className="container y mandatory-scroll-snapping" dir="ltr">
+      <header id="top" className="light three">
         <Nav />
-        <div class="grid-place-center grid gr-2 gc-1-4"  > 
+        <div className="grid-place-center grid gr-2 gc-1-4"  > 
         {/* style={{gridAutoColumns: minContent,}} */}
           <GradientCircle />
-          <h1 class="gr-1 gc-1">Team</h1>
-          <p class="text-center">Tahoe Web Shop</p>
+          <h1 className="gr-1 gc-1">Team</h1>
+          <p className="text-center">Tahoe Web Shop</p>
         </div>
 
           <Pedestal />
       </header>
-      <main id="riley" class="lake three">
-        <h2 class="vert" >Riley //</h2>
+      <main id="riley" className="lake three">
+        <h2 className="vert" >Riley //</h2>
         {/* style="grid-row: 1; justify-self: start; margin: 0;" */}
 
-        <div class="measure profile">
-          <div class="info">
-            <h3 class="out">Riley Bathurst.</h3>
+        <div className="measure profile">
+          <div className="info">
+            <h3 className="out">Riley Bathurst.</h3>
             <h4>California Dreaming Kiwi</h4>
             <p>Riley has been working with clients from large to small, always up for a challenge and available to create something for you, your company or your project.</p>
-            <div class="icons">
+            <div className="icons">
               <a href="https://twitter.com/rileybathurst" target="_blank" rel="nofollow noreferrer">
-                {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 98 400 400" width="76" height="76" class="tweet" style="display: inline;">
+                {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 98 400 400" width="76" height="76" className="tweet" style="display: inline;">
                   <path d="M153.6,301.6c94.3,0,145.9-78.2,145.9-145.9c0-2.2,0-4.4-0.1-6.6c10-7.2,18.7-16.3,25.6-26.6
                     c-9.2,4.1-19.1,6.8-29.5,8.1c10.6-6.3,18.7-16.4,22.6-28.4c-9.9,5.9-20.9,10.1-32.6,12.4c-9.4-10-22.7-16.2-37.4-16.2
                     c-28.3,0-51.3,23-51.3,51.3c0,4,0.5,7.9,1.3,11.7c-42.6-2.1-80.4-22.6-105.7-53.6c-4.4,7.6-6.9,16.4-6.9,25.8
@@ -54,8 +54,8 @@ const IndexPage = () => {
             </div> {/* .icons */}
           </div> {/* .info */}
 
-          <div class="circles">
-            <svg height="300" width="300" class="gr-1 gc-1-4 turn">
+          <div className="circles">
+            <svg height="300" width="300" className="gr-1 gc-1-4 turn">
               <path id="profile"
                 fill="none"
                 d="
@@ -71,7 +71,7 @@ const IndexPage = () => {
                 </textPath> */}
               </text>
             </svg>
-            <video autoplay loop muted >
+            <video autoPlay loop muted >
             {/* style="max-width: 200px; border-radius: 50%;" */}
               <source src="/static/drone-selfie.webm"
                 type="video/webm" />
@@ -83,7 +83,7 @@ const IndexPage = () => {
             </video>
           </div>
         </div> {/* .measure */}
-        <p class="vert" ><a href="#top">Tahoe Web Shop</a></p>
+        <p className="vert" ><a href="#top">Tahoe Web Shop</a></p>
         {/* style="grid-row: 3; grid-column: 3; align-self: center;" */}
       </main>
     </div>
