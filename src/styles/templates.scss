@@ -31,23 +31,3 @@
   height: auto;
 }
 
-// this is js I can work around it with css for now
-/* .module { // fix for mobile height where other elements end up over the top of the content
-  // https://codepen.io/team/css-tricks/pen/WKdJaB
-  // height: 100vh; // Use vh as a fallback for browsers that do not support Custom Properties
-  // height: calc(var(--vh, 1vh) * 100);
-} */
-
-/* .light,
-.lake {
-  padding: 2rem;
-  height: calc(100vh - 4rem);
-}
- */
-
-
-#portfolio {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 2em;
-}

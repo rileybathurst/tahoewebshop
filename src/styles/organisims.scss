@@ -14,7 +14,8 @@
   // writing-mode: vertical-lr; // this was to do with vertical but newer can work
   grid-row: 1;
   grid-column: 1/4;
-  width: 100%;
+  width: calc(100% - 4rem);
+  padding: 2rem;
 
   nav {
     width: 100%;
@@ -64,6 +65,7 @@ header ul {
   a {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 }
 

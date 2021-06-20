@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 
 const Nav = () => (
-  <nav className="three--nav">
-    <ul>
+  <nav className="three__row--vert">
+    <ul className="three__row--vert">
       <li>
         <Link to="#about">About//</Link>
       </li>

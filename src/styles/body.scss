@@ -1,0 +1,73 @@
+body {
+  // this needs some love but its a functional starting point
+  cursor: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'%3e%3cg transform='rotate(45 256 256)'%3e%3crect id='r' x='16' y='216' width='480' height='80' rx='14'/%3e%3cuse href='%23r' transform='rotate(90 256 256)'/%3e%3c/g%3e%3c/svg%3e") 16 16, auto;
+}
+
+.lake {
+  background-color: var(--vivid-cyan);
+
+  @media (min-height: 30rem) { // guess and check
+    height: 90vh;
+  }
+}
+
+.three__row {
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 44em) 1fr;
+  width: 100%;
+  gap: 1rem;
+}
+
+.three__row--constant {
+  @extend .three__row;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.three__row >:first-child {
+  place-self: start;
+}
+
+.three__row >:nth-child(2) {
+  place-self: center;
+}
+
+.three__row >:last-child {
+  place-self: end;
+}
+
+.three {
+  @extend .lake;
+  padding: 2rem;
+  width: calc(100% - 4rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: stretch;
+
+  > * {
+    @extend .three__row;
+  }
+}
+
+// Im gonna do this by row so it cant be grid area by grid area
+.three__row--vert {
+  writing-mode: vertical-lr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.single-area {
+  display: grid;
+  place-items: center;
+
+  > * {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
+
+.tahoe-svg {
+  max-height: 20rem; // guess and check
+}
