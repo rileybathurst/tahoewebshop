@@ -7,12 +7,13 @@ const GradientCircle = () => {
         <linearGradient id="linear-gradient" gradientTransform="rotate(90)">
           <stop
             offset="0%"
-            stopColor="rgba(242, 201, 76, 0.5)"
+            stopColor="rgba(242, 153, 74, 0.5)"
             stopOpacity="50%"
           />
           <stop
             offset="100%"
-            stopColor="rgba(242, 153, 74, 0.5)"
+            
+            stopColor="rgba(28, 181, 224, 0.5)"
             stopOpacity="50%"
           />
         </linearGradient>

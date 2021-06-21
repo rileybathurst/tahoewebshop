@@ -11,6 +11,8 @@ import Seo from "../components/seo";
 
 import DroneSelfie from "../images/droneSelfie";
 
+import "@fontsource/josefin-sans";
+import "@fontsource/josefin-sans/files/josefin-sans-latin-variable-wghtOnly-normal";
 import "../styles/index.scss";
 
 function Pacrav() {
@@ -42,8 +44,8 @@ const IndexPage = () => {
         <div>
           <div>{/* stay gold */}</div>
           <div className="single-area">
-            {/* <GradientCircle />
-          <CircleGradient /> */}
+            <GradientCircle />
+          {/* <CircleGradient /> */}
             <TahoeSvg />
             <div>
               <h1>
@@ -137,17 +139,17 @@ const IndexPage = () => {
         <article className="three__row--constant">
           {/* row */}
 
-          <section>
-            <h3>
+          <section className="portfolio__card">
+            <h3 className="project__title">
               <a href="/portfolio.html#pacrav">Pacrav.com</a>
             </h3>
-            <a href="/portfolio#pacrav" className="shadow">
+            <a href="/portfolio#pacrav" className="project__thumbnail shadow">
               <Pacrav />
             </a>
             <CircleGradient />
           </section>
 
-          <section>
+          <section className="portfolio__card">
             <h3>
               <a href="/portfolio.html#aaw">Authentic Alignment Wellness.com</a>
             </h3>
@@ -158,7 +160,7 @@ const IndexPage = () => {
             <CircleGradient />
           </section>
 
-          <section>
+          <section className="portfolio__card">
             <h3>
               <Link to="/portfolio">Snowledge.co</Link>
             </h3>
