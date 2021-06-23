@@ -14,3 +14,6 @@ Each page has a 3x3 grid with some vertical text elements in the margins.
 
 Built on a pretty base version of gatsby, keep it simple and fast.
 
+## Variable Fonts
+
+Working with Josefin Sans Variable through fontsource to explore variable fonts

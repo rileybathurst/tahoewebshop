@@ -95,6 +95,11 @@ const SEO = ({ title, description, image, lang }) => {
       {/* <meta name="google-site-verification" content={seo.gsv} /> */}
 
       {/* <link rel="stylesheet" href="https://use.typekit.net/vgk8lss.css"></link> */}
+    
+      <meta name="theme-color" content="#1cb5e0" />
+
+      rgba(0, 0, 70, 1);
+
     </Helmet>
   );
 };

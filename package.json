@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/cabin": "^4.4.5",
     "@fontsource/josefin-sans": "^4.4.5",
     "gatsby": "^3.4.1",
     "gatsby-plugin-image": "^1.7.1",
