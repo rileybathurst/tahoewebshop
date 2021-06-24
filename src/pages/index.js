@@ -89,8 +89,8 @@ const IndexPage = () => {
               </p>
 
               <div className="circles">
-                <svg height="300" width="300" className="gr-1 gc-1-4 turn">
-                  {" "}
+                  {/* the negative viewbox means the text doesn't clip */}
+                <svg height="300" width="300" viewBox="-25 -25 350 350" className="gr-1 gc-1-4 turn">
                   {/* text path */}
                   <path
                     id="profile"
@@ -135,18 +135,7 @@ const IndexPage = () => {
           {/* row */}
           <h2 className="label">Portfolio//</h2>
           <div>{/* stay gold */}</div>
-          {/* <div>stay gold</div> */}
-          <div>
-            <svg viewBox='0 0 100 100'>
-              <g>
-                <mask id='myMask'>
-                  <rect x='0' y='0' width='100' height='100' fill='white' />
-                  <circle cx='50' cy='50' r='40' fill='black' />
-                </mask>
-                <circle cx='50' cy='50' r='50' mask='url(#myMask)' fill='pink' />
-              </g>
-            </svg>
-          </div>
+          <div>{/* stay gold */}</div>
         </div>
 
         <article className="three__row--constant">

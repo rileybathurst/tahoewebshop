@@ -47,6 +47,8 @@ $three: 1fr minmax(min-content, 44em) 1fr;
   --three: 1fr minmax(min-content, 44em) 1fr;
 }
 
+
+
 body {
   font-family: sans-serif;
   font-size: 14px;
@@ -57,6 +59,14 @@ body {
 
 p {
   margin-block-start: 0; // browser reset
+}
+
+p:hover {
+  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'%3e%3cg transform='rotate(45 256 256)'%3e%3crect id='r' x='16' y='216' width='480' height='80' rx='14' fill='whitesmoke' /%3e%3cuse href='%23r' transform='rotate(90 256 256)'/%3e%3c/g%3e%</svg>") 16 16, auto;
+
+  @media (prefers-color-scheme: dark) {
+    cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'%3e%3cg transform='rotate(45 256 256)'%3e%3crect id='r' x='16' y='216' width='480' height='80' rx='14' fill='black' /%3e%3cuse href='%23r' transform='rotate(90 256 256)'/%3e%3c/g%3e%</svg>") 16 16, auto;
+  }
 }
 
 a {
@@ -149,6 +159,11 @@ input {
   font-size: 1.25em;
   caret-color: var(--primary);
   border: 2px transparent solid;
+
+  @media (prefers-color-scheme: dark) {
+    background: var(--black);
+    color: var(--white);
+  }
 }
 
 input:focus {
@@ -164,11 +179,16 @@ button {
   padding: 1em;
   border: none;
   border-radius: 4px;
-  color: var(--white);
   font-size: 1.25em;
+  color: var(--white);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--white);
+  }
 }
 
-button:hover {
+// button:hover {
+  button:is(:hover, :focus) {
   background: linear-gradient(-45deg, #d6ad30 0%, #cd7425 100%);
   filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.2));
 }
@@ -184,7 +204,7 @@ button:hover {
   grid-template-columns: var(--three);
 }
 
-.three {
+/* .three {
   // display: grid;
   // grid-template-columns: var(--three); // Im kinda dropping this in so do I need it now
   display: flex;
@@ -209,7 +229,7 @@ button:hover {
     @extend .three--row;
     grid-row: 3;
   }
-}
+} */
 
 
 
@@ -272,23 +292,37 @@ button:hover {
   background: var(--lake-fallback);
   background: var(--lake);
   color: var(--white);
+  @media (prefers-color-scheme: dark) {
+    color: var(--black);
+  }
 
   svg {
     fill: var(--lake-fallback)
   }
 
   a svg {
-    fill: white;
+    fill: var(--white);
+    @media (prefers-color-scheme: dark) {
+      fill: var(--black);
+    }
   }
 
   h1 {
     border-color: var(--white);
+    @media (prefers-color-scheme: dark) {
+      border-color: var(--black);  
+    }
   }
 }
 
 .lake a {
   color: var(--white);
+  @media (prefers-color-scheme: dark) {
+    color: var(--black);
+  }
 }
+
+
 
 .label {
   grid-row: 1;

@@ -1,6 +1,7 @@
 // @include Josefinsans.fontFaceVariable($weight: 500, $type: "wghtOnly");
 
 body {
+  font-family: "Josefin Sans", sans-serif;
   // this needs some love but its a functional starting point
   // cursor: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'%3e%3cg transform='rotate(45 256 256)'%3e%3crect id='r' x='16' y='216' width='480' height='80' rx='14'/%3e%3cuse href='%23r' transform='rotate(90 256 256)'/%3e%3c/g%3e%3c/svg%3e") 16 16, auto;
 /*   cursor: url("
@@ -43,7 +44,9 @@ body {
 
   cursor: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'><circle cx='50' cy='50' r='25' stroke='whitesmoke' stroke-width='10' fill='none' /></svg>") 32 32, auto;
 
-  font-family: "Josefin Sans", sans-serif;
+  @media (prefers-color-scheme: dark) {
+    cursor: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'><circle cx='50' cy='50' r='25' stroke='black' stroke-width='10' fill='none' /></svg>") 32 32, auto;
+  }
 }
 
 // < 	%3C
@@ -131,13 +134,16 @@ body {
 }
 
 .portfolio__card {
-  background: var(--white);
   border-radius: 8px;
   display: grid;
   place-items: center;
   padding: 0.1rem;
   transition: 1s;
   height: 100%;
+  background: var(--white);
+  @media (prefers-color-scheme: dark) {
+    background: var(--black);
+  }
 
   > * {
     grid-row: 1;
@@ -155,21 +161,27 @@ body {
 
     a {
       color: var(--lake-deep);
+      @media (prefers-color-scheme: dark) {
+        color: var(--lake-surface);
+      }
     }
   }
 
-  > .project__title::after {
+/*   > .project__title::after {
     content: "\21E2";
     content: "\27A9";
     color: var(--lake-deep);
-  }
+  } */
 
   > .project__thumbnail {
     z-index: 1;
-    mix-blend-mode: multiply;
     min-height: 100%;
     min-width: 100;
     object-fit: cover;
+    mix-blend-mode: multiply;
+    @media (prefers-color-scheme: dark) {
+      mix-blend-mode: screen;
+    }
 
     img {
       filter: opacity(0.5) grayscale(1);
