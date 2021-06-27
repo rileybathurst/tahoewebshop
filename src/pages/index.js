@@ -9,6 +9,8 @@ import CircleGradient from "../components/circle-gradient";
 import TahoeSvg from "../components/tahoe";
 import Seo from "../components/seo";
 
+import CircleTextPath from "../components/circle-textpath";
+
 import DroneSelfie from "../images/droneSelfie";
 
 // import "@fontsource/josefin-sans";
@@ -46,22 +48,40 @@ const IndexPage = () => {
         <div>
           <div>{/* stay gold */}</div>
           <div className="single-area">
-            <GradientCircle />
+
+            {/* set a circle once */}
+            {/* <GradientCircle /> */}
+            
+            {/* use the gradient */}
             {/* <CircleGradient /> */}
-            <TahoeSvg />
-            <div>
-              <h1>
-                Tahoe
+
+            {/* set a circle once */}
+            <CircleTextPath />
+
+            {/* set the text */}
+            {/* can I simplify this more */}
+            <svg height="500" width="500" viewBox="-25 -25 350 350">
+              <text>
+                <textPath xlinkHref="#profile">Building &amp; Maintaining your web presence.</textPath>
+              </text>
+            </svg>
+
+            {/* <TahoeSvg /> */}
+            <div className="">
+              {/* .square */}
+              <h1 className="">
+                {/* .square */}
+                <span>Tahoe</span>
                 <br />
-                Web
+                <span>Web</span>
                 <br />
-                Shop
+                <span>Shop</span>
               </h1>
-              <p>
+              {/* <p>
                 Building &amp; Maintaining
                 <br />
                 your web presence.
-              </p>
+              </p> */}
             </div>
           </div>
           <div>{/* stay gold */}</div>
@@ -89,19 +109,16 @@ const IndexPage = () => {
               </p>
 
               <div className="circles">
-                  {/* the negative viewbox means the text doesn't clip */}
-                <svg height="300" width="300" viewBox="-25 -25 350 350" className="gr-1 gc-1-4 turn">
-                  {/* text path */}
-                  <path
-                    id="profile"
-                    fill="none"
-                    d="
-                    M 150, 150
-                    m -150, 0
-                    a 100,100 0 1,0 300,0
-                    a 100,100 0 1,0 -300,0
-                  "
-                  />
+                {/* the negative viewbox means the text doesn't clip */}
+
+              
+                <CircleTextPath />
+                <svg
+                  height="300"
+                  width="300"
+                  viewBox="-25 -25 350 350"
+                  className="gr-1 gc-1-4 turn"
+                >
                   <text>
                     <textPath xlinkHref="#profile">
                       <Link to="/team.html#riley">Riley Bathurst</Link>

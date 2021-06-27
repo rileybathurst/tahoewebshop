@@ -97,10 +97,30 @@
 }
 
 #top { // needs specificity
+  .square {
+    aspect-ratio: 1 / 1; // nope
+  }
+/*   h1 {
+    border: 0.5rem solid var(--hypolmnion);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1; // nope
+    margin: 0;
+  } */
+
+  h1 > span {
+    border-block-start: 0.5rem solid var(--hypolmnion);
+    border-block-end: 0.5rem solid var(--hypolmnion);
+
+  }
+
   .tahoe-svg {
-    fill: var(--lake-deep);
+    fill: hsla(var(--lmnion-h), var(--lmnion-s), 95%, 0.5); // guess and check
     @media (prefers-color-scheme: dark) {
       fill: var(--lake-surface);
     }
+  }
+
+  svg {
+    fill: pink; // testing
   }
 }

@@ -35,19 +35,41 @@ $three: 1fr minmax(min-content, 44em) 1fr;
   );
   --lake-deep: rgb(0, 0, 70);
   --lake-surface: rgb(28, 181, 224);
-  --lake: linear-gradient(
+
+  --shallows: linear-gradient(
     0deg,
-    rgba(0, 0, 70, 1) 0%,
-    rgba(28, 181, 224, 1) 100%
+    hsl(193, 58%, 59%) 0%,
+    hsl(193, 58%, 79%) 100%
+  );
+
+  --sunrise: linear-gradient(
+    0deg,
+    hsl(29, 100%, 69%) 0%,
+    hsl(47, 100%, 78%) 100%
   );
 
   --drop: hsla(0, 0%, 0%, 0.25);
 
 
   --three: 1fr minmax(min-content, 44em) 1fr;
+
+
+  // Lake stratification
+  // https://en.wikipedia.org/wiki/Lake_stratification
+  --epilmnion: hsl(188, 100%, 79%); // #95f1ff
+  --metalmnion:hsl(188, 100%, 45%); // #00c9e7
+  --hypolmnion:hsl(188, 100%, 18%); // #004f5b
+
+  // lmnion layers
+  --lmnion-h: 188;
+  --lmnion-s: 100%;
+
+  --lake: linear-gradient(
+    0deg,
+    hsl(188, 100%, 79%) 0%,
+    hsl(188, 100%, 45%) 100%
+  );
 }
-
-
 
 body {
   font-family: sans-serif;
@@ -80,7 +102,7 @@ a:hover {
 :is(nav, .pedestal) a {
   line-height: 1.5rem;
   padding: 0.5rem;
-  border-radius: 1.5rem; // smooth round?
+  // border-radius: 1.5rem; // smooth round?
 }
 
 :is(nav, .pedestal) a:hover {
@@ -90,7 +112,7 @@ a:hover {
 h1 {
   font-weight: bold;
   padding: 1em;
-  border: 8px solid var(--black);
+  // border: 8px solid var(--black);
 }
 
 h1 {
@@ -276,50 +298,17 @@ button {
   }
 }
 
-.light {
-  @extend .three;
-  background: var(--light-fallback);
-  background: var(--light);
-  // padding: 2em;
-
-  svg {
-    fill: var(--light-fallback)
-  }
-}
-
-.lake {
-  @extend .three;
-  background: var(--lake-fallback);
-  background: var(--lake);
-  color: var(--white);
-  @media (prefers-color-scheme: dark) {
-    color: var(--black);
-  }
-
-  svg {
-    fill: var(--lake-fallback)
-  }
-
-  a svg {
-    fill: var(--white);
-    @media (prefers-color-scheme: dark) {
-      fill: var(--black);
-    }
-  }
-
-  h1 {
-    border-color: var(--white);
-    @media (prefers-color-scheme: dark) {
-      border-color: var(--black);  
-    }
-  }
-}
-
 .lake a {
-  color: var(--white);
+  color: var(--hypolmnion);
   @media (prefers-color-scheme: dark) {
     color: var(--black);
   }
+}
+
+.lake li > a {
+  text-decoration: none;
+  border-block-start: 1px solid var(--hypolmnion);
+  border-block-end: 1px solid var(--hypolmnion);
 }
 
 
