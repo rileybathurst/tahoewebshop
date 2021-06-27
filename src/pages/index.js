@@ -112,7 +112,7 @@ const IndexPage = () => {
                 {/* the negative viewbox means the text doesn't clip */}
 
               
-                <CircleTextPath />
+                {/* <CircleTextPath /> */}
                 <svg
                   height="300"
                   width="300"
