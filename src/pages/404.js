@@ -1,26 +1,33 @@
 import * as React from "react";
-// import { Link } from "gatsby";
+import { Link } from "gatsby";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
-import GradientCircle from "../components/gradient-circle";
 import Seo from "../components/seo";
 
 // markup
 const NotFoundPage = () => {
   return (
-    <div className="y-scroll-snapping" dir="ltr">
+    <div className="three screen-high" dir="ltr">
       <Seo title="404" />
-      <header id="top" className="single-page">
+      <header id="top">
         <Nav />
-        <div className="major">
-          <GradientCircle />
-          <h1>404</h1>
-          <p>We are lost.</p>
+        </header>
+        {/* full row */}
+
+        <div>
+          {/* row */}
+          <div>{/* stay gold */}</div>
+          <div>
+            <h1>404</h1>
+            <p>We are lost.</p>
+            <Link to="/">Go Home</Link>
+          </div>
+          <div>{/* stay gold */}</div>
         </div>
+        {/* row */}
 
         <Pedestal />
-      </header>
     </div>
   );
 };

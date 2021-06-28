@@ -10,13 +10,9 @@ import TahoeSvg from "../components/tahoe";
 import Seo from "../components/seo";
 
 import CircleTextPath from "../components/circle-textpath";
-
 import DroneSelfie from "../images/droneSelfie";
 
-// import "@fontsource/josefin-sans";
-// import "@fontsource/josefin-sans/files/josefin-sans-latin-variable-wghtOnly-normal";
 import "@fontsource/josefin-sans/variable.css";
-import "@fontsource/cabin/variable.css";
 import "../styles/index.scss";
 
 function Pacrav() {
@@ -49,40 +45,24 @@ const IndexPage = () => {
           <div>{/* stay gold */}</div>
           <div className="single-area">
 
-            {/* set a circle once */}
-            {/* <GradientCircle /> */}
-            
-            {/* use the gradient */}
-            {/* <CircleGradient /> */}
-
+            <TahoeSvg />
             {/* set a circle once */}
             <CircleTextPath />
 
             {/* set the text */}
-            {/* can I simplify this more */}
+            {/* can I simplify this more but thatll come soon */}
             <svg height="500" width="500" viewBox="-25 -25 350 350">
               <text>
                 <textPath xlinkHref="#profile">Building &amp; Maintaining your web presence.</textPath>
               </text>
             </svg>
 
-            {/* <TahoeSvg /> */}
-            <div className="">
-              {/* .square */}
-              <h1 className="">
-                {/* .square */}
+              <h1>
                 <span>Tahoe</span>
-                <br />
                 <span>Web</span>
-                <br />
                 <span>Shop</span>
               </h1>
-              {/* <p>
-                Building &amp; Maintaining
-                <br />
-                your web presence.
-              </p> */}
-            </div>
+
           </div>
           <div>{/* stay gold */}</div>
         </div>
@@ -101,36 +81,16 @@ const IndexPage = () => {
           <div>{/* stay gold */}</div>
           <div className="single-area">
             <div>
-              {/* holder */}
               <h3>The web should only be as complex as you need.</h3>
-              <p>
+              {/* <p>
                 From initial setup of a site to additional features as your
-                company grows and you&rsquo;re reach expands.
-              </p>
-
-              <div className="circles">
-                {/* the negative viewbox means the text doesn't clip */}
+                company grows and your reach expands.
+              </p> */}
+              <p>Work with us at your level, we can take care of the rest.</p>
+              <p><Link to="/features">Learn More</Link></p>
+              <p><Link to="/team">Meet the team</Link></p>
 
               
-                {/* <CircleTextPath /> */}
-                <svg
-                  height="300"
-                  width="300"
-                  viewBox="-25 -25 350 350"
-                  className="gr-1 gc-1-4 turn"
-                >
-                  <text>
-                    <textPath xlinkHref="#profile">
-                      <Link to="/team.html#riley">Riley Bathurst</Link>
-                    </textPath>
-                  </text>
-                </svg>
-
-                <DroneSelfie />
-
-                <p className="screen-reader">Riley Bathurst Profile Video</p>
-              </div>
-              {/* /circles */}
             </div>
           </div>
           {/* /singlearea */}
@@ -147,7 +107,7 @@ const IndexPage = () => {
         </div>
       </main>
 
-      <section id="portfolio" className="three">
+      <section id="portfolio" className="three extra-long">
         <div>
           {/* row */}
           <h2 className="label">Portfolio//</h2>
@@ -155,7 +115,7 @@ const IndexPage = () => {
           <div>{/* stay gold */}</div>
         </div>
 
-        <article className="three__row--constant">
+        <article className="three__row--constant three__row--vert-when-needed">
           {/* row */}
 
           <section className="portfolio__card">
@@ -208,7 +168,7 @@ const IndexPage = () => {
         {/* row */}
       </section>
 
-      <section id="contact" className="lake three module any-height">
+      <section id="contact" className="lake three module extra-long">
         {/* 
         dont have these so there isnt a gap for no content
         <div>
@@ -248,9 +208,9 @@ const IndexPage = () => {
                   placeholder="Name"
                   required
                 />
-                <br />
+                {/* <br /> */}
               </label>
-              <br />
+              {/* <br /> */}
               <label>
                 E-mail:*
                 <input
@@ -260,9 +220,9 @@ const IndexPage = () => {
                   placeholder="email"
                   required
                 />
-                <br />
+                {/* <br /> */}
               </label>
-              <br />
+              {/* <br /> */}
               <label>
                 What&#39;s your favourite website&#63;*
                 <input
@@ -272,7 +232,7 @@ const IndexPage = () => {
                   placeholder="What&#39;s your favourite website&#63;"
                   required
                 />
-                <br />
+                {/* <br /> */}
               </label>
               <br />
 

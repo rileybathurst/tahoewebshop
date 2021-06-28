@@ -43,7 +43,9 @@ body {
   ")16 16, auto; */
 
   cursor: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'><circle cx='50' cy='50' r='25' stroke='whitesmoke' stroke-width='10' fill='none' /></svg>") 32 32, auto;
-  background: color;
+  color: var(--hypolmnion);
+  fill: var(--hypolmnion);
+
 
 
   @media (prefers-color-scheme: dark) {
@@ -66,21 +68,47 @@ body {
   background: var(--lake-surface);
   background: var(--shallows);
 
-  @media (min-height: 30rem) { // guess and check
+/* 
+  this should be part of the scroll snapping
+    @media (min-height: 30rem) { // guess and check
     height: 90vh;
-  }
+  } */
+}
+
+.screen-high {
+  min-height: 100vh;
+}
+
+.three.screen-high {
+  min-height: calc(100vh - 4rem);
 }
 
 .three__row {
   display: grid;
   grid-template-columns: 1fr minmax(min-content, 44em) 1fr;
   width: 100%;
-  gap: 1rem;
+
+  // with empty blocks we get gaps
+  @media (min-width: var(--maximum-measure)) {
+    gap: 1rem;
+  }
 }
 
 .three__row--constant {
   @extend .three__row;
-  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (min-width: var(--maximum-measure)) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.three__row--vert-when-needed {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @media (min-width: var(--maximum-measure)) {
+    grid-template-columns: revert;
+  }
 }
 
 .three__row >:first-child {
@@ -112,6 +140,7 @@ body {
 
 // Im gonna do this by row so it cant be grid area by grid area
 .three__row--vert {
+  grid-column: 1/4;
   writing-mode: vertical-lr;
   display: flex;
   flex-direction: column;
@@ -155,12 +184,14 @@ body {
 
   > .project__title {
     z-index: 2;
-    font-size: 4rem;
     margin: 0;
     z-index: 10;
     text-align: center;
     display: flex;
     flex-direction: column;
+    @media (min-width: var(--maximum-measure)) {
+      font-size: 4rem;
+    }
 
     a {
       color: var(--lake-deep);

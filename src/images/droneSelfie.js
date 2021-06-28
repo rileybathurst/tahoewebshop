@@ -12,9 +12,10 @@ const DroneSelfie = ({ videoSrcURL, videoTitle, ...props }) => (
     />
 
     <p>
-      Sorry, Your browser doesn't support HTML5 video. Here is a{" "}
+      Sorry, Your browser doesn't support HTML5 video. Here is a 
       <a href="/static/drone-selfie.mp4">link to the video</a> instead.
     </p>
+    <p className="screen-reader">Riley Bathurst Profile Video</p>
   </video>
 );
 export default DroneSelfie;

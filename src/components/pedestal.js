@@ -1,10 +1,10 @@
 import React from "react";
-// import { Link } from "gatsby";
+import { Link } from "gatsby";
 
 const Pedestal = () => (
   <div className="pedestal">
     <div>
-      <a href="/features.html#local">
+      <Link to="#local">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="48"
@@ -19,11 +19,11 @@ const Pedestal = () => (
           <path d="M0 0h24v24H0z" fill="none" />
         </svg>
         <p>Local</p>
-      </a>
+      </Link>
     </div>
 
     <div>
-      <a href="/features.html#performance">
+      <Link to="/features#performance">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="48"
@@ -38,11 +38,11 @@ const Pedestal = () => (
           />
         </svg>
         Performance
-      </a>
+      </Link>
     </div>
 
     <div>
-      <a href="/features.html#security">
+      <Link to="/features#security">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="48"
@@ -57,7 +57,7 @@ const Pedestal = () => (
           />
         </svg>
         Security
-      </a>
+      </Link>
     </div>
   </div>
 );

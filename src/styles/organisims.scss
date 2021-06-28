@@ -67,6 +67,10 @@ header ul {
     flex-direction: column;
     text-align: center;
   }
+
+  p {
+    margin-block-end: 0;
+  }
 }
 
 .p1 {

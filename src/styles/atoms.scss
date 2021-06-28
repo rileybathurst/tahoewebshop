@@ -53,6 +53,7 @@ $three: 1fr minmax(min-content, 44em) 1fr;
 
   --three: 1fr minmax(min-content, 44em) 1fr;
 
+  --maximum-measure: 44rem;
 
   // Lake stratification
   // https://en.wikipedia.org/wiki/Lake_stratification
@@ -126,7 +127,8 @@ h2 {
 
 h3 {
   font-size: 1.953em;
-  @media (max-width: 24em) {
+  font-size: 1.25em; // contact form on a phone has problems
+  @media (min-width: var(--maximum-measure)) {
     font-size: 1.563em;
   }
 }
@@ -178,10 +180,12 @@ input {
   width: calc(100% - 2em); // deals with padding on small sizes
   border-radius: 4px;
   margin-bottom: 1.5em;
-  font-size: 1.25em;
   caret-color: var(--primary);
   border: 2px transparent solid;
-
+  @media (min-width: var(--maximum-measure)) {
+    font-size: 1.25em;
+  }
+  
   @media (prefers-color-scheme: dark) {
     background: var(--black);
     color: var(--white);
@@ -288,10 +292,13 @@ button {
 
 
 
-
+.extra-long {
+  min-height: 90%;
+}
 
 
 .ninety-vh {
+  // min-content?
   @media (min-content: 30rem) {
     // guess and check
     height: 90vh; // needs safari small fix
@@ -344,10 +351,6 @@ button {
   -webkit-text-stroke: 1.5px var(--white);
   letter-spacing: 0.1rem;
   paint-order: stroke fill; // css validator issue https://developer.mozilla.org/en-US/docs/Web/CSS/paint-order
-}
-
-.light .out {
-  -webkit-text-stroke: 1.5px var(--primary__dark);
 }
 
 // performance

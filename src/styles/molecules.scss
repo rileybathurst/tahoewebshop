@@ -13,7 +13,7 @@
 
 .circles {
   align-self: start;
-  grid-row: 1;
+  // grid-row: 1;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -107,10 +107,26 @@
     margin: 0;
   } */
 
-  h1 > span {
-    border-block-start: 0.5rem solid var(--hypolmnion);
-    border-block-end: 0.5rem solid var(--hypolmnion);
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem; // guess and check
 
+    @media (min-width: var(--maximum-measure)) {
+      font-size: revert; // maybe
+      line-height: 2.5rem; // guess and check
+    }
+  }
+
+  h1 > span {
+    display: block;
+    padding-block: 0.25rem;
+    margin-block: 0.5rem;
+    border-block-start: 0.25rem solid var(--hypolmnion);
+    // border-block-end: 0.25rem solid var(--hypolmnion);
+
+    @media (min-width: var(--maximum-measure)) {
+      padding-block: 0.5rem;
+    }
   }
 
   .tahoe-svg {
@@ -121,6 +137,8 @@
   }
 
   svg {
-    fill: pink; // testing
+    fill: var(--hypolmnion);
+    max-width: 100%;
+    max-height: 100%;
   }
 }
