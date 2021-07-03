@@ -96,9 +96,25 @@ body {
 
 .three__row--constant {
   @extend .three__row;
+  grid-template-columns: 1fr;
+  
+  @media (max-width: 44rem) {
+    grid-row-gap: 1rem;
+  }
 
-  @media (min-width: var(--maximum-measure)) {
+  @media (min-width: 44rem) { // var(--maximum-measure)
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+
+  > * {
+    @media (max-width: 44rem) { // not the regular min-width
+      grid-column: 1;
+    }
+  }
+
+  > .portfolio__card {
+    grid-row: auto;
   }
 }
 
@@ -106,7 +122,7 @@ body {
   grid-template-columns: 1fr;
   gap: 1rem;
 
-  @media (min-width: var(--maximum-measure)) {
+  @media (min-width: 44rem) { // var(--maximum-measure)
     grid-template-columns: revert;
   }
 }
@@ -152,6 +168,7 @@ body {
 }
 
 .single-area {
+  width: 100%;
   display: grid;
   place-items: center;
 
@@ -166,10 +183,12 @@ body {
 }
 
 .portfolio__card {
+  grid-row: 1;
+
   border-radius: 8px;
   display: grid;
   place-items: center;
-  padding: 0.1rem;
+  // padding: 0.5rem;
   transition: 1s;
   height: 100%;
   background: var(--white);
@@ -177,10 +196,10 @@ body {
     background: var(--black);
   }
 
-  > * {
+/*   > * {
     grid-row: 1;
     grid-column: 1;
-  }
+  } */
 
   > .project__title {
     z-index: 2;
@@ -189,6 +208,8 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    background: var(--light);
     @media (min-width: var(--maximum-measure)) {
       font-size: 4rem;
     }
@@ -210,15 +231,11 @@ body {
   > .project__thumbnail {
     z-index: 1;
     min-height: 100%;
-    min-width: 100;
+    min-width: 100%;
     object-fit: cover;
-    mix-blend-mode: multiply;
-    @media (prefers-color-scheme: dark) {
-      mix-blend-mode: screen;
-    }
 
     img {
-      filter: opacity(0.5) grayscale(1);
+      // filter: opacity(0.5);
       min-height: 100%;
       min-width: 100%;
     }
@@ -237,18 +254,9 @@ body {
   // https://fontsource.org/docs/variable-fonts
   font-family: "Josefin SansVariable";
   font-variation-settings: "wght" 700;
-  background: var(--lake-deep);
+  // background: var(--lake-deep);
   
   a {
-    color: var(--lake-surface);
-  }
-
-  ::after {
-    color: var(--lake-surface);
-  }
-
-  img {
-    // filter: grayscale(0);
-    // margin-block-start: 1rem;
+    color: var(--hypolmnion);
   }
 }

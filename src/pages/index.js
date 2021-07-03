@@ -4,31 +4,37 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
-import GradientCircle from "../components/gradient-circle";
-import CircleGradient from "../components/circle-gradient";
 import TahoeSvg from "../components/tahoe";
 import Seo from "../components/seo";
 
 import CircleTextPath from "../components/circle-textpath";
-import DroneSelfie from "../images/droneSelfie";
 
 import "@fontsource/josefin-sans/variable.css";
 import "../styles/index.scss";
 
-function Pacrav() {
+function EbptGrab() {
   return (
     <StaticImage
-      src="https://tahoewebshop.s3.us-west-1.amazonaws.com/pacrav-com.png"
-      alt="pacrav website"
+      src="https://tahoewebshop.s3.us-west-1.amazonaws.com/emeraldbay-screengrab.png"
+      alt="emerald bay physical therapy website"
     />
   );
 }
 
-function Aaw() {
+function SnowledgeGrab() {
   return (
     <StaticImage
-      src="https://tahoewebshop.s3.us-west-1.amazonaws.com/authenticalignmentwellness-com_how-i-got-into-coaching.png"
-      alt="authentic alignment wellness website"
+      src="https://tahoewebshop.s3.us-west-1.amazonaws.com/snowledge-netlify-screengrab.png"
+      alt="emerald bay physical therapy website"
+    />
+  );
+}
+
+function CmsfGrab() {
+  return (
+    <StaticImage
+      src="https://tahoewebshop.s3.us-west-1.amazonaws.com/cmsf-screengrab.png"
+      alt="emerald bay physical therapy website"
     />
   );
 }
@@ -69,7 +75,7 @@ const IndexPage = () => {
         <Pedestal />
       </header>
 
-      <main id="about" className="three">
+      <main id="about" className="three extra-long">
         <div className="three__row--vert">
           <h2 className="label">About//</h2>
           <div>{/* stay gold */}</div>
@@ -115,31 +121,26 @@ const IndexPage = () => {
           <div>{/* stay gold */}</div>
         </div>
 
-        <article className="three__row--constant three__row--vert-when-needed">
+        <article className="three__row--constant "> {/* three__row--vert-when-needed */}
           {/* row */}
 
           <section className="portfolio__card">
             <h3 className="project__title">
-              <Link to="/portfolio.html#pacrav">Pacrav.com</Link>
+              <Link to="/portfolio.html#ebpt">Emeraldbay.physio</Link>
             </h3>
-            <Link to="/portfolio#pacrav" className="project__thumbnail shadow">
-              <Pacrav />
+            <Link to="/portfolio#ebpt" className="project__thumbnail">
+              <EbptGrab />
             </Link>
-            {/* <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <path d="M39.2,-58.1C49.1,-46.7,54.3,-33,62.1,-18.1C69.8,-3.1,80.1,13.1,77.1,26C74.2,38.8,58,48.2,43,59.6C27.9,71.1,14,84.5,-0.5,85.1C-14.9,85.7,-29.7,73.6,-45.4,62.4C-61.1,51.1,-77.6,40.9,-81.6,26.9C-85.6,13,-77,-4.6,-68,-19C-59,-33.3,-49.7,-44.4,-38.3,-55.2C-26.8,-66.1,-13.4,-76.7,0.6,-77.6C14.6,-78.4,29.3,-69.4,39.2,-58.1Z" transform="translate(100 100)" />
-            </svg> */}
-
-            <CircleGradient />
           </section>
 
           <section className="portfolio__card">
             <h3 className="project__title">
-              <Link to="/portfolio.html#aaw">
-                Authentic Alignment Wellness.com
+              <Link to="/portfolio.html#cmsf">
+                Cordell Marine Sanctuary Foundation
               </Link>
             </h3>
-            <Link to="/portfolio#aaw" className="project__thumbnail">
-              <Aaw />
+            <Link to="/portfolio#cmsf" className="project__thumbnail">
+            <CmsfGrab />
             </Link>
 
             {/* <CircleGradient /> */}
@@ -149,11 +150,9 @@ const IndexPage = () => {
             <h3 className="project__title">
               <Link to="/portfolio">Snowledge.co</Link>
             </h3>
-            {/* <Link to="/portfolio#snowledge" className="shadow">
-              Needs a new snowledge image
-            </Link> */}
-
-            <CircleGradient />
+            <Link to="/portfolio#snowledge" className="project__thumbnail">
+              <SnowledgeGrab />
+            </Link>
           </section>
         </article>
 
@@ -169,18 +168,15 @@ const IndexPage = () => {
       </section>
 
       <section id="contact" className="lake three module extra-long">
-        {/* 
-        dont have these so there isnt a gap for no content
         <div>
-          row
-          <div>stay gold</div>
-          <div>stay gold</div>
-          <div>stay gold</div>
-        </div> */}
+        <h2 className="label">Contact//</h2>
+          <div>{/* stay gold */}</div>
+          <div>{/* stay gold */}</div>
+        </div>
 
         <article>
           {/* row */}
-          <h2 className="label">Contact//</h2>
+          <div>{/* stay gold */}</div>
           <div>
             <h3>
               <a href="https://goo.gl/maps/DhEsvHPR8mUSsnBM8">
@@ -195,67 +191,23 @@ const IndexPage = () => {
             </h3>
 
             <h3>
-              <a href="mailto:info@tahoewebshop.com">info@tahoewebshop.com</a>
+              <a href="mailto:info@tahoewebshop.com" className="button">info@tahoewebshop.com</a>
             </h3>
+            <p>No form? Nope, I'm not a huge fan of them, I would prefer just a mail link, you can send from you preferred mail app, or service. This way you know if it works or not and we can just start your mail. I can still make you a form, let's just talk about it first.</p>
 
-            <form action="/contact.php" method="post">
-              <label>
-                Name:*
-                <input
-                  type="text"
-                  id="name"
-                  name="user_name"
-                  placeholder="Name"
-                  required
-                />
-                {/* <br /> */}
-              </label>
-              {/* <br /> */}
-              <label>
-                E-mail:*
-                <input
-                  type="email"
-                  id="mail"
-                  name="user_mail"
-                  placeholder="email"
-                  required
-                />
-                {/* <br /> */}
-              </label>
-              {/* <br /> */}
-              <label>
-                What&#39;s your favourite website&#63;*
-                <input
-                  type="text"
-                  id="favourite"
-                  name="user_favourite"
-                  placeholder="What&#39;s your favourite website&#63;"
-                  required
-                />
-                {/* <br /> */}
-              </label>
-              <br />
-
-              <input
-                type="hidden"
-                name="recaptcha_response"
-                id="recaptchaResponse"
-              />
-
-              <button type="submit">Send</button>
-            </form>
           </div>
-          <p className="return">
-            <Link to="#top">Tahoe Web Shop</Link>
-          </p>
+          <div>{/* stay gold */}</div>
         </article>
 
-        {/*         <div>
-          row
-          <div>stay gold</div>
-          <div>stay gold</div>
-          <div>stay gold</div>
-        </div> */}
+        <div>
+          <div>{/* stay gold */}</div>
+          <div>{/* stay gold */}</div>
+          <div>
+            <p className="return">
+              <Link to="#top">Tahoe Web Shop</Link>
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   );
