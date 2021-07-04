@@ -37,12 +37,16 @@ const TeamPage = () => {
               company or your project.
             </p>
             <div className="icons">
-              <a href="#">
+              <a href="https://twitter.com/rileybathurst"
+                target="_blank"
+                rel="nofollow noreferrer">
                 <TwitterSvg />
                 @rileybathurst
               </a>
 
-              <a to="#">
+              <a href="https://www.instagram.com/rileybathurst/"
+                target="_blank"
+                rel="nofollow noreferrer">
                 <InstagramSvg />
                 @rileybathurst
               </a>
@@ -50,11 +54,9 @@ const TeamPage = () => {
               <a
                 href="https://github.com/rileybathurst"
                 target="_blank"
-                rel="nofollow noreferrer"
-              >
+                rel="nofollow noreferrer">
                 <GithubSvg />
                 @rileybathurst
-
               </a>
             </div>
             {/* .icons */}
@@ -70,7 +72,7 @@ const TeamPage = () => {
               height="300"
               width="300"
               viewBox="-25 -25 350 350"
-              className="turn"
+              className="turn rotating"
             >
               <text>
                 <textPath xlinkHref="#profile">

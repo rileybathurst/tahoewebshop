@@ -157,7 +157,7 @@ body {
 // Im gonna do this by row so it cant be grid area by grid area
 .three__row--vert {
   grid-column: 1/4;
-  writing-mode: vertical-lr;
+  writing-mode: vertical-rl; // needs to rl for nav top bar
   display: flex;
   flex-direction: column;
   justify-content: space-between;

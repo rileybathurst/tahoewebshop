@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
-import Nav from "../components/nav";
+// import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
 import TahoeSvg from "../components/tahoe";
 import Seo from "../components/seo";
@@ -46,18 +46,38 @@ const IndexPage = () => {
       <Seo title="Home" />
       <header id="top" className="three">
         {/* <title>Home Page</title> */}
-        <Nav />
+        
+        {/* Im not running the nav here as its a page link */}
+        <nav className="three__row--vert">
+          <ul>
+            <li>
+              <Link to="#about">About</Link>
+            </li>
+            {/* li style="--animation-order: 1;" */}
+            <li>
+              <Link to="#portfolio">Portfolio</Link>
+            </li>
+            {/* li style="--animation-order: 2;" */}
+            <li>
+              <Link to="#contact">Contact</Link>
+            </li>
+            {/* li style="--animation-order: 3;" */}
+          </ul>
+        </nav>
+
         <div>
           <div>{/* stay gold */}</div>
           <div className="single-area">
 
-            <TahoeSvg />
+            <div className="tahoe-pop">
+              <TahoeSvg />
+            </div>
             {/* set a circle once */}
             <CircleTextPath />
 
             {/* set the text */}
             {/* can I simplify this more but thatll come soon */}
-            <svg height="500" width="500" viewBox="-25 -25 350 350">
+            <svg height="500" width="500" viewBox="-25 -25 350 350" className="rotating">
               <text>
                 <textPath xlinkHref="#profile">Building &amp; Maintaining your web presence.</textPath>
               </text>
@@ -77,9 +97,9 @@ const IndexPage = () => {
 
       <main id="about" className="three extra-long">
         <div className="three__row--vert">
-          <h2 className="label">About//</h2>
           <div>{/* stay gold */}</div>
           <div>{/* stay gold */}</div>
+          <h2 className="label">About //</h2>
         </div>
 
         <section>
@@ -88,11 +108,8 @@ const IndexPage = () => {
           <div className="single-area">
             <div>
               <h3>The web should only be as complex as you need.</h3>
-              {/* <p>
-                From initial setup of a site to additional features as your
-                company grows and your reach expands.
-              </p> */}
-              <p>Work with us at your level, we can take care of the rest.</p>
+              <p>Work with us at your level, we can take care of the rest.<br />
+              If you know the basics, the code or the whole deal we </p>
               <p><Link to="/features">Learn More</Link></p>
               <p><Link to="/team">Meet the team</Link></p>
 
@@ -105,11 +122,11 @@ const IndexPage = () => {
 
         <div className="three__row--vert">
           {/* row */}
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
           <p className="return">
             <Link to="#top">Tahoe Web Shop</Link>
           </p>
+          <div>{/* stay gold */}</div>
+          <div>{/* stay gold */}</div>
         </div>
       </main>
 

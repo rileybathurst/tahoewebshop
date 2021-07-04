@@ -109,8 +109,14 @@ a:hover {
   // border-radius: 1.5rem; // smooth round?
 }
 
-:is(nav, .pedestal) a:hover {
-  background: var(--drop);
+
+:is(nav, .pedestal, #top) a:hover {
+  background: var(--hypolmnion);
+  color: var(--metalmnion);
+
+  svg {
+    fill: var(--metalmnion)
+  }
 }
 
 h1 {
@@ -365,13 +371,13 @@ button {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); // clockwise
   }
 }
 .rotating {
-  animation: rotating 2s linear infinite;
+  animation: rotating 30s linear infinite;
   stroke-linecap: round;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -416,21 +422,28 @@ button {
   }
 }
 
-.logo-pop circle {
+.logo-pop circle,
+.logo-pop path {
   animation: pop 2s infinite ease;
   stroke: rgba(0, 0, 0, 0.2);
 }
 
-.grad {
-  fill: red;
-  fill: var(--light);
+@keyframes tahoepop {
+  0% {
+    stroke-width: 0;
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-width: 40%;
+    stroke-opacity: 0;
+  }
 }
 
-.gradient-circle {
-  fill: rgb(242, 201, 76); // fallback
-}
-
-#about {
-  padding: 2rem;
-  width: calc(100% - 4rem);
+.tahoe-pop {
+  animation: tahoepop 5s infinite ease;
+  stroke: rgba(0, 0, 0, 0.2);
+  stroke-linecap: round;
+  // stroke-alignment: outside;
+  // https://svgwg.org/specs/strokes/#SpecifyingStrokeAlignment
+  // this isnt a thing
 }
