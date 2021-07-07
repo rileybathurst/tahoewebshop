@@ -55,7 +55,7 @@ const IndexPage = () => {
             </li>
             {/* li style="--animation-order: 1;" */}
             <li>
-              <Link to="#portfolio">Portfolio</Link>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
             {/* li style="--animation-order: 2;" */}
             <li>
@@ -130,7 +130,7 @@ const IndexPage = () => {
         </div>
       </main>
 
-      <section id="portfolio" className="three extra-long">
+      <section id="#portfolio" className="three extra-long">
         <div>
           {/* row */}
           <h2 className="label">Portfolio//</h2>

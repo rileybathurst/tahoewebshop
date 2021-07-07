@@ -447,3 +447,13 @@ button {
   // https://svgwg.org/specs/strokes/#SpecifyingStrokeAlignment
   // this isnt a thing
 }
+
+.full-width {
+  width: 100%;
+}
+
+svg {
+  max-width: 8rem;
+  width: 100%;
+  margin-inline: auto;
+}
