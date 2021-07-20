@@ -51,7 +51,7 @@ const IndexPage = () => {
         <nav className="three__row--vert">
           <ul>
             <li>
-              <Link to="#about">About</Link>
+              <Link to="#about">Home</Link>
             </li>
             {/* li style="--animation-order: 1;" */}
             <li>
@@ -110,7 +110,7 @@ const IndexPage = () => {
               <h3>The web should only be as complex as you need.</h3>
               <p>Work with us at your level, we can take care of the rest.<br />
               If you know the basics, the code or the whole deal we </p>
-              <p><Link to="/features">Learn More</Link></p>
+              <p><Link to="/features">Learn More about how and what we do</Link></p>
               <p><Link to="/team">Meet the team</Link></p>
 
               
@@ -130,10 +130,10 @@ const IndexPage = () => {
         </div>
       </main>
 
-      <section id="#portfolio" className="three extra-long">
+      <section id="#portfolio" className="three">
         <div>
           {/* row */}
-          <h2 className="label">Portfolio//</h2>
+          <h2 className="label">Portfolio //</h2>
           <div>{/* stay gold */}</div>
           <div>{/* stay gold */}</div>
         </div>

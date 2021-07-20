@@ -109,7 +109,6 @@ a:hover {
   // border-radius: 1.5rem; // smooth round?
 }
 
-
 :is(nav, .pedestal, #top) a:hover {
   background: var(--hypolmnion);
   color: var(--metalmnion);
@@ -136,10 +135,6 @@ h2 {
 
 h3 {
   font-size: 1.953em;
-  font-size: 1.25em; // contact form on a phone has problems
-  @media (min-width: var(--maximum-measure)) {
-    font-size: 1.563em;
-  }
 }
 
 h4 {
@@ -153,6 +148,10 @@ h5 {
 small,
 .text_small {
   font-size: 0.8em;
+}
+
+.clamped-3 {
+  font-size: clamp(1.25em, 1.5vw, 1.953em);
 }
 
 img {
@@ -213,7 +212,7 @@ button {
     rgb(242, 201, 76) 0%,
     rgb(242, 153, 74) 100%
   );
-  padding: 1em;
+  padding: 1rem;
   margin-bottom: 1rem;
   border: none;
   border-radius: 4px;
@@ -226,9 +225,11 @@ button {
 }
 
 // button:hover {
+  .button:is(:hover, :focus),
   button:is(:hover, :focus) {
   background: linear-gradient(-45deg, #d6ad30 0%, #cd7425 100%);
   filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.2));
+  // color: darkgray;
 }
 
 .screen-reader {

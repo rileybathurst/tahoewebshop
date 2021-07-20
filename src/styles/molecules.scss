@@ -143,9 +143,14 @@
     }
   }
 
+  // these svgs needs some work
   svg {
     fill: var(--hypolmnion);
     max-width: 100%;
     max-height: 100%;
   }
-}
+
+  .pedestal svg {
+    max-width: 4rem;
+  }
+} // #top
