@@ -5,7 +5,7 @@
   [plugins.inputs.thresholds]
     performance = 0.9
     accessibility = 0.9
-    best-practices = 0.9
+    best-practices = 0.8
     seo = 0.9
 
   # optional, deploy the lighthouse report to a path under your site
