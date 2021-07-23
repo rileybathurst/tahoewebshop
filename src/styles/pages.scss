@@ -1,0 +1,22 @@
+.portfolio__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+
+  @media(min-width: 60rem) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  > * {
+    max-width: 20rem;
+    place-self: center !important;
+  }
+}
+
+.third {
+  grid-column: 1/4;
+  
+  @media(min-width: $break-small) {
+    grid-column: 3;
+  }
+}

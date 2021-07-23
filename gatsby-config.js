@@ -5,9 +5,6 @@ module.exports = {
     url: "https://tahoewebshop.com", // No trailing slash allowed!
     description:
       'Building & Maintaining your web presence.',
-    // image: 'https://ebpt.s3-us-west-1.amazonaws.com/images/emerald-bay-pt-og_image.jpg', // Path to your image you placed in the 'static' folder
-    // ogImage: 'https://ebpt.s3-us-west-1.amazonaws.com/images/emerald_bay_physical_therapy-og_image.jpg',
-    // twitterImage: 'https://ebpt.s3-us-west-1.amazonaws.com/images/emerald_bay_physical_therapy-twitter_image.jpg',
     openingHours: 'Mo, Tu, We, Th, Fr 08:00-18:00',
     telephone: '(530)386-6296',
     logo: '/images/icon.png',
@@ -40,5 +37,18 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-csp`,
+        options: {
+          mergeStyleHashes: false, // you can disable styles sha256 hashes
+          mergeScriptHashes: false,
+          directives: {
+            "style-src": "'self' 'unsafe-inline'", // inline needed for gatsby and how it deals with things
+            // "script-src": "'self' 'unsafe-inline' use.typekit.net",
+            // the unsafe-inline on script-src is a problem for https://observatory.mozilla.org but without it the images break
+            // "font-src": "'self' 'unsafe-inline' use.typekit.net",
+          }
+        }
+      },
   ],
 };

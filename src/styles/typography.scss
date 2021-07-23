@@ -1,0 +1,55 @@
+/*------------------------------------*/
+//  #typography
+/*------------------------------------*/
+
+h1 {
+  font-weight: bold;
+  padding: 1rem;
+  // border: 8px solid var(--black);
+}
+
+h1 {
+  // https://type-scale.com Major Third
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+p {
+  margin-block-start: 0; // browser reset
+}
+
+p:hover {
+  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'%3e%3cg transform='rotate(45 256 256)'%3e%3crect id='r' x='16' y='216' width='480' height='80' rx='14' fill='whitesmoke' /%3e%3cuse href='%23r' transform='rotate(90 256 256)'/%3e%3c/g%3e%</svg>") 16 16, auto;
+
+  @media (prefers-color-scheme: dark) {
+    cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'%3e%3cg transform='rotate(45 256 256)'%3e%3crect id='r' x='16' y='216' width='480' height='80' rx='14' fill='black' /%3e%3cuse href='%23r' transform='rotate(90 256 256)'/%3e%3c/g%3e%</svg>") 16 16, auto;
+  }
+}
+
+.clamped-3 {
+  font-size: clamp(1.25rem, 1.5vw, 1.953rem);
+}
+
+.clamped-4 {
+  font-size: clamp(1rem, 1.5vw, 1.563rem);
+}

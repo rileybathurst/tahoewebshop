@@ -1,9 +1,36 @@
+/*------------------------------------*/
+//  #index
+/*------------------------------------*/
+
 @import './reset';
+@import './variables';
+
+/*------------------------------------*/
+//  #base
+/*------------------------------------*/
+
+@import './body';
+@import './typography';
+@import './buttons';
+@import './colors';
+@import './links';
+@import './lists';
+@import './media';
+
+/*------------------------------------*/
+//  #layout
+/*------------------------------------*/
+
 @import './grid';
+@import './footer';
+
+/*------------------------------------*/
+//  #utilities
+/*------------------------------------*/
+
+@import './visibility';
 @import './atoms';
 @import './molecules';
 @import './organisims';
 @import './templates';
 @import './pages';
-
-@import './body';

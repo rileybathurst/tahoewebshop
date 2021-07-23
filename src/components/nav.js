@@ -5,7 +5,7 @@ const Nav = () => (
   <nav className="three__row--vert">
     <ul>
       <li>
-        <Link to="/#about">About</Link>
+        <Link to="/">Home</Link>
       </li>
       {/* li style="--animation-order: 1;" */}
       <li>

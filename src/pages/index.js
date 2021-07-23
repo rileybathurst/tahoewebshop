@@ -11,6 +11,7 @@ import CircleTextPath from "../components/circle-textpath";
 
 import "@fontsource/josefin-sans/variable.css";
 import "../styles/index.scss";
+import Backup from "../components/back-up";
 
 function EbptGrab() {
   return (
@@ -107,10 +108,11 @@ const IndexPage = () => {
           <div>{/* stay gold */}</div>
           <div className="single-area">
             <div>
-              <h3>The web should only be as complex as you need.</h3>
+              <h3 className="clamped-3">The web should only be as complex as you need.</h3>
               <p>Work with us at your level, we can take care of the rest.<br />
               If you know the basics, the code or the whole deal we </p>
-              <p><Link to="/features">Learn More about how and what we do</Link></p>
+              <p><Link to="/features">Learn more about how and what we do</Link></p>
+              <p><Link to="/tools">Learn more about what we use</Link></p>
               <p><Link to="/team">Meet the team</Link></p>
 
               
@@ -120,30 +122,18 @@ const IndexPage = () => {
         </section>
         {/* .row */}
 
-        <div className="three__row--vert">
-          {/* row */}
-          <p className="return">
-            <Link to="#top">Tahoe Web Shop</Link>
-          </p>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-        </div>
+        <Backup />
       </main>
 
       <section id="#portfolio" className="three">
-        <div>
-          {/* row */}
           <h2 className="label">Portfolio //</h2>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-        </div>
-
-        <article className="three__row--constant "> {/* three__row--vert-when-needed */}
+          
+        <article className="three__row--constant portfolio__cards"> {/* three__row--vert-when-needed */}
           {/* row */}
 
           <section className="portfolio__card">
-            <h3 className="project__title">
-              <Link to="/portfolio.html#ebpt">Emeraldbay.physio</Link>
+            <h3 className="project__title clamped-3">
+              <Link to="/portfolio.html#ebpt">Emeraldbay .physio</Link>
             </h3>
             <Link to="/portfolio#ebpt" className="project__thumbnail">
               <EbptGrab />
@@ -151,7 +141,7 @@ const IndexPage = () => {
           </section>
 
           <section className="portfolio__card">
-            <h3 className="project__title">
+            <h3 className="project__title clamped-3">
               <Link to="/portfolio.html#cmsf">
                 Cordell Marine Sanctuary Foundation
               </Link>
@@ -164,7 +154,7 @@ const IndexPage = () => {
           </section>
 
           <section className="portfolio__card">
-            <h3 className="project__title">
+            <h3 className="project__title clamped-3">
               <Link to="/portfolio">Snowledge.co</Link>
             </h3>
             <Link to="/portfolio#snowledge" className="project__thumbnail">
@@ -174,10 +164,7 @@ const IndexPage = () => {
         </article>
 
         <div>
-          {/* row */}
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
+          <p className="third return">
             <Link to="#top">Tahoe Web Shop</Link>
           </p>
         </div>
@@ -195,7 +182,7 @@ const IndexPage = () => {
           {/* row */}
           <div>{/* stay gold */}</div>
           <div>
-            <h3>
+            <h3 className="clamped-3">
               <a href="https://goo.gl/maps/DhEsvHPR8mUSsnBM8">
                 945 N Lake Blvd
                 <br />
@@ -207,7 +194,7 @@ const IndexPage = () => {
               </a>
             </h3>
 
-            <h3>
+            <h3 className="clamped-3">
               <a href="mailto:info@tahoewebshop.com" className="button">info@tahoewebshop.com</a>
             </h3>
             <p>No form? Nope, I'm not a huge fan of them, I would prefer just a mail link, you can send from you preferred mail app, or service. This way you know if it works or not and we can just start your mail. I can still make you a form, let's just talk about it first.</p>
@@ -217,9 +204,7 @@ const IndexPage = () => {
         </article>
 
         <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <div>
+          <div className="third">
             <p className="return">
               <Link to="#top">Tahoe Web Shop</Link>
             </p>

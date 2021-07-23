@@ -1,12 +1,42 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
 import GradientCircle from "../components/gradient-circle";
 import Seo from "../components/seo";
+import Backup from "../components/back-up";
 
 import EbptIcon from "../images/ebpt-icon";
+import Contact from "../components/contact";
+
+function EbptGrab() {
+  return (
+    <StaticImage
+      src="https://tahoewebshop.s3.us-west-1.amazonaws.com/emeraldbay-screengrab.png"
+      alt="emerald bay physical therapy website"
+    />
+  );
+}
+
+function SnowledgeGrab() {
+  return (
+    <StaticImage
+      src="https://tahoewebshop.s3.us-west-1.amazonaws.com/snowledge-netlify-screengrab.png"
+      alt="emerald bay physical therapy website"
+    />
+  );
+}
+
+function CmsfGrab() {
+  return (
+    <StaticImage
+      src="https://tahoewebshop.s3.us-west-1.amazonaws.com/cmsf-screengrab.png"
+      alt="emerald bay physical therapy website"
+    />
+  );
+}
 
 // markup
 const IndexPage = () => {
@@ -34,7 +64,7 @@ const IndexPage = () => {
       <main id="ebpt" className="three">
         <div>
           {/* row */}
-          <h2 className="label">EBPT //</h2>
+          <h2 className="label show-beyond-small">EBPT //</h2>
           <div>{/* stay gold */}</div>
           <div>{/* stay gold */}</div>
         </div>
@@ -43,6 +73,9 @@ const IndexPage = () => {
           <div>{/* stay gold */}</div>
           <div>
             <h3 className="">Emerald Bay Physical Therapy</h3>
+            <div className="port">
+              <EbptGrab />
+            </div>
             <p>Emerald Bay Physical Therapy is a comprehensive center for orthopedic and manual physical therapy.</p>
             <p>
               Full branding, static generated website and print designs.
@@ -52,21 +85,13 @@ const IndexPage = () => {
           <div className="full-width"><EbptIcon /></div>
         </div>
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <div>
-            <p className="return">
-              <Link to="/">Tahoe Web Shop</Link>
-            </p>
-          </div>
-        </div>
+        <Backup />
       </main>
 
       <section id="cmsf" className="three">
         <div>
           {/* row */}
-          <h2 className="label">CMSF //</h2>
+          <h2 className="label show-beyond-small">CMSF //</h2>
           <div>{/* stay gold */}</div>
           <div>{/* stay gold */}</div>
         </div>
@@ -75,6 +100,9 @@ const IndexPage = () => {
           <div>{/* stay gold */}</div>
           <div>
             <h3 className="clamped-3">Cordell Marine Sanctuary Foundation</h3>
+            <div className="port">
+              <CmsfGrab />
+            </div>
             <p>A wordpress theme built on an overlapping grid</p>
           </div>
           <div className="full-width">
@@ -84,18 +112,12 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
-            <Link to="/">Tahoe Web Shop</Link>
-          </p>
-        </div>
+        <Backup />
       </section>
 
       <section id="snowledge" className="three">
         <div>
-          <h2 className="label">Snowledge //</h2>
+          <h2 className="label show-beyond-small">Snowledge //</h2>
           <div>{/* stay gold */}</div>
           <div>{/* stay gold */}</div>
         </div>
@@ -104,6 +126,9 @@ const IndexPage = () => {
           <div>{/* stay gold */}</div>
           <div className="">
             <h3 className="clamped-3">Snowledge</h3>
+            <div className="port">
+              <SnowledgeGrab />
+            </div>
             <p>
               Website development &amp; design. Gatsby and Strapi build to supplement the app.
             </p>
@@ -116,14 +141,10 @@ const IndexPage = () => {
         </div>
 
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
-            <Link to="/">Tahoe Web Shop</Link>
-          </p>
-        </div>
+        <Backup />
       </section>
+
+      <Contact />
     </div>
   );
 };

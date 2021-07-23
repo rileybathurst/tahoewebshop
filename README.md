@@ -17,3 +17,13 @@ Built on a pretty base version of gatsby, keep it simple and fast.
 ## Variable Fonts
 
 Working with Josefin Sans Variable through fontsource to explore variable fonts
+
+### do i want a cms
+
+its a decent amount of maintinece, a strapi setup and a mongodb
+
+### bring all the content in from markdown docs
+
+as thats kinda halfway between a cms?
+except relationships
+not yet

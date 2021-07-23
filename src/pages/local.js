@@ -1,8 +1,10 @@
 import * as React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 
 import Seo from "../components/seo";
 import Nav from "../components/nav";
+import Contact from "../components/contact";
+import Backup from "../components/back-up";
 
 import "@fontsource/josefin-sans/variable.css";
 import "../styles/index.scss";
@@ -10,18 +12,20 @@ import "../styles/index.scss";
 // markup
 const LocalPage = () => {
   return (
+    <>
     <main className="three screen-high">
       <Seo title="Local" />
       <header id="top">
         <Nav />
       </header>
 
-      <section>
+      <section className="three">
         {/* row */}
         <h2 className="label">Local</h2>
-        <div className="single-area">
+        <div>
+          <div>{/* stay gold */}</div>
           <div>
-            <h3>We are on the doorstep.</h3>
+            <h3 className="clamped-3">We are on the doorstep.</h3>
             <p>
               We are avaliable online but sometimes it's easier in person, come
               by the studio in Tahoe City to say hi. <i>(by appointment)</i>
@@ -41,15 +45,10 @@ const LocalPage = () => {
       </section>
       {/* .row */}
 
-      <div className="three__row--vert">
-        {/* row */}
-        <div>{/* stay gold */}</div>
-        <div>{/* stay gold */}</div>
-        <p className="return">
-          <Link to="/">Tahoe Web Shop</Link>
-        </p>
-      </div>
+      <Backup />
     </main>
+    <Contact />
+    </>
   );
 };
 

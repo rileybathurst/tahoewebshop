@@ -1,0 +1,24 @@
+/*------------------------------------*/
+//  #visibility
+/*------------------------------------*/
+
+.hide-beyond-small {
+  @media (min-width: $break-small) {
+    display: none;
+  }
+}
+
+.show-beyond-small {
+  display: none;
+
+  @media (min-width: $break-small) {
+    display: unset;
+  }
+}
+
+// hopefully I dont have to do to many
+.three > .show-beyond-small {
+  @media (min-width: $break-small) {
+    display: grid;
+  }
+}

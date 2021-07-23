@@ -15,7 +15,7 @@
 }
 
 .y-scroll-snapping > * {
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
   flex: none;
 
   @media (min-width: 30rem) {

@@ -18,19 +18,22 @@ import GithubSvg from "../components/github";
 // markup
 const TeamPage = () => {
   return (
-    <div className="three screen-high" dir="ltr">
+    <div className="three">
       <Seo title="team" />
       <header id="top">
         <Nav />
-        </header>
+      </header>
 
       <main>
-        <h1>Team</h1>
+        <div>
+          <h1 className="label">Team //</h1>
+        </div>
 
         <div>
+          <div>{/* stay gold */}</div>
           <div>
-            <h3>Riley Bathurst.</h3>
-            <h4>California Dreaming Kiwi</h4>
+            <h3 className="clamped-3">Riley Bathurst.</h3>
+            <h4 className="clamped-4">California Dreaming Kiwi</h4>
             <p>
               Riley has been working with clients from large to small, always up
               for a challenge and available to create something for you, your
@@ -65,25 +68,25 @@ const TeamPage = () => {
         </div>
 
         <div className="circles">
-            {/* the negative viewbox means the text doesn't clip */}
-            {/* theres a reference to the #profile so the circle is only set once */}
-            <CircleTextPath />
-            <svg
-              height="300"
-              width="300"
-              viewBox="-25 -25 350 350"
-              className="turn rotating"
-            >
-              <text>
-                <textPath xlinkHref="#profile">
-                  <Link to="/team.html#riley">Riley Bathurst</Link>
-                </textPath>
-              </text>
-            </svg>
+          {/* the negative viewbox means the text doesn't clip */}
+          {/* theres a reference to the #profile so the circle is only set once */}
+          <CircleTextPath />
+          <svg
+            height="300"
+            width="300"
+            viewBox="-25 -25 350 350"
+            className="turn rotating"
+          >
+            <text>
+              <textPath xlinkHref="#profile">
+                <Link to="/team.html#riley">Riley Bathurst</Link>
+              </textPath>
+            </text>
+          </svg>
 
-            <DroneSelfie />
-          </div>
-          {/* /.circles */}
+          <DroneSelfie />
+        </div>
+        {/* /.circles */}
       </main>
 
       <div className="three__row--vert">

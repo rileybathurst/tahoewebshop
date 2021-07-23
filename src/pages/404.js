@@ -4,14 +4,16 @@ import { Link } from "gatsby";
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
 import Seo from "../components/seo";
+import Contact from "../components/contact";
 
 // markup
 const NotFoundPage = () => {
   return (
-    <div className="three screen-high" dir="ltr">
-      <Seo title="404" />
-      <header id="top">
-        <Nav />
+    <>
+      <div className="three">
+        <Seo title="404" />
+        <header id="top">
+          <Nav />
         </header>
         {/* full row */}
 
@@ -28,7 +30,9 @@ const NotFoundPage = () => {
         {/* row */}
 
         <Pedestal />
-    </div>
+      </div>
+      <Contact />
+    </>
   );
 };
 

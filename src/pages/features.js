@@ -3,9 +3,9 @@ import { Link } from "gatsby";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
-// import GradientCircle from "../components/gradient-circle";
-import TahoeSvg from "../components/tahoe";
+import Contact from "../components/contact";
 import Seo from "../components/seo";
+import Backup from "../components/back-up";
 
 // markup
 const IndexPage = () => {
@@ -18,8 +18,11 @@ const IndexPage = () => {
         <div>
           <div>{/* stay gold */}</div>
           <div className="single-area">
-            <TahoeSvg />
             <h1>Features</h1>
+            {/* waves */}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="svg__backplate">
+              <path d="M22,14L22,14L22,14z M5.3,13c1.2,0,1.4,1,3.3,1c1.9,0,2.1-1,3.3-1c1.2,0,1.4,1,3.3,1c2,0,2.1-1,3.3-1c1.2,0,1.4,1,3.3,1	v-2c-1.2,0-1.4-1-3.3-1c-2,0-2.1,1-3.3,1c-1.2,0-1.4-1-3.3-1c-1.9,0-2.1,1-3.3,1c-1.2,0-1.4-1-3.3-1c-1.9,0-2.1,1-3.3,1v2	C3.9,14,4.2,13,5.3,13z M18.7,15c-2,0-2.1,1-3.3,1c-1.2,0-1.4-1-3.3-1c-1.9,0-2.1,1-3.3,1s-1.4-1-3.3-1S3.2,16,2,16v2	c2,0,2.1-1,3.3-1c1.2,0,1.4,1,3.3,1s2.1-1,3.3-1c1.2,0,1.4,1,3.3,1c1.9,0,2.1-1,3.3-1c1.2,0,1.4,1,3.3,1v-2	C20.8,16,20.6,15,18.7,15z M5.3,9c1.2,0,1.4,1,3.3,1c1.9,0,2.1-1,3.3-1c1.2,0,1.4,1,3.3,1c2,0,2.1-1,3.3-1c1.2,0,1.4,1,3.3,1V8 c-1.2,0-1.4-1-3.3-1c-2,0-2.1,1-3.3,1c-1.2,0-1.4-1-3.3-1C10,7,9.9,8,8.7,8C7.5,8,7.2,7,5.3,7C3.4,7,3.2,8,2,8v2 C3.9,10,4.2,9,5.3,9z"/>
+            </svg>
           </div>
           <div>{/* stay gold */}</div>
         </div>
@@ -56,13 +59,7 @@ const IndexPage = () => {
           <div>{/* stay gold */}</div>
         </div>
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
-            <Link to="/">Tahoe Web Shop</Link>
-          </p>
-        </div>
+        <Backup />
       </main>
 
       <section id="performance" className="three">
@@ -82,7 +79,7 @@ const IndexPage = () => {
               down the road leading to more sales during the life of your site.
             </p>
             <h4 className="clamped-4">Test your site with Google's tool</h4>
-            <a href="https://web.dev/" target='_blank' rel='noopener'>Check it out on web.dev</a>
+            <a href="https://web.dev/" target='_blank' rel='noreferrer'>Check it out on web.dev</a>
 
           </div>
 
@@ -97,13 +94,7 @@ const IndexPage = () => {
           </svg>
         </div>
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
-            <Link to="/">Tahoe Web Shop</Link>
-          </p>
-        </div>
+        <Backup />
       </section>
 
       <section id="security" className="three">
@@ -124,7 +115,7 @@ const IndexPage = () => {
               develop a stategy to keep it running through the good and the bad.
             </p>
             <h4 className="clamped-4">Test your security with Mozilla's tool</h4>
-            <a href="https://observatory.mozilla.org/" target='_blank' rel='noopener'>Observatory</a>
+            <a href="https://observatory.mozilla.org/" target='_blank' rel='noreferrer'>Observatory</a>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -145,13 +136,7 @@ const IndexPage = () => {
           </svg>
         </div>
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
-            <Link to="/">Tahoe Web Shop</Link>
-          </p>
-        </div>
+        <Backup />
       </section>
 
       <section id="a11y" className="three">
@@ -169,7 +154,7 @@ const IndexPage = () => {
               A11y helps everyone, not only those with a dissability.
             </p>
             <h4 className="clamped-4">Test your security with Web AIM's tool</h4>
-            <a href="https://wave.webaim.org/" target='_blank' rel='noopener'>wave</a>
+            <a href="https://wave.webaim.org/" target='_blank' rel='noreferrer'>wave</a>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -182,16 +167,9 @@ const IndexPage = () => {
               fill="white"
             />
           </svg>
-
         </div>
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
-            <Link to="/">Tahoe Web Shop</Link>
-          </p>
-        </div>
+        <Backup />
       </section>
 
       <section id="dark" className="three">
@@ -219,14 +197,10 @@ const IndexPage = () => {
               fill="white"
             />
           </svg>
-
-
         </div>
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
+        <div className="show-beyond-small">
+          <p className="third return">
             <Link to="/">Tahoe Web Shop</Link>
           </p>
         </div>
@@ -263,57 +237,10 @@ const IndexPage = () => {
 
         </div>
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
-            <Link to="/">Tahoe Web Shop</Link>
-          </p>
-        </div>
+        <Backup />
       </section>
 
-      <section id="contact" className="lake three module extra-long">
-        <div>
-          <h2 className="label">Contact//</h2>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-        </div>
-
-        <article>
-          {/* row */}
-          <div>{/* stay gold */}</div>
-          <div>
-            <h3 className="clamped-3">
-              <a href="https://goo.gl/maps/DhEsvHPR8mUSsnBM8">
-                945 N Lake Blvd
-                <br />
-                Tahoe City
-                <br />
-                California 96145
-                <br />
-                United States
-              </a>
-            </h3>
-
-            <h3 className="clamped-3">
-              <a href="mailto:info@tahoewebshop.com" className="button">info@tahoewebshop.com</a>
-            </h3>
-            <p>No form? Nope, I'm not a huge fan of them, I would prefer just a mail link, you can send from you preferred mail app, or service. This way you know if it works or not and we can just start your mail. I can still make you a form, let's just talk about it first.</p>
-
-          </div>
-          <div>{/* stay gold */}</div>
-        </article>
-
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <div>
-            <p className="return">
-              <Link to="#top">Tahoe Web Shop</Link>
-            </p>
-          </div>
-        </div>
-      </section>
+      <Contact />
     </div>
   );
 };

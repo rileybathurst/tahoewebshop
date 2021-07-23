@@ -39,7 +39,7 @@ const IndexPage = () => {
           <div className="">
             <h3 className="clamped-3">Our current platform of choice.</h3>
             <p>
-              By using <a href="https://www.gatsbyjs.com/" target='_blank' rel='noopener'>Gatsby</a> static site generation we can push speed, security and development to create your website before your customers get near it.
+              By using <a href="https://www.gatsbyjs.com/" target='_blank' rel='noreferrer'>Gatsby</a> static site generation we can push speed, security and development to create your website before your customers get near it.
             </p>
             <p>In fact you are seeing it right now with this site.</p>
           </div>
@@ -76,7 +76,7 @@ const IndexPage = () => {
           <div className="">
             <h3 className="clamped-3">A custom Content Management System.</h3>
             <p>
-              Every site needs different content <a href="https://strapi.io/" target='_blank' rel='noopener'>Strapi</a> if you build your CMS from scratch it can tailorr perfeectly to your needs including relational models to connect the dots.
+              Every site needs different content <a href="https://strapi.io/" target='_blank' rel='noreferrer'>Strapi</a> if you build your CMS from scratch it can tailorr perfeectly to your needs including relational models to connect the dots.
             </p>
           </div>
 
@@ -154,7 +154,7 @@ const IndexPage = () => {
             <p>
               We value breaking websites down to building blocks. This way we can find and fix problems quickly and effeciently
             </p>
-            <p>Our personal preference is to use <a href="https://patternlab.io/" target='_blank' rel='noopener'>Pattern Lab</a></p>
+            <p>Our personal preference is to use <a href="https://patternlab.io/" target='_blank' rel='noreferrer'>Pattern Lab</a></p>
           </div>
 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 255" className="paths">

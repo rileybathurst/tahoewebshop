@@ -1,0 +1,20 @@
+/*------------------------------------*/
+//  #media
+/*------------------------------------*/
+
+/*------------------------------------*/
+//  #svg
+/*------------------------------------*/
+
+.svg__backplate {
+  fill: var(--epilmnion !important); // has to get over the #top // this doesnt seem to be getting through tho
+  opacity: 0.5;
+  z-index: 0;
+}
+
+// kinda hate the name
+.port {
+  .gatsby-image-wrapper {
+    margin-block-end: 3rem;
+  }
+}

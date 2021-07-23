@@ -1,96 +1,7 @@
-// basic HTML elements like form labels, inputs, buttons, and others that can’t be broken down any further without ceasing to be functional.
-
-$black: #0a0a0a;
-$white: #fafafa;
-$primary: rgb(242, 201, 76);
-$primary__dark: #bb6a1b;
-
-$light-fallback: rgb(242, 201, 76);
-$light: linear-gradient(
-  -45deg,
-  rgba(242, 201, 76, 0.5) 0%,
-  rgba(242, 153, 74, 0.5) 100%
-);
-
-$lake-fallback: rgb(0, 0, 70);
-$lake: linear-gradient(0deg, rgba(0, 0, 70, 1) 0%, rgba(28, 181, 224, 1) 100%);
-
-$three: 1fr minmax(min-content, 44em) 1fr;
-
-// <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
-//  <stop offset="0%" style="stop-color:rgb(242,201,76);stop-opacity:0.5" />
-//  <stop offset="100%" style="stop-color:rgb(242,153,74);stop-opacity:0.5" />
-// </linearGradient>
-
-:root {
-  --black: #0a0a0a;
-  --white: #fafafa;
-  --primary: rgb(242, 201, 76);
-  --primary__dark: #bb6a1b;
-  --light-fallback: rgb(242, 201, 76);
-  --light: linear-gradient(
-    -45deg,
-    rgba(242, 201, 76, 0.5) 0%,
-    rgba(242, 153, 74, 0.5) 100%
-  );
-  --lake-deep: rgb(0, 0, 70);
-  --lake-surface: rgb(28, 181, 224);
-
-  --shallows: linear-gradient(
-    0deg,
-    hsl(193, 58%, 59%) 0%,
-    hsl(193, 58%, 79%) 100%
-  );
-
-  --sunrise: linear-gradient(
-    0deg,
-    hsl(29, 100%, 69%) 0%,
-    hsl(47, 100%, 78%) 100%
-  );
-
-  --drop: hsla(0, 0%, 0%, 0.25);
 
 
-  --three: 1fr minmax(min-content, 44em) 1fr;
-
-  --maximum-measure: 44rem;
-
-  // Lake stratification
-  // https://en.wikipedia.org/wiki/Lake_stratification
-  --epilmnion: hsl(188, 100%, 79%); // #95f1ff
-  --metalmnion:hsl(188, 100%, 45%); // #00c9e7
-  --hypolmnion:hsl(188, 100%, 18%); // #004f5b
-
-  // lmnion layers
-  --lmnion-h: 188;
-  --lmnion-s: 100%;
-
-  --lake: linear-gradient(
-    0deg,
-    hsl(188, 100%, 79%) 0%,
-    hsl(188, 100%, 45%) 100%
-  );
-}
-
-body {
-  font-family: sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--black);
-}
 
 
-p {
-  margin-block-start: 0; // browser reset
-}
-
-p:hover {
-  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'%3e%3cg transform='rotate(45 256 256)'%3e%3crect id='r' x='16' y='216' width='480' height='80' rx='14' fill='whitesmoke' /%3e%3cuse href='%23r' transform='rotate(90 256 256)'/%3e%3c/g%3e%</svg>") 16 16, auto;
-
-  @media (prefers-color-scheme: dark) {
-    cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'%3e%3cg transform='rotate(45 256 256)'%3e%3crect id='r' x='16' y='216' width='480' height='80' rx='14' fill='black' /%3e%3cuse href='%23r' transform='rotate(90 256 256)'/%3e%3c/g%3e%</svg>") 16 16, auto;
-  }
-}
 
 a {
   color: var(--black);
@@ -118,41 +29,9 @@ a:hover {
   }
 }
 
-h1 {
-  font-weight: bold;
-  padding: 1em;
-  // border: 8px solid var(--black);
-}
 
-h1 {
-  // https://type-scale.com Major Third
-  font-size: 3.052em;
-}
 
-h2 {
-  font-size: 2.441em;
-}
 
-h3 {
-  font-size: 1.953em;
-}
-
-h4 {
-  font-size: 1.563em;
-}
-
-h5 {
-  font-size: 1.25em;
-}
-
-small,
-.text_small {
-  font-size: 0.8em;
-}
-
-.clamped-3 {
-  font-size: clamp(1.25em, 1.5vw, 1.953em);
-}
 
 img {
   max-width: 100%;
@@ -182,6 +61,8 @@ li {
   }
 }
 
+/* 
+no forms at this time
 input {
   padding: 1em;
   width: 80%;
@@ -190,7 +71,8 @@ input {
   margin-bottom: 1.5em;
   caret-color: var(--primary);
   border: 2px transparent solid;
-  @media (min-width: var(--maximum-measure)) {
+
+  @media (min-width: $break-small) { // 🚨
     font-size: 1.25em;
   }
   
@@ -202,7 +84,7 @@ input {
 
 input:focus {
   border: 2px $primary solid;
-}
+} */
 
 .button,
 button {
@@ -240,70 +122,12 @@ button {
   grid-column: 1/4;
   width: 100%;
   display: grid;
-  grid-template-columns: var(--three);
-}
+  // grid-template-columns: var(--three);
 
-/* .three {
-  // display: grid;
-  // grid-template-columns: var(--three); // Im kinda dropping this in so do I need it now
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-content: space-between;
-  height: 100vh; // this is ok as it's a background content needs to be inside this
-
-  .three--nav {
-    @extend .three--row;
-    grid-row: 1;
-    writing-mode: vertical-rl; // this was to do with vertical but newer can work
-  }
-
-  .three--main {
-    @extend .three--row;
-    grid-row: 2;
-    place-self: center;
-  }
-
-  .three--footer {
-    @extend .three--row;
-    grid-row: 3;
-  }
-} */
-
-
-
-.three--main {
-  // place-self: center;
-
-  max-width: 44em;
-
-  svg {
-    grid-row: 1/4;
-    grid-column: 1/4;
-    max-width: 44em;
-  }
-
-  .main-stop {
-    stop-color: red;
-  }
-  .alt-stop {
-    stop-color: green;
-  }
-
-  h1 {
-    grid-row: 2;
-    grid-column: 1;
-    max-width: 44em;
-  }
-
-  p {
-    grid-row: 3;
-    grid-column: 1;
-    text-align: center;
+  @media (min-width: $break-small) {
+    grid-template-columns: var(--three);
   }
 }
-
-
 
 .extra-long {
   min-height: 90%;
@@ -334,19 +158,24 @@ button {
 
 
 .label {
-  grid-row: 1;
-  @media (max-width: 24em) {
-    font-size: 1.563em;
-    grid-row: 1/3;
-  }
+  grid-row: 1/3;
   justify-self: start;
-  writing-mode: vertical-lr;
   margin: 0;
   font-weight: normal;
+  font-size: clamp(1.563rem, 1.5vw, 2.441rem); // h2
+  white-space: nowrap;
+
+  @media (min-width: $break-small) {
+    writing-mode: vertical-lr;
+    grid-row: 1;
+  }
 }
 
 .return {
-  writing-mode: vertical-rl;
+
+  @media (min-width: $break-small) {
+    writing-mode: vertical-rl;
+  }
 }
 
 .shadow {
@@ -376,10 +205,14 @@ button {
   }
 }
 .rotating {
-  animation: rotating 30s linear infinite;
   stroke-linecap: round;
   width: 100%;
   margin: 0 auto;
+  
+  // 🚨 I want to fix this but the rotation pushes widths
+  @media (min-width: $break-small) {
+    animation: rotating 30s linear infinite;
+  }
 }
 
 .rotating circle {

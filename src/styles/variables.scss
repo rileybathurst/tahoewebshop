@@ -1,0 +1,42 @@
+/*------------------------------------*/
+//  #variables
+/*------------------------------------*/
+
+:root {
+  /*------------------------------------*/
+  //  #colors
+  /*------------------------------------*/
+
+  // Lake stratification
+  // https://en.wikipedia.org/wiki/Lake_stratification
+  --epilmnion: hsl(188, 100%, 79%); // #95f1ff
+  --metalmnion:hsl(188, 100%, 45%); // #00c9e7
+  --hypolmnion:hsl(188, 100%, 18%); // #004f5b
+
+  // lmnion layers
+  --lmnion-h: 188;
+  --lmnion-s: 100%;
+
+  --lake: linear-gradient(
+    0deg,
+    hsl(188, 100%, 40%) 0%,
+    hsl(188, 100%, 50%) 100%
+  );
+
+  --black: #0a0a0a;
+  --white: #fafafa;
+  --drop: hsla(0, 0%, 0%, 0.25);
+
+  /*------------------------------------*/
+  //  #layout
+  /*------------------------------------*/
+
+  --three: 1fr minmax(min-content, 44em) 1fr;
+
+  --maximum-measure: 44rem;
+
+  // this is kept here for reference
+  --break-small: 30rem;
+}
+
+$break-small: 30rem;
