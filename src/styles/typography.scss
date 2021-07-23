@@ -53,3 +53,7 @@ p:hover {
 .clamped-4 {
   font-size: clamp(1rem, 1.5vw, 1.563rem);
 }
+
+::selection {
+  background: var(--black);
+}
