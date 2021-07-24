@@ -12,6 +12,7 @@ import CircleTextPath from "../components/circle-textpath";
 import "@fontsource/josefin-sans/variable.css";
 import "../styles/index.scss";
 import Backup from "../components/back-up";
+import Contact from "../components/contact";
 
 function EbptGrab() {
   return (
@@ -133,22 +134,30 @@ const IndexPage = () => {
 
           <section className="portfolio__card">
             <h3 className="project__title clamped-3">
-              <Link to="/portfolio.html#ebpt">Emeraldbay .physio</Link>
+              <Link to="/portfolio#ebpt">Emeraldbay.physio</Link>
             </h3>
-            <Link to="/portfolio#ebpt" className="project__thumbnail">
-              <EbptGrab />
+            <Link to="/portfolio#ebpt">
+              <div className="project__thumbnail">
+                <EbptGrab />
+              </div>
             </Link>
+            <a href="https://emeraldbay.physio/" target="_blank" rel='noreferrer'>
+              View the site
+            </a>
           </section>
 
           <section className="portfolio__card">
             <h3 className="project__title clamped-3">
-              <Link to="/portfolio.html#cmsf">
+              <Link to="/portfolio#cmsf">
                 Cordell Marine Sanctuary Foundation
               </Link>
             </h3>
             <Link to="/portfolio#cmsf" className="project__thumbnail">
             <CmsfGrab />
             </Link>
+            <a href="https://cordellfoundation.org/" target="_blank" rel='noreferrer'>
+              View the site
+            </a>
 
             {/* <CircleGradient /> */}
           </section>
@@ -160,57 +169,16 @@ const IndexPage = () => {
             <Link to="/portfolio#snowledge" className="project__thumbnail">
               <SnowledgeGrab />
             </Link>
+            <a href="https://snowledge.netlify.app/" target="_blank" rel='noreferrer'>
+              View the site
+            </a>
           </section>
         </article>
 
-        <div>
-          <p className="third return">
-            <Link to="#top">Tahoe Web Shop</Link>
-          </p>
-        </div>
-        {/* row */}
+        <Backup />
       </section>
 
-      <section id="contact" className="lake three module extra-long">
-        <div>
-        <h2 className="label">Contact//</h2>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-        </div>
-
-        <article>
-          {/* row */}
-          <div>{/* stay gold */}</div>
-          <div>
-            <h3 className="clamped-3">
-              <a href="https://goo.gl/maps/DhEsvHPR8mUSsnBM8">
-                945 N Lake Blvd
-                <br />
-                Tahoe City
-                <br />
-                California 96145
-                <br />
-                United States
-              </a>
-            </h3>
-
-            <h3 className="clamped-3">
-              <a href="mailto:info@tahoewebshop.com" className="button">info@tahoewebshop.com</a>
-            </h3>
-            <p>No form? Nope, I'm not a huge fan of them, I would prefer just a mail link, you can send from you preferred mail app, or service. This way you know if it works or not and we can just start your mail. I can still make you a form, let's just talk about it first.</p>
-
-          </div>
-          <div>{/* stay gold */}</div>
-        </article>
-
-        <div>
-          <div className="third">
-            <p className="return">
-              <Link to="#top">Tahoe Web Shop</Link>
-            </p>
-          </div>
-        </div>
-      </section>
+      <Contact />
     </div>
   );
 };

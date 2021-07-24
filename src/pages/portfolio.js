@@ -4,7 +4,6 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
-import GradientCircle from "../components/gradient-circle";
 import Seo from "../components/seo";
 import Backup from "../components/back-up";
 

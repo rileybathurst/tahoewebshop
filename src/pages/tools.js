@@ -1,12 +1,12 @@
 import * as React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
-// import GradientCircle from "../components/gradient-circle";
-import TahoeSvg from "../components/tahoe";
 import Seo from "../components/seo";
 import BubblesSvg from "../components/bubble-pop";
+import Backup from "../components/back-up";
+import Contact from "../components/contact";
 
 // markup
 const IndexPage = () => {
@@ -40,7 +40,7 @@ const IndexPage = () => {
         <div>
           <div>{/* stay gold */}</div>
           <div className="">
-            <h3 className="clamped-3">Our current platform of choice.</h3>
+            <h3 className="clamped-3">Our platform of choice.</h3>
             <p>
               By using <a href="https://www.gatsbyjs.com/" target='_blank' rel='noreferrer'>Gatsby</a> static site generation we can push speed, security and development to create your website before your customers get near it.
             </p>
@@ -58,13 +58,7 @@ const IndexPage = () => {
 
         </div>
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
-            <Link to="/">Tahoe Web Shop</Link>
-          </p>
-        </div>
+        <Backup />
       </section>
 
       <section id="strapi" className="three">
@@ -89,13 +83,7 @@ const IndexPage = () => {
 
         </div>
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
-            <Link to="/">Tahoe Web Shop</Link>
-          </p>
-        </div>
+        <Backup />
       </section>
 
       <section id="wordpress" className="three">
@@ -134,13 +122,7 @@ const IndexPage = () => {
 
         </div>
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
-            <Link to="/">Tahoe Web Shop</Link>
-          </p>
-        </div>
+        <Backup />
       </section>
 
       <section id="guide" className="three">
@@ -173,57 +155,10 @@ const IndexPage = () => {
 
         </div>
 
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <p className="return">
-            <Link to="/">Tahoe Web Shop</Link>
-          </p>
-        </div>
+        <Backup />
       </section>
 
-      <section id="contact" className="lake three module extra-long">
-        <div>
-          <h2 className="label">Contact//</h2>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-        </div>
-
-        <article>
-          {/* row */}
-          <div>{/* stay gold */}</div>
-          <div>
-            <h3 className="clamped-3">
-              <a href="https://goo.gl/maps/DhEsvHPR8mUSsnBM8">
-                945 N Lake Blvd
-                <br />
-                Tahoe City
-                <br />
-                California 96145
-                <br />
-                United States
-              </a>
-            </h3>
-
-            <h3 className="clamped-3">
-              <a href="mailto:info@tahoewebshop.com" className="button">info@tahoewebshop.com</a>
-            </h3>
-            <p>No form? Nope, I'm not a huge fan of them, I would prefer just a mail link, you can send from you preferred mail app, or service. This way you know if it works or not and we can just start your mail. I can still make you a form, let's just talk about it first.</p>
-
-          </div>
-          <div>{/* stay gold */}</div>
-        </article>
-
-        <div>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <div>
-            <p className="return">
-              <Link to="#top">Tahoe Web Shop</Link>
-            </p>
-          </div>
-        </div>
-      </section>
+      <Contact />
     </div>
   );
 };
