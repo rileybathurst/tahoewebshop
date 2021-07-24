@@ -1,45 +1,46 @@
 // @include Josefinsans.fontFaceVariable($weight: 500, $type: "wghtOnly");
 
 body {
-  font-family: sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
-  color: var(--black);
-}
 
-body {
-  font-family: "Josefin Sans", sans-serif;
-  cursor: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'><circle cx='50' cy='50' r='25' stroke='whitesmoke' stroke-width='10' fill='none' /></svg>") 32 32, auto;
+  background: var(--metalmnion);
   color: var(--hypolmnion);
-  fill: var(--hypolmnion); // can I do this with current color?
+  cursor: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'><circle cx='50' cy='50' r='25' stroke='whitesmoke' stroke-width='10' fill='none' /></svg>") 32 32, auto;
+  fill: currentColor;
+  
+  /*------------------------------------*/
+  //  #dark
+  /*------------------------------------*/
 
   @media (prefers-color-scheme: dark) {
-    cursor: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'><circle cx='50' cy='50' r='25' stroke='black' stroke-width='10' fill='none' /></svg>") 32 32, auto;
+    background: var(--hypolmnion);
     color: var(--white);
+    cursor: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'><circle cx='50' cy='50' r='25' stroke='black' stroke-width='10' fill='none' /></svg>") 32 32, auto;
   }
-}
 
-@supports (font-variation-settings: normal) {
-  body {
+  /*------------------------------------*/
+  //  #fonts
+  /*------------------------------------*/
+  
+  font-family: "Josefin Sans", sans-serif;
+
+  @supports (font-variation-settings: normal) {
     font-family: 'Josefin SansVariable', sans-serif;
     font-variation-settings: "wght" 400;
   }
 }
 
 
-
 .lake {
-  background: var(--metalmnion);
-
+// gradients
   @media (min-width: $break-small) {
     background: var(--lake);
   }
 
   @media (prefers-color-scheme: dark) {
-    background: var(--hypolmnion);
-
     @media (min-width: $break-small) {
-      // background: var(--lake);
+      background: var(--ocean);
     }
   }
 }

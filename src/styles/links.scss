@@ -2,35 +2,53 @@
 //  #links
 /*------------------------------------*/
 
-
 a {
-  color: var(--black);
+  text-decoration: underline;
+  line-height: 1.5rem;
   padding: 0.25rem;
+  padding-block-start: 0.5rem;
+  color: var(--hypolmnion);
 
   @media (prefers-color-scheme: dark) {
-    color: var(--white);
+    color: var(--epilmnion);
   }
 }
 
-a:hover {
-  // text-decoration: line-through;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 0.2rem;
+a:where(:hover, :focus) {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--link--radius);
 }
 
-:is(nav, .pedestal) a {
-  line-height: 1.5rem;
-  padding: 0.5rem;
-  // border-radius: 1.5rem; // smooth round?
-}
-
-:is(nav, .pedestal, #top) a:hover {
-  background: var(--hypolmnion);
-  color: var(--metalmnion);
-
-  
+.svg-a {
+  display: block;
+  max-width: 8.5rem;
 
   svg {
-    fill: var(--metalmnion)
+    display: block;
+    padding: 0.25rem;
   }
+}
+
+.svg-hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--link--radius);
+}
+
+nav a {
+  line-height: 2.5rem;
+  border-block-start: 1px solid var(--hypolmnion);
+  border-block-end: 1px solid var(--hypolmnion);
+}
+
+nav a:where(:hover, :focus) {
+  background: var(--hypolmnion);
+  color: var(--epilmnion);
+}
+
+.card a:where(:hover, :focus) {
+  font-variation-settings: "wght" 700;
+}
+
+a img:where(:hover, :focus) {
+  opacity: 0.8;
 }

@@ -6,10 +6,13 @@
 //  #svg
 /*------------------------------------*/
 
+svg {
+  fill: currentColor;
+}
+
 .svg__backplate {
-  fill: var(--epilmnion !important); // has to get over the #top // this doesnt seem to be getting through tho
-  opacity: 0.5;
-  z-index: 0;
+  fill: hsl(188, 100%, 79%); // for some reason the var wont do this
+  opacity: 0.25;
 }
 
 // kinda hate the name
@@ -17,4 +20,39 @@
   .gatsby-image-wrapper {
     margin-block-end: 3rem;
   }
+}
+
+
+@keyframes pop--tahoe {
+  0% {
+    stroke-width: 0;
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-width: 100;
+    stroke-opacity: 0;
+  }
+}
+
+.pop--tahoe {
+  animation: pop--tahoe 5s infinite;
+  stroke: var(--white);
+}
+
+// hopefully this works across the board but itll need checking that 2 fits
+@keyframes pop--google {
+  0% {
+    stroke-width: 0;
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-width: 2;
+    stroke-opacity: 0;
+  }
+}
+
+.pop--google {
+  animation: pop--google 5s infinite;
+  stroke: var(--white);
+  // stroke-linecap: round; // no effect
 }

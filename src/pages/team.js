@@ -12,14 +12,17 @@ import Seo from "../components/seo";
 import TwitterSvg from "../components/twitter";
 import InstagramSvg from "../components/instagram";
 import GithubSvg from "../components/github";
+import Contact from "../components/contact";
+import Backup from "../components/back-up";
 
 // this page is gonna need some changes when I add team members but thats a latter problem
 
 // markup
 const TeamPage = () => {
   return (
+    <div className="y-scroll-snapping" dir="ltr">
+    <Seo title="team" />
     <div className="three">
-      <Seo title="team" />
       <header id="top">
         <Nav />
       </header>
@@ -89,14 +92,10 @@ const TeamPage = () => {
         {/* /.circles */}
       </main>
 
-      <div className="three__row--vert">
-        <div>{/* stay gold */}</div>
-        <div>{/* stay gold */}</div>
-        <p>
-          <Link to="/">Tahoe Web Shop</Link>
-        </p>
-        {/* style="grid-row: 3; grid-column: 3; align-self: center;" */}
-      </div>
+      <Backup />
+    </div>
+
+    <Contact />
     </div>
   );
 };

@@ -23,9 +23,17 @@
     hsl(188, 100%, 50%) 100%
   );
 
+  --ocean: linear-gradient(
+    0deg,
+    hsl(188, 100%, 20%) 0%,
+    hsl(188, 100%, 30%) 100%
+  );
+
   --black: #0a0a0a;
   --white: #fafafa;
   --drop: hsla(0, 0%, 0%, 0.25);
+
+  --link--radius: 0.2rem;
 
   /*------------------------------------*/
   //  #layout

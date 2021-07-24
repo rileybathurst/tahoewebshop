@@ -6,6 +6,7 @@ import Pedestal from "../components/pedestal";
 // import GradientCircle from "../components/gradient-circle";
 import TahoeSvg from "../components/tahoe";
 import Seo from "../components/seo";
+import BubblesSvg from "../components/bubble-pop";
 
 // markup
 const IndexPage = () => {
@@ -18,8 +19,10 @@ const IndexPage = () => {
         <div>
           <div>{/* stay gold */}</div>
           <div className="single-area">
-            <TahoeSvg />
-            <h1>Tools</h1>
+            
+            <BubblesSvg />
+
+            <h1><span>Tools</span></h1>
           </div>
           <div>{/* stay gold */}</div>
         </div>

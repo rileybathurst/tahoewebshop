@@ -9,7 +9,7 @@ import Contact from "../components/contact";
 // markup
 const NotFoundPage = () => {
   return (
-    <>
+    <div className="y-scroll-snapping" dir="ltr">
       <div className="three">
         <Seo title="404" />
         <header id="top">
@@ -32,7 +32,7 @@ const NotFoundPage = () => {
         <Pedestal />
       </div>
       <Contact />
-    </>
+    </div>
   );
 };
 
