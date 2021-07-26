@@ -53,6 +53,18 @@ svg {
 
 .pop--google {
   animation: pop--google 5s infinite;
+  stroke: var(--black);
+  
+  @media (prefers-color-scheme: dark) {
+    stroke: var(--white);
+  }
+}
+
+.pop--google_top {
+  animation: pop--google 5s infinite;
   stroke: var(--white);
-  // stroke-linecap: round; // no effect
+  
+  @media (prefers-color-scheme: dark) {
+    stroke: var(--black);
+  }
 }

@@ -62,6 +62,29 @@ body {
   @media (min-width: var(--maximum-measure)) { // 🚨
     gap: 1rem;
   }
+
+  >svg:nth-child(3) {
+    align-self: start;
+  }
+
+  @media (min-width: 20rem) and (max-width: 66rem) {
+    > * {
+      grid-row: 2;
+    }
+
+    > :nth-child(2) {
+      grid-column: 2;
+    }
+
+    >svg:nth-child(3) {
+      // background-color: rebeccapurple;
+      grid-row: 1;
+      grid-column: 2/4;
+      justify-self: end;
+      margin-inline-end: 0; // needed for the justify self
+      align-self: start;
+    }
+  }
 }
 
 .three__row--constant {

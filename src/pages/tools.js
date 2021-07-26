@@ -9,7 +9,7 @@ import Backup from "../components/back-up";
 import Contact from "../components/contact";
 
 // markup
-const IndexPage = () => {
+const ToolsPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
       <Seo title="features" />
@@ -39,7 +39,7 @@ const IndexPage = () => {
 
         <div>
           <div>{/* stay gold */}</div>
-          <div className="">
+          <div>
             <h3 className="clamped-3">Our platform of choice.</h3>
             <p>
               By using <a href="https://www.gatsbyjs.com/" target='_blank' rel='noreferrer'>Gatsby</a> static site generation we can push speed, security and development to create your website before your customers get near it.
@@ -70,7 +70,7 @@ const IndexPage = () => {
 
         <div>
           <div>{/* stay gold */}</div>
-          <div className="">
+          <div>
             <h3 className="clamped-3">A custom Content Management System.</h3>
             <p>
               Every site needs different content <a href="https://strapi.io/" target='_blank' rel='noreferrer'>Strapi</a> if you build your CMS from scratch it can tailorr perfeectly to your needs including relational models to connect the dots.
@@ -95,7 +95,7 @@ const IndexPage = () => {
 
         <div>
           <div>{/* stay gold */}</div>
-          <div className="">
+          <div>
             <h3 className="clamped-3">The most used webplatform.</h3>
             <p>
               We have ten years of development in Wordpress but also keep up with the new parts of the platform and the major changes coming.
@@ -134,7 +134,7 @@ const IndexPage = () => {
 
         <div>
           <div>{/* stay gold */}</div>
-          <div className="">
+          <div>
             <h3 className="clamped-3">Style Guides.</h3>
             <p>
               We value breaking websites down to building blocks. This way we can find and fix problems quickly and effeciently
@@ -163,4 +163,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default ToolsPage;

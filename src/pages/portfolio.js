@@ -38,7 +38,7 @@ function CmsfGrab() {
 }
 
 // markup
-const IndexPage = () => {
+const PortfolioPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
       <Seo title="portfolio" />
@@ -86,10 +86,10 @@ const IndexPage = () => {
           <div>{/* stay gold */}</div>
         </div>
 
-        <div className="">
+        <div>
           <div>{/* stay gold */}</div>
           <div>
-            <h3 className="">Emerald Bay Physical Therapy</h3>
+            <h3>Emerald Bay Physical Therapy</h3>
             <div className="port">
               <EbptGrab />
             </div>
@@ -141,7 +141,7 @@ const IndexPage = () => {
 
         <div>
           <div>{/* stay gold */}</div>
-          <div className="">
+          <div>
             <h3 className="clamped-3">Snowledge</h3>
             <div className="port">
               <SnowledgeGrab />
@@ -166,4 +166,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default PortfolioPage;

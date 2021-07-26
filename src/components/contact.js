@@ -7,7 +7,7 @@ const Contact = () => (
     <hr className="hide-beyond-small" />
 
     <div>
-      <h2 className="label">Contact//</h2>
+      <h2 className="label">Contact //</h2>
       <div>{/* stay gold */}</div>
       <div>{/* stay gold */}</div>
     </div>

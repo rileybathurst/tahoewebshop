@@ -13,6 +13,7 @@ import "@fontsource/josefin-sans/variable.css";
 import "../styles/index.scss";
 import Backup from "../components/back-up";
 import Contact from "../components/contact";
+import Label from "../components/label";
 
 function EbptGrab() {
   return (
@@ -98,11 +99,7 @@ const IndexPage = () => {
       </header>
 
       <main id="about" className="three extra-long">
-        <div className="three__row--vert">
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-          <h2 className="label">About //</h2>
-        </div>
+      <Label docket="About" />
 
         <section>
           {/* row */}
@@ -127,7 +124,7 @@ const IndexPage = () => {
       </main>
 
       <section id="#portfolio" className="three">
-          <h2 className="label">Portfolio //</h2>
+        <Label docket="Portfolio" />
           
         <article className="three__row--constant portfolio__cards"> {/* three__row--vert-when-needed */}
           {/* row */}
