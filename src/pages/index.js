@@ -82,7 +82,7 @@ const IndexPage = () => {
             {/* can I simplify this more but thatll come soon */}
             <svg height="500" width="500" viewBox="-25 -25 350 350" className="rotating">
               <text>
-                <textPath xlinkHref="#profile">Building &amp; Maintaining your web presence.</textPath>
+                <textPath xlinkHref="#profile">Building and maintaining your web presence.</textPath>
               </text>
             </svg>
 

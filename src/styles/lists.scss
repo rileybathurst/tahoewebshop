@@ -1,0 +1,128 @@
+/*------------------------------------*/
+//  #Lists
+/*------------------------------------*/
+
+// maybe these should all just be cards
+
+/*------------------------------------*/
+//  #Portfolio Tools
+/*------------------------------------*/
+
+.portfolio__tools ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  padding-inline-start: 0; // browser reset
+  margin-block-end: 3rem;
+
+  li {
+    flex: 1 1 10rem;
+    border: 2px solid var(--metalmnion);
+    border-radius: var(--link--radius);
+    padding: 1rem;
+    text-align: center;
+    // height: max-content;
+    // align-self: end;
+    display: flex;
+    flex-flow: column;
+    align-content: flex-end;
+    background: var(--epilmnion); // maybe some opacity
+    
+    @media (prefers-color-scheme: dark) {
+      background: var(--hypolmnion);
+    }
+
+    svg {
+      max-width: 4rem;
+      margin-block-end: 1rem;
+    }
+
+    h5 {
+      margin-block: 0;
+    }
+  }
+
+  .tool__stroke {
+    stroke: var(--hypolmnion);
+
+    @media (prefers-color-scheme: dark) {
+      stroke: var(--white);
+    }
+  }
+}
+
+
+/*------------------------------------*/
+//  #scorecard
+/*------------------------------------*/
+
+.card {
+  // background: var(--white);
+  // background: var(--hypolmnion);
+  // border-radius: var(--link--radius);
+  padding: 1rem;
+  margin-block-end: 3rem;
+  background: hsla(0, 0%, 100%, 0.9);
+
+  @media (prefers-color-scheme: dark) {
+    background: hsla(0, 0%, 0%, 0.5);
+  }
+}
+
+.scores {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  gap: 2rem;
+
+  span {
+    background: var(--white);
+    border-radius: var(--link--radius);
+    padding: 0.25rem 0.5rem;
+    height: min-content;
+
+    @media (prefers-color-scheme: dark) {
+      background: var(--hypolmnion);
+    }
+  }
+}
+
+.scorecard {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+
+  section {
+    flex: 1 1 15rem;
+    border: 2px solid var(--metalmnion);
+    border-radius: var(--link--radius);
+    padding: 1rem;
+    background: var(--epilmnion); // maybe some opacity
+
+    @media (prefers-color-scheme: dark) {
+      background: var(--hypolmnion);
+    }
+  }
+
+  ul  {
+    padding-inline-start: 0; // browser reset
+
+    li {
+      line-height: 2rem;
+    }
+  }
+
+  h4 {
+    margin-block: 0; // browser reset
+  }
+
+  span {
+    background: var(--white);
+    border-radius: var(--link--radius);
+    padding: 0.25rem 0.5rem;
+
+    @media (prefers-color-scheme: dark) {
+      background: var(--black);
+    }
+  }
+}

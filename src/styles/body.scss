@@ -179,6 +179,17 @@ body {
   }
 }
 
+#top div:nth-child(2) {
+  overflow: hidden; // as the rotating label spins it needs to hide the background
+  // max-height: 66vh; // guess and check
+
+  .single-area {
+    svg {
+      max-height: 66vh; // guess and check
+    }
+  }
+}
+
 .tahoe-svg {
   max-height: 20rem; // guess and check
 }
@@ -259,5 +270,9 @@ body {
   
   a {
     color: var(--hypolmnion);
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--epilmnion);
+    }
   }
 }

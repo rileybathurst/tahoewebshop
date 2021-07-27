@@ -1,16 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
 
+import Label from "./label";
+
 const Contact = () => (
   <section id="contact" className="lake three module extra-long">
     
     <hr className="hide-beyond-small" />
 
-    <div>
-      <h2 className="label">Contact //</h2>
-      <div>{/* stay gold */}</div>
-      <div>{/* stay gold */}</div>
-    </div>
+    <Label docket="Contact" />
 
     <article>
       {/* row */}

@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 const Pedestal = () => (
   <div className="pedestal">
     <div>
-      <Link to="#about">
+      <Link to="/#about">
 
         {/* fingerprint */}
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

@@ -4,9 +4,10 @@ import * as React from "react";
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
 import Seo from "../components/seo";
-import BubblesSvg from "../components/bubble-pop";
 import Backup from "../components/back-up";
 import Contact from "../components/contact";
+import Pop from "../components/pop";
+import Label from "../components/label";
 
 // markup
 const ToolsPage = () => {
@@ -19,10 +20,11 @@ const ToolsPage = () => {
         <div>
           <div>{/* stay gold */}</div>
           <div className="single-area">
-            
-            <BubblesSvg />
 
-            <h1><span>Tools</span></h1>
+            <Pop icon="bubbles" top="top" d="M7,10c-2.2,0-4,1.8-4,4s1.8,4,4,4s4-1.8,4-4S9.2,10,7,10z
+          M15,15 c-1.6,0-3,1.4-3,3s1.4,3,3,3s3-1.4,3-3S16.7,15,15,15z
+          M16.5,3 c-3,0-5.5,2.5-5.5,5.5s2.5,5.5,5.5,5.5S22,11.5,22,8.5S19.5,3,16.5,3z" />
+          <h1><span>Tools</span></h1>
           </div>
           <div>{/* stay gold */}</div>
         </div>
@@ -62,11 +64,7 @@ const ToolsPage = () => {
       </section>
 
       <section id="strapi" className="three">
-        <div>
-          <h2 className="label">Strapi //</h2>
-          <div>{/* stay gold */}</div>
-          <div>{/* stay gold */}</div>
-        </div>
+      <Label docket="Strapi" />
 
         <div>
           <div>{/* stay gold */}</div>

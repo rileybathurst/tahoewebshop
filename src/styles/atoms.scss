@@ -85,6 +85,23 @@ button {
   background: lightgray;
   filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.2));
   // color: darkgray;
+
+  @media (prefers-color-scheme: dark) {
+    background: hsl(var(--lmnion-h), var(--lmnion-s), 10%);
+  }
+}
+
+.button__long {
+  @extend .button;
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  gap: 1rem;
+  align-items: center;
+
+  svg {
+    width: 5rem;
+  }
 }
 
 .screen-reader {
@@ -119,6 +136,10 @@ button {
   text-decoration: none;
   border-block-start: 1px solid var(--hypolmnion);
   border-block-end: 1px solid var(--hypolmnion);
+
+  @media (prefers-color-scheme: dark) {
+    border-color: var(--epilmnion);
+  }
 }
 
 
