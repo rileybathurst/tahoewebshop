@@ -46,9 +46,9 @@
 }
 
 .circles text a {
-  fill: var(--white);
+  fill: var(--hypolmnion);
   @media (prefers-color-scheme: dark) {
-    fill: var(--black);
+    fill: var(--white);
   }
 }
 
