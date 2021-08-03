@@ -160,6 +160,7 @@ const NotFoundPage = () => {
             <p>
               We start at $2k for a new site, depending on how much work is needed.
             </p>
+            <p>A new websites recieve two years of maintenance at one hour per month.</p>
           </div>
           <div>{/* stay gold */}</div>
         </div>

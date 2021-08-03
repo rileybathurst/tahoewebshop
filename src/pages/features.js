@@ -62,12 +62,12 @@ const FeaturesPage = () => {
       </main>
 
       <section id="performance" className="three">
-        <Label docket="Performance" />
+        <Label docket="Speed is king" />
 
         <div>
           <div>{/* stay gold */}</div>
           <div>
-            <h3 className="clamped-3">Speed is king.</h3>
+            <h3 className="clamped-3">Performance</h3>
             <p>
               Performance runs deeper than how fast does the website load in the
               best conditions. a few moments of work up front can save hours
@@ -93,12 +93,12 @@ const FeaturesPage = () => {
       </section>
 
       <section id="security" className="three">
-        <Label docket="Security" />
+        <Label docket="Keep it strong" />
 
         <div>
           <div>{/* stay gold */}</div>
           <div>
-            <h3 className="clamped-3">Keep it strong.</h3>
+            <h3 className="clamped-3">Security</h3>
             <p>
               The good and the bad part of having a 24/7 store is that you have
               a 24/7 store which is open to customers and those less diseriable,
@@ -137,14 +137,14 @@ const FeaturesPage = () => {
       </section>
 
       <section id="dark" className="three">
-        <Label docket="Dark" />
+        <Label docket="Not just party trick." />
 
         <div>
           <div>{/* stay gold */}</div>
           <div>
-            <h3 className="clamped-3">Not just party trick.</h3>
+            <h3 className="clamped-3">Dark Mode</h3>
             <p>
-              Dark mode is expected today, when a client is looking at your website with their device in dark mode they expect your website to respect that.
+              When a client is looking at your website with their device in dark mode they expect your website to respect that.
             </p>
             <p>Dark mode can also give a huge advantage to battery life as a nice additional use case.</p>
           </div>
