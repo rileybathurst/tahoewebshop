@@ -19,7 +19,7 @@ const ToolsPage = () => {
 
         <div>
           <div>{/* stay gold */}</div>
-          <div className="single-area">
+          <div className="single-area shadowdom">
 
             <Pop icon="bubbles" top="top" d="M7,10c-2.2,0-4,1.8-4,4s1.8,4,4,4s4-1.8,4-4S9.2,10,7,10z
           M15,15 c-1.6,0-3,1.4-3,3s1.4,3,3,3s3-1.4,3-3S16.7,15,15,15z
@@ -34,7 +34,7 @@ const ToolsPage = () => {
 
       <section id="gatsby" className="three">
         <div>
-          <h2 className="label">Gatsby //</h2>
+          <h2 className="label">Gatsby </h2>
           <div>{/* stay gold */}</div>
           <div>{/* stay gold */}</div>
         </div>
@@ -86,7 +86,7 @@ const ToolsPage = () => {
 
       <section id="wordpress" className="three">
         <div>
-          <h2 className="label">WordPress //</h2>
+          <h2 className="label">WordPress </h2>
           <div>{/* stay gold */}</div>
           <div>{/* stay gold */}</div>
         </div>
@@ -125,7 +125,7 @@ const ToolsPage = () => {
 
       <section id="guide" className="three">
         <div>
-          <h2 className="label">Guides //</h2>
+          <h2 className="label">Guides </h2>
           <div>{/* stay gold */}</div>
           <div>{/* stay gold */}</div>
         </div>

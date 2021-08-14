@@ -55,5 +55,9 @@ p:hover {
 }
 
 ::selection {
-  background: var(--black);
+  background: var(--white);
+
+  @media (prefers-color-scheme: dark) {
+    background: var(--black);
+  }
 }

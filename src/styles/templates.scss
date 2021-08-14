@@ -9,7 +9,7 @@
   flex-flow: column nowrap;
   scroll-snap-type: y mandatory;
   
-  @media (min-width: 30rem) {
+  @media (min-width: 30rem) and (min-height: 40rem) {
     scroll-snap-stop: always;
   }
 }
@@ -18,7 +18,7 @@
   // scroll-snap-align: start;
   flex: none;
 
-  @media (min-width: 30rem) {
+  @media (min-width: 30rem) and (min-height: 40rem) {
     scroll-snap-align: center;
     height: 90vh;
   }

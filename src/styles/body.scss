@@ -179,7 +179,7 @@ body {
   }
 }
 
-#top div:nth-child(2) {
+#top > div:nth-child(2) {
   overflow: hidden; // as the rotating label spins it needs to hide the background
   // max-height: 66vh; // guess and check
 

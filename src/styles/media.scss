@@ -30,7 +30,7 @@ svg {
 }
 
 
-@keyframes pop--tahoe {
+/* @keyframes pop--tahoe {
   0% {
     stroke-width: 0;
     stroke-opacity: 1;
@@ -39,12 +39,13 @@ svg {
     stroke-width: 100;
     stroke-opacity: 0;
   }
-}
+} */
 
-.pop--tahoe {
-  animation: pop--tahoe 5s infinite;
-  stroke: var(--white);
-}
+// .pop--tahoe {
+//   // animation: pop--tahoe 5s infinite;
+//   stroke: var(--white);
+//   stroke: hotpink;
+// }
 
 // hopefully this works across the board but itll need checking that 2 fits
 @keyframes pop--google {
@@ -73,5 +74,12 @@ svg {
   
   @media (prefers-color-scheme: dark) {
     stroke: var(--black);
+  }
+}
+
+// safari doesnt style through the shadow dom so this hacks that
+.shadowdom {
+  svg {
+    @extend .pop--google
   }
 }

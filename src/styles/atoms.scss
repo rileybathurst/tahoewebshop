@@ -255,18 +255,15 @@ button {
     stroke-opacity: 1;
   }
   100% {
-    stroke-width: 40%;
+    stroke-width: 10rem;
     stroke-opacity: 0;
   }
 }
 
 .tahoe-pop {
   animation: tahoepop 5s infinite ease;
-  stroke: rgba(0, 0, 0, 0.2);
+  stroke: rgba(255, 255, 255, 0.2);
   stroke-linecap: round;
-  // stroke-alignment: outside;
-  // https://svgwg.org/specs/strokes/#SpecifyingStrokeAlignment
-  // this isnt a thing
 }
 
 .full-width {

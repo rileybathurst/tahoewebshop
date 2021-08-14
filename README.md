@@ -13,6 +13,7 @@ Each page has a 3x3 grid with some vertical text elements in the margins.
 ## Build
 
 Built on a pretty base version of gatsby, keep it simple and fast.
+This doesn't work as an offline build as the static image are coming direct from AWS I don't know how to put them behind a ? as I can with a graphQL query
 
 ## Variable Fonts
 

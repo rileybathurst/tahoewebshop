@@ -29,7 +29,7 @@ const TeamPage = () => {
 
       <main>
         <div>
-          <h1 className="label">Team //</h1>
+          <h1 className="label">Team</h1>
         </div>
 
         <div>
