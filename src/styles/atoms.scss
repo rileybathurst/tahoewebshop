@@ -121,6 +121,11 @@ button {
 
 .extra-long {
   min-height: 90%;
+  height: auto !important;
+
+  > * {
+    height: auto;
+  }
 }
 
 

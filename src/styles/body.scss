@@ -67,7 +67,7 @@ body {
     align-self: start;
   }
 
-  @media (min-width: 20rem) and (max-width: 66rem) {
+  @media (min-width: 40rem) and (max-width: 66rem) {
     > * {
       grid-row: 2;
     }

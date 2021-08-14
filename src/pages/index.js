@@ -125,7 +125,7 @@ const IndexPage = () => {
         <Backup />
       </main>
 
-      <section id="#portfolio" className="three">
+      <section id="#portfolio" className="three extra-long">
         <Label docket="Portfolio" />
           
         <article className="three__row--constant portfolio__cards"> {/* three__row--vert-when-needed */}

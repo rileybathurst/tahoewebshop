@@ -19,7 +19,7 @@ This doesn't work as an offline build as the static image are coming direct from
 
 Working with Josefin Sans Variable through fontsource to explore variable fonts
 
-### do i want a cms
+### Do I want a CMS
 
 its a decent amount of maintinece, a strapi setup and a mongodb
 
