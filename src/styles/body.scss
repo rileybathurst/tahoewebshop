@@ -276,3 +276,12 @@ body {
     }
   }
 }
+
+.project__thumbnail {
+  border: 3px solid transparent;
+  transition: 0.2s ease-in-out;
+}
+
+a:hover.project__thumbnail {
+    border: 3px solid var(--hypolmnion);
+}

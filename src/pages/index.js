@@ -135,10 +135,8 @@ const IndexPage = () => {
             <h3 className="project__title clamped-3">
               <Link to="/portfolio#ebpt">Emeraldbay.physio</Link>
             </h3>
-            <Link to="/portfolio#ebpt">
-              <div className="project__thumbnail">
-                <EbptGrab />
-              </div>
+            <Link to="/portfolio#ebpt" className="project__thumbnail">
+              <EbptGrab />
             </Link>
             <a href="https://emeraldbay.physio/" target="_blank" rel='noreferrer'>
               View the site
