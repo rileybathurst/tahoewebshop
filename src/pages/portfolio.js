@@ -229,8 +229,8 @@ const PortfolioPage = () => {
               Ls="93"
 
               // Observatory
-              Osu="F"
-              Osc="15"
+              Osu="A"
+              Osc="90"
 
               // Wave
               We="0"
