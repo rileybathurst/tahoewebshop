@@ -61,11 +61,11 @@ svg {
 
 .pop--google {
   animation: pop--google 5s infinite;
-  stroke: var(--black);
+  stroke: var(--white);
   
-  @media (prefers-color-scheme: dark) {
+/*   @media (prefers-color-scheme: dark) {
     stroke: var(--white);
-  }
+  } */
 }
 
 .pop--google_top {
