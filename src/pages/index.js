@@ -7,7 +7,8 @@ import Pedestal from "../components/pedestal";
 import TahoeSvg from "../components/tahoe";
 import Seo from "../components/seo";
 
-import CircleTextPath from "../components/circle-textpath";
+// import CircleTextPath from "../components/circle-textpath";
+import RotatingTitle from "../components/rotating-title";
 
 import "@fontsource/josefin-sans/variable.css";
 import "../styles/index.scss";
@@ -75,16 +76,8 @@ const IndexPage = () => {
             <div className="tahoe-pop">
               <TahoeSvg />
             </div>
-            {/* set a circle once */}
-            <CircleTextPath />
 
-            {/* set the text */}
-          
-            <svg height="500" width="500" viewBox="-25 -25 350 350" className="rotating" >
-              <text>
-                <textPath xlinkHref="#profile">Building and maintaining your web presence.</textPath>
-              </text>
-            </svg>
+            <RotatingTitle />
 
               <h1>
                 <span>Tahoe</span>
