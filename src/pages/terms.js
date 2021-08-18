@@ -11,7 +11,10 @@ const NotFoundPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
       <div className="three">
-        <Seo title="Terms" />
+        <Seo
+          title="Terms"
+          description="Standard terms of use and conditions for Tahoe Web Shop."
+        />
         <header id="top">
           <Nav />
         </header>

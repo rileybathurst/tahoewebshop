@@ -13,7 +13,10 @@ import Pop from "../components/pop";
 const FeaturesPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
-      <Seo title="features" />
+      <Seo
+        title="Features"
+        description="Some of the ways we work on Websites here at Tahoe Web Shop."
+      />
       <header id="top" className="three">
         <Nav />
 

@@ -21,7 +21,10 @@ import Backup from "../components/back-up";
 const TeamPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
-    <Seo title="team" />
+    <Seo
+      title="Team"
+      description="Who works on your website at Tahoe Web Shop"
+    />
     <div className="three">
       <header id="top">
         <Nav />

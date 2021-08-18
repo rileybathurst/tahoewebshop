@@ -47,7 +47,9 @@ function CmsfGrab() {
 const IndexPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
-      <Seo title="Home" />
+      <Seo
+        title="Tahoe Web Shop"
+      />
       <header id="top" className="three">
         {/* <title>Home Page</title> */}
         

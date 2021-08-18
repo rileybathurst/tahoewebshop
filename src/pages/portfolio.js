@@ -46,7 +46,10 @@ function CmsfGrab() {
 const PortfolioPage = () => {
   return (
     <>
-      <Seo title="portfolio" />
+      <Seo
+        title="Portfolio"
+        description="A few of the favourite works from Tahoe Web Shop"
+      />
 
       <header id="top" className="three">
         <Nav />

@@ -11,7 +11,10 @@ const NotFoundPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
       <div className="three">
-        <Seo title="404" />
+        <Seo
+          title="404"
+          description="Page not found"
+        />
         <header id="top">
           <Nav />
         </header>

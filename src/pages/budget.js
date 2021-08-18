@@ -13,7 +13,10 @@ const NotFoundPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
       <div id="top" className="three">
-        <Seo title="budget" />
+        <Seo
+          title="Budget"
+          description="A look into how much a website costs from Tahoe Web Shop."
+        />
         <header >
           <Nav />
         </header>

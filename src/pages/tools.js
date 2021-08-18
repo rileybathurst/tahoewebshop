@@ -13,7 +13,10 @@ import Label from "../components/label";
 const ToolsPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
-      <Seo title="features" />
+      <Seo 
+        title="Tools"
+        description="What we use to build your website."
+      />
       <header id="top" className="three">
         <Nav />
 
