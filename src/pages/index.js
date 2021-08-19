@@ -7,7 +7,6 @@ import Pedestal from "../components/pedestal";
 import TahoeSvg from "../components/tahoe";
 import Seo from "../components/seo";
 
-// import CircleTextPath from "../components/circle-textpath";
 import RotatingTitle from "../components/rotating-title";
 
 import "@fontsource/josefin-sans/variable.css";
@@ -75,9 +74,8 @@ const IndexPage = () => {
           <div>{/* stay gold */}</div>
           <div className="single-area">
 
-            <div className="tahoe-pop">
-              <TahoeSvg />
-            </div>
+
+            <TahoeSvg />
 
             <RotatingTitle />
 

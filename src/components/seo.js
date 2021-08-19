@@ -98,8 +98,6 @@ const SEO = ({ title, description, image, lang }) => {
     
       <meta name="theme-color" content="#1cb5e0" />
 
-      rgba(0, 0, 70, 1);
-
     </Helmet>
   );
 };
