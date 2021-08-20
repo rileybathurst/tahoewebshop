@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-function InterObs() {
+function TahoeSvg() {
   let lakeElement = useRef();
   console.log(lakeElement);
 
@@ -63,11 +63,5 @@ function InterObs() {
     </div>
   );
 }
-
-const TahoeSvg = () => {
-  return (
-    <InterObs />
-  );
-};
 
 export default TahoeSvg;
