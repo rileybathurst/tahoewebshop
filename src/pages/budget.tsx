@@ -174,6 +174,52 @@ const NotFoundPage = () => {
 
         <Backup />
       </section>
+      
+      <section id="domains" className="three">
+        <Label docket="Fresh" />
+
+        <div>
+          <div>{/* stay gold */}</div>
+          <div>
+            <h3 className="clamped-3">Domains.</h3>
+            <p>
+              We pass on direct costs of domains,
+              we use <a href="https://www.hover.com/domain-pricing" target="_blank">hover pricing is reflected here.</a>
+              The reason for this is if we have control of the domain it makes our life a lot easier and doesn't cost you anything additional.
+              Current .com domains are $15.99 per year.
+            </p>
+          </div>
+          <div>{/* stay gold */}</div>
+        </div>
+
+        <Backup />
+      </section>
+
+      <section id="hosting" className="three">
+        <Label docket="Fresh" />
+        <div>
+          <div>{/* stay gold */}</div>
+          <div>
+            <h3 className="clamped-3">Hosting.</h3>
+            <p>We start hosting at $100 per year depending on needs.</p>
+          </div>
+          <div>{/* stay gold */}</div>
+        </div>
+        <Backup />
+      </section>
+
+      <section id="uptime" className="three">
+        <Label docket="Fresh" />
+        <div>
+          <div>{/* stay gold */}</div>
+          <div>
+            <h3 className="clamped-3">Uptime.</h3>
+            <p>We start monitoring at $60 per year.</p>
+          </div>
+          <div>{/* stay gold */}</div>
+        </div>
+        <Backup />
+      </section>
 
       <Contact />
     </div>
