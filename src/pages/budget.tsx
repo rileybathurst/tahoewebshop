@@ -75,8 +75,8 @@ const NotFoundPage = () => {
 
         <Backup />
       </section>
-      
-      
+
+
       <section id="maintenance" className="three">
         <Label docket="Keep Up" />
 
@@ -98,7 +98,7 @@ const NotFoundPage = () => {
 
         <Backup />
       </section>
-      
+
       <section id="payment" className="three">
         <Label docket="The Transaction" />
 
@@ -122,7 +122,7 @@ const NotFoundPage = () => {
 
         <Backup />
       </section>
-      
+
       <section id="501" className="three">
         <Label docket="501" />
 
@@ -139,7 +139,7 @@ const NotFoundPage = () => {
 
         <Backup />
       </section>
-      
+
       <section id="updates" className="three">
         <Label docket="Updates" />
 
@@ -156,7 +156,7 @@ const NotFoundPage = () => {
 
         <Backup />
       </section>
-      
+
       <section id="new" className="three">
         <Label docket="Fresh" />
 
@@ -174,7 +174,7 @@ const NotFoundPage = () => {
 
         <Backup />
       </section>
-      
+
       <section id="domains" className="three">
         <Label docket="Fresh" />
 
@@ -214,7 +214,7 @@ const NotFoundPage = () => {
           <div>{/* stay gold */}</div>
           <div>
             <h3 className="clamped-3">Uptime.</h3>
-            <p>We start monitoring at $60 per year.</p>
+            <p>We start monitoring at $80 per year.</p>
           </div>
           <div>{/* stay gold */}</div>
         </div>

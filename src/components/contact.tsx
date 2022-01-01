@@ -5,7 +5,7 @@ import Label from "./label";
 
 const Contact = () => (
   <section id="contact" className="lake three module extra-long">
-    
+
     <hr className="hide-beyond-small" />
 
     <Label docket="Contact" />
@@ -16,7 +16,7 @@ const Contact = () => (
       <div>
         <h3 className="clamped-3">
           <a href="https://goo.gl/maps/DhEsvHPR8mUSsnBM8">
-            945 N Lake Blvd
+            925 N Lake Blvd
             <br />
             Tahoe City
             <br />

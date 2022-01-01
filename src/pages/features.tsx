@@ -168,6 +168,7 @@ const FeaturesPage = () => {
             <p>
               We can set you up with Gmail, Office 365, the apps you want on your phone computer, tablet to be ready to go whenever you want.
             </p>
+            <p>We prefer to stay away from forward only emails as these have lead to problems over time.</p>
           </div>
 
           <Pop icon="email" top="" d="M22,6c0-1.1-0.9-2-2-2H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6z M20,6l-8,5L4,6H20z M20,18H4V8l8,5l8-5 V18z" />
