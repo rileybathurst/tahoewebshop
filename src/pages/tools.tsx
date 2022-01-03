@@ -13,7 +13,7 @@ import Label from "../components/label";
 const ToolsPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
-      <Seo 
+      <Seo
         title="Tools"
         description="What we use to build your website."
       />
@@ -27,7 +27,7 @@ const ToolsPage = () => {
             <Pop icon="bubbles" top="top" d="M7,10c-2.2,0-4,1.8-4,4s1.8,4,4,4s4-1.8,4-4S9.2,10,7,10z
           M15,15 c-1.6,0-3,1.4-3,3s1.4,3,3,3s3-1.4,3-3S16.7,15,15,15z
           M16.5,3 c-3,0-5.5,2.5-5.5,5.5s2.5,5.5,5.5,5.5S22,11.5,22,8.5S19.5,3,16.5,3z" />
-          <h1><span>Tools</span></h1>
+            <h1><span>Tools</span></h1>
           </div>
           <div>{/* stay gold */}</div>
         </div>
@@ -47,7 +47,7 @@ const ToolsPage = () => {
           <div>
             <h3 className="clamped-3">Our platform of choice.</h3>
             <p>
-              By using <a href="https://www.gatsbyjs.com/" target='_blank' rel='noreferrer'>Gatsby</a> static site generation we can push speed, security and development to create your website before your customers get near it.
+              By using <a href="https://www.gatsbyjs.com/" target='_blank' rel='noreferrer noopener'>Gatsby</a> static site generation we can push speed, security and development to create your website before your customers get near it.
             </p>
             <p>In fact you are seeing it right now with this site.</p>
           </div>
@@ -67,21 +67,19 @@ const ToolsPage = () => {
       </section>
 
       <section id="strapi" className="three">
-      <Label docket="Strapi" />
+        <Label docket="Strapi" />
 
         <div>
           <div>{/* stay gold */}</div>
           <div>
             <h3 className="clamped-3">A custom Content Management System.</h3>
             <p>
-              Every site needs different content <a href="https://strapi.io/" target='_blank' rel='noreferrer'>Strapi</a> if you build your CMS from scratch it can tailorr perfeectly to your needs including relational models to connect the dots.
+              Every site needs different content <a href="https://strapi.io/" target='_blank' rel='noreferrer noopener'>Strapi</a> if you build your CMS from scratch it can tailorr perfeectly to your needs including relational models to connect the dots.
             </p>
           </div>
 
           <svg viewBox=".24262095 .26549587 243.32256626 243.58072911" xmlns="http://www.w3.org/2000/svg"
             className="paths"><g fill="white" fill-rule="evenodd"><path d="m161.893 165.833v-78.73a5.077 5.077 0 0 0 -5.077-5.076h-78.638v-81.267h159.815a5.077 5.077 0 0 1 5.078 5.077v159.996z" /><path d="m78.178.76v81.267h-75.054a2.539 2.539 0 0 1 -1.796-4.333zm83.715 240.206v-75.133h81.178l-76.844 76.927a2.539 2.539 0 0 1 -4.334-1.794zm-83.715-158.939h81.176a2.539 2.539 0 0 1 2.539 2.538v81.268h-78.638a5.077 5.077 0 0 1 -5.077-5.077z" opacity=".405" /></g></svg>
-
-
         </div>
 
         <Backup />
@@ -140,7 +138,7 @@ const ToolsPage = () => {
             <p>
               We value breaking websites down to building blocks. This way we can find and fix problems quickly and effeciently
             </p>
-            <p>Our personal preference is to use <a href="https://patternlab.io/" target='_blank' rel='noreferrer'>Pattern Lab</a></p>
+            <p>Our personal preference is to use <a href="https://patternlab.io/" target='_blank' rel='noreferrer noopener'>Pattern Lab</a></p>
           </div>
 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 255" className="paths">

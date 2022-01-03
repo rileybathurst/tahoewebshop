@@ -77,7 +77,7 @@ const FeaturesPage = () => {
               down the road leading to more sales during the life of your site.
             </p>
             <h4 className="clamped-4">Test your site with Google's tool</h4>
-            <a href="https://web.dev/" target='_blank' rel='noreferrer'>Check it out on web.dev</a>
+            <a href="https://web.dev/" target='_blank' rel='noreferrer noopener'>Check it out on web.dev</a>
 
           </div>
 
@@ -109,7 +109,7 @@ const FeaturesPage = () => {
               develop a stategy to keep it running through the good and the bad.
             </p>
             <h4 className="clamped-4">Test your security with Mozilla's tool</h4>
-            <a href="https://observatory.mozilla.org/" target='_blank' rel='noreferrer'>Observatory</a>
+            <a href="https://observatory.mozilla.org/" target='_blank' rel='noreferrer noopener'>Observatory</a>
           </div>
 
           <Pop icon="lock" stroke="white" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
@@ -129,7 +129,7 @@ const FeaturesPage = () => {
               A11y helps everyone, not only those with a dissability.
             </p>
             <h4 className="clamped-4">Test your security with Web AIM's tool</h4>
-            <a href="https://wave.webaim.org/" target='_blank' rel='noreferrer'>wave</a>
+            <a href="https://wave.webaim.org/" target='_blank' rel='noreferrer noopener'>wave</a>
           </div>
 
           <Pop icon="a11y" top="" d="M20.5,6c-2.6,0.7-5.7,1-8.5,1S6.1,6.7,3.5,6L3,8c1.9,0.5,4,0.8,6,1v13h2v-6h2v6h2V9c2-0.2,4.1-0.5,6-1L20.5,6z M12,6 c1.1,0,2-0.9,2-2s-0.9-2-2-2s-2,0.9-2,2S10.9,6,12,6z" />
@@ -207,6 +207,7 @@ const FeaturesPage = () => {
           <div>
             <h3 className="clamped-3">Hosting.</h3>
             <p>The files that are your website have to be somewhere, this might be refered to as the cloud but we can do some interesting things with more than a folder.</p>
+            <p>If you are hosting your website with your own setup then it becomes far more time consuming to get setup and troubleshoot.</p>
             <p>Prices depend on size of storage needed and complexity of tools.</p>
           </div>
 
