@@ -6,9 +6,12 @@ body {
 
   background: var(--metalmnion);
   color: var(--hypolmnion);
-  cursor: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'><circle cx='50' cy='50' r='25' stroke='whitesmoke' stroke-width='10' fill='none' /></svg>") 32 32, auto;
+  // cursor: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'><circle cx='50' cy='50' r='25' stroke='whitesmoke' stroke-width='10' fill='none' /></svg>") 32 32, auto;
+  cursor: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 10 10'><circle cx='5' cy='5' r='5' /></svg>")
+      4 4,
+    auto;
   fill: currentColor;
-  
+
   /*------------------------------------*/
   //  #dark
   /*------------------------------------*/
@@ -16,24 +19,23 @@ body {
   @media (prefers-color-scheme: dark) {
     background: var(--hypolmnion);
     color: var(--white);
-    cursor: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'><circle cx='50' cy='50' r='25' stroke='black' stroke-width='10' fill='none' /></svg>") 32 32, auto;
+    // cursor: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 100 100'><circle cx='50' cy='50' r='25' stroke='black' stroke-width='10' fill='none' /></svg>") 32 32, auto;
   }
 
   /*------------------------------------*/
   //  #fonts
   /*------------------------------------*/
-  
+
   font-family: "Josefin Sans", sans-serif;
 
   @supports (font-variation-settings: normal) {
-    font-family: 'Josefin SansVariable', sans-serif;
+    font-family: "Josefin SansVariable", sans-serif;
     font-variation-settings: "wght" 400;
   }
 }
 
-
 .lake {
-// gradients
+  // gradients
   @media (min-width: $break-small) {
     background: var(--lake);
   }
@@ -59,11 +61,12 @@ body {
   width: 100%;
 
   // with empty blocks we get gaps
-  @media (min-width: var(--maximum-measure)) { // 🚨
+  @media (min-width: var(--maximum-measure)) {
+    // 🚨
     gap: 1rem;
   }
 
-  >svg:nth-child(3) {
+  > svg:nth-child(3) {
     align-self: start;
   }
 
@@ -76,7 +79,7 @@ body {
       grid-column: 2;
     }
 
-    >svg:nth-child(3) {
+    > svg:nth-child(3) {
       // background-color: rebeccapurple;
       grid-row: 1;
       grid-column: 2/4;
@@ -90,18 +93,20 @@ body {
 .three__row--constant {
   @extend .three__row;
   grid-template-columns: 1fr;
-  
+
   @media (max-width: 44rem) {
     grid-row-gap: 1rem;
   }
 
-  @media (min-width: 44rem) { // var(--maximum-measure)
+  @media (min-width: 44rem) {
+    // var(--maximum-measure)
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1rem;
   }
 
   > * {
-    @media (max-width: 44rem) { // not the regular min-width
+    @media (max-width: 44rem) {
+      // not the regular min-width
       grid-column: 1;
     }
   }
@@ -120,15 +125,15 @@ body {
   }
 }
 
-.three__row >:first-child {
+.three__row > :first-child {
   place-self: start;
 }
 
-.three__row >:nth-child(2) {
+.three__row > :nth-child(2) {
   place-self: center;
 }
 
-.three__row >:last-child {
+.three__row > :last-child {
   place-self: end;
 }
 
@@ -146,7 +151,8 @@ body {
   justify-content: space-between;
   align-items: stretch;
 
-  > * { // maybe this should be a div or go back on some others
+  > * {
+    // maybe this should be a div or go back on some others
     @extend .three__row;
   }
 
@@ -208,7 +214,7 @@ body {
     background: var(--black);
   }
 
-/*   > * {
+  /*   > * {
     grid-row: 1;
     grid-column: 1;
   } */
@@ -234,7 +240,7 @@ body {
     }
   }
 
-/*   > .project__title::after {
+  /*   > .project__title::after {
     content: "\21E2";
     content: "\27A9";
     color: var(--lake-deep);
@@ -262,12 +268,11 @@ body {
 }
 
 .portfolio__card:hover {
-
   // https://fontsource.org/docs/variable-fonts
   font-family: "Josefin SansVariable";
   font-variation-settings: "wght" 700;
   // background: var(--lake-deep);
-  
+
   a {
     color: var(--hypolmnion);
 
@@ -283,5 +288,5 @@ body {
 }
 
 a:hover.project__thumbnail {
-    border: 3px solid var(--hypolmnion);
+  border: 3px solid var(--hypolmnion);
 }
