@@ -15,6 +15,8 @@ import Backup from "../components/back-up";
 import Contact from "../components/contact";
 import Label from "../components/label";
 
+import Layout from "../components/layout";
+
 function EbptGrab() {
   return (
     <StaticImage
@@ -45,13 +47,13 @@ function CmsfGrab() {
 // markup
 const IndexPage = () => {
   return (
-    <div className="y-scroll-snapping" dir="ltr">
+    <Layout>
       <Seo
         title="Tahoe Web Shop"
       />
       <header id="top" className="three">
         {/* <title>Home Page</title> */}
-        
+
         {/* Im not running the nav here as its a page link */}
         <nav className="three__row--vert">
           <ul>
@@ -79,22 +81,22 @@ const IndexPage = () => {
 
             <RotatingTitle />
 
-              <h1>
-                <span>Tahoe</span>
-                <span>Web</span>
-                <span>Shop</span>
-              </h1>
+            <h1>
+              <span>Tahoe</span>
+              <span>Web</span>
+              <span>Shop</span>
+            </h1>
 
           </div>
 
           <div>{/* stay gold */}</div>
-        
+
         </div>
         <Pedestal />
       </header>
 
       <main id="about" className="three extra-long">
-      <Label docket="About" />
+        <Label docket="About" />
 
         <section>
           <div>{/* stay gold */}</div>
@@ -102,16 +104,16 @@ const IndexPage = () => {
             <div>
               <h3 className="clamped-3">The web should only be as complex as you need.</h3>
               <p>Work with us at your level, we can take care of the rest.<br />
-              If you know the basics, the code or the whole deal we </p>
+                If you know the basics, the code or the whole deal we </p>
               <p><Link to="/features">Learn more about how and what we do</Link></p>
               <p><Link to="/tools">Learn more about what we use</Link></p>
               <p><Link to="/team">Meet the team</Link></p>
 
-              
+
             </div>
           </div>
           <svg title="about book" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="paths" >
-            <path fill="white" d="M22.47,5.2C22,4.96,21.51,4.76,21,4.59v12.03C19.86,16.21,18.69,16,17.5,16c-1.9,0-3.78,0.54-5.5,1.58V5.48 C10.38,4.55,8.51,4,6.5,4C4.71,4,3.02,4.44,1.53,5.2C1.2,5.36,1,5.71,1,6.08v12.08c0,0.58,0.47,0.99,1,0.99 c0.16,0,0.32-0.04,0.48-0.12C3.69,18.4,5.05,18,6.5,18c2.07,0,3.98,0.82,5.5,2c1.52-1.18,3.43-2,5.5-2c1.45,0,2.81,0.4,4.02,1.04 c0.16,0.08,0.32,0.12,0.48,0.12c0.52,0,1-0.41,1-0.99V6.08C23,5.71,22.8,5.36,22.47,5.2z M10,16.62C8.86,16.21,7.69,16,6.5,16 c-1.19,0-2.36,0.21-3.5,0.62V6.71C4.11,6.24,5.28,6,6.5,6C7.7,6,8.89,6.25,10,6.72V16.62z M19,0.5l-5,5V15l5-4.5V0.5z"/>
+            <path fill="white" d="M22.47,5.2C22,4.96,21.51,4.76,21,4.59v12.03C19.86,16.21,18.69,16,17.5,16c-1.9,0-3.78,0.54-5.5,1.58V5.48 C10.38,4.55,8.51,4,6.5,4C4.71,4,3.02,4.44,1.53,5.2C1.2,5.36,1,5.71,1,6.08v12.08c0,0.58,0.47,0.99,1,0.99 c0.16,0,0.32-0.04,0.48-0.12C3.69,18.4,5.05,18,6.5,18c2.07,0,3.98,0.82,5.5,2c1.52-1.18,3.43-2,5.5-2c1.45,0,2.81,0.4,4.02,1.04 c0.16,0.08,0.32,0.12,0.48,0.12c0.52,0,1-0.41,1-0.99V6.08C23,5.71,22.8,5.36,22.47,5.2z M10,16.62C8.86,16.21,7.69,16,6.5,16 c-1.19,0-2.36,0.21-3.5,0.62V6.71C4.11,6.24,5.28,6,6.5,6C7.7,6,8.89,6.25,10,6.72V16.62z M19,0.5l-5,5V15l5-4.5V0.5z" />
           </svg>
         </section>
 
@@ -120,7 +122,7 @@ const IndexPage = () => {
 
       <section id="#portfolio" className="three extra-long">
         <Label docket="Portfolio" />
-          
+
         <article className="three__row--constant portfolio__cards"> {/* three__row--vert-when-needed */}
           {/* row */}
 
@@ -143,7 +145,7 @@ const IndexPage = () => {
               </Link>
             </h3>
             <Link to="/portfolio#cmsf" className="project__thumbnail">
-            <CmsfGrab />
+              <CmsfGrab />
             </Link>
             <a href="https://cordellfoundation.org/" target="_blank" rel='noreferrer'>
               View the site
@@ -169,7 +171,7 @@ const IndexPage = () => {
       </section>
 
       <Contact />
-    </div>
+    </Layout>
   );
 };
 

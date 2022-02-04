@@ -6,10 +6,12 @@ import Pedestal from "../components/pedestal";
 import Seo from "../components/seo";
 import Contact from "../components/contact";
 
+import Layout from "../components/layout";
+
 // markup
 const NotFoundPage = () => {
   return (
-    <div className="y-scroll-snapping" dir="ltr">
+    <Layout>
       <div className="three">
         <Seo
           title="404"
@@ -35,7 +37,7 @@ const NotFoundPage = () => {
         <Pedestal />
       </div>
       <Contact />
-    </div>
+    </Layout>
   );
 };
 

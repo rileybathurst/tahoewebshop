@@ -8,11 +8,12 @@ import Backup from "../components/back-up";
 import TahoeSvg from "../components/tahoe";
 import Label from "../components/label";
 import Pop from "../components/pop";
+import Layout from "../components/layout";
 
 // markup
 const FeaturesPage = () => {
   return (
-    <div className="y-scroll-snapping" dir="ltr">
+    <Layout>
       <Seo
         title="Features"
         description="Some of the ways we work on Websites here at Tahoe Web Shop."
@@ -218,7 +219,7 @@ const FeaturesPage = () => {
       </section>
 
       <Contact />
-    </div>
+    </Layout>
   );
 };
 

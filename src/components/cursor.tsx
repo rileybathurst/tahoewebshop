@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import PropTypes from "prop-types";
 
 // styles
 const gridStyles = {
   gridRow: 1,
   gridColumn: 1,
   height: '100vh',
-  zIndex: 1,
+  // zIndex: 1,
 }
 
 function MouseTracker({ children }) {
@@ -22,7 +23,6 @@ function MouseTracker({ children }) {
     <div style={{ display: 'grid' }}>
       <div style={gridStyles} onMouseMove={handleMouse}>
         {children}
-
       </div>
       <div
         className="cursor"
@@ -34,5 +34,9 @@ function MouseTracker({ children }) {
     </div>
   );
 }
+
+MouseTracker.propTypes = {
+  children: PropTypes.node.isRequired
+};
 
 export default MouseTracker;

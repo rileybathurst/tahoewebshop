@@ -8,6 +8,7 @@ import Seo from "../components/seo";
 import Backup from "../components/back-up";
 import Contact from "../components/contact";
 import Pop from "../components/pop";
+import MouseTracker from "../components/cursor"; // on purpose to not be layout
 
 // import EbptIcon from "../images/ebpt-icon";
 import Label from "../components/label";
@@ -45,7 +46,7 @@ function CmsfGrab() {
 // markup
 const PortfolioPage = () => {
   return (
-    <>
+    <MouseTracker>
       <Seo
         title="Portfolio"
         description="A few of the favourite works from Tahoe Web Shop"
@@ -349,7 +350,7 @@ const PortfolioPage = () => {
       </section>
 
       <Contact />
-    </>
+    </MouseTracker>
   );
 };
 

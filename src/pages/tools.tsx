@@ -8,11 +8,12 @@ import Backup from "../components/back-up";
 import Contact from "../components/contact";
 import Pop from "../components/pop";
 import Label from "../components/label";
+import Layout from "../components/layout";
 
 // markup
 const ToolsPage = () => {
   return (
-    <div className="y-scroll-snapping" dir="ltr">
+    <Layout>
       <Seo
         title="Tools"
         description="What we use to build your website."
@@ -158,7 +159,7 @@ const ToolsPage = () => {
       </section>
 
       <Contact />
-    </div>
+    </Layout>
   );
 };
 
