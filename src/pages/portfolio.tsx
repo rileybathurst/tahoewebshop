@@ -25,11 +25,11 @@ function EbptGrab() {
   );
 }
 
-function SnowledgeGrab() {
+function JSWCGrab() {
   return (
     <StaticImage
-      src="https://tahoewebshop.s3.us-west-1.amazonaws.com/snowledge-netlify-screengrab.png"
-      alt="emerald bay physical therapy website"
+      src="https://tahoewebshop.s3.us-west-1.amazonaws.com/Jarrod_Semmens_Window_Cleaning.png"
+      alt="jarrod semmens window cleaning website"
     />
   );
 }
@@ -257,18 +257,18 @@ const PortfolioPage = () => {
         <Backup />
       </section>
 
-      <section id="snowledge" className="three">
-        <Label docket="Snowledge" />
+      <section id="jswc" className="three">
+        <Label docket="Jarrod Semmens Window Cleaning" />
 
         <div>
           <div>{/* stay gold */}</div>
           <div>
-            <h3 className="clamped-3">Snowledge</h3>
+            <h3 className="clamped-3">Jarrod Semmens Window Cleaning</h3>
             <div className="port">
-              <SnowledgeGrab />
+              <JSWCGrab />
             </div>
             <p>
-              Website development &amp; design. Gatsby and Strapi build to supplement the app.
+              Website development &amp; design. Gatsby under the hood.
             </p>
 
             <section className="portfolio__tools">
@@ -284,65 +284,39 @@ const PortfolioPage = () => {
                   </svg>
                   <h5>Gatsby</h5>
                 </li>
-
-                <li>
-                  <svg viewBox=".24262095 .26549587 243.32256626 243.58072911" xmlns="http://www.w3.org/2000/svg"
-                    className=""><path d="m161.893 165.833v-78.73a5.077 5.077 0 0 0 -5.077-5.076h-78.638v-81.267h159.815a5.077 5.077 0 0 1 5.078 5.077v159.996z" /><path d="m78.178.76v81.267h-75.054a2.539 2.539 0 0 1 -1.796-4.333zm83.715 240.206v-75.133h81.178l-76.844 76.927a2.539 2.539 0 0 1 -4.334-1.794zm-83.715-158.939h81.176a2.539 2.539 0 0 1 2.539 2.538v81.268h-78.638a5.077 5.077 0 0 1 -5.077-5.077z" opacity=".405" /></svg>
-
-                  <h5>Strapi</h5>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 255" className="">
-
-                    {/* outline circle */}
-                    <circle cx="134.2" cy="127.6" r="115.1" stroke="" fill="none" strokeWidth="5" className="tool__stroke" />
-
-                    {/* floating circle */}
-                    <path d="M253,56.3c0,15.6-12.6,28.2-28.2,28.2s-28.2-12.6-28.2-28.2s12.6-28.2,28.2-28.2 C240.3,28.1,253,40.7,253,56.3z" fill="" />
-
-                    <circle cx="134.2" cy="127.6" r="70" fill="" />
-                  </svg>
-                  <h5>Pattern Lab</h5>
-                </li>
-
               </ul>
             </section>
 
             <Scorecard
-              site="https://snowledge.netlify.app/"
-              date="7/27/2021"
+              site="https://jarrodsemmenswindowcleaning.com/"
+              date="2/4/2022"
 
               // Lighthouse
-              Lp="45"
-              La="93"
+              Lp="90"
+              La="100"
               Lbp="100"
-              Ls="92"
+              Ls="98"
 
               // Observatory
-              Osu="D+"
-              Osc="40"
+              Osu="B+"
+              Osc="80"
 
               // Wave
               We="-"
               Wc="-"
 
               // Dark Mode
-              Dm="No"
+              Dm="Yes"
 
               // Deadlink
-              Dlc="35"
+              Dlc="1"
             />
 
             {/* <Link to="/portfolio/emeraldbay">Explore the Designs</Link> */}
 
-            <a href="https://github.com/rileybathurst/snowledge" target='_blank' rel='noreferrer' className="button__long"><GithubSvg />View the code</a>
+            <a href="https://github.com/rileybathurst/jswc" target='_blank' rel='noreferrer noopener' className="button__long"><GithubSvg />View the code</a>
 
           </div>
-          {/* <div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162.1 77.8">
-              <path d="M92.2,8c4.4,4.6,8.9,9.1,13.3,13.6c6.4,6.5,12.8,13,19.1,19.6c5.8,6,11.7,12,17.5,17.9c3.3,3.3,6.5,6.7,9.8,10 c0.1,0.2,0.3,0.3,0.3,0.7c-0.2-0.2-0.5-0.3-0.7-0.5c-9.2-8.1-18.4-16.1-27.6-24.2c-8.6-7.5-17.2-15-25.7-22.6 c-0.8-0.7-1.3-0.7-2.2,0C85.3,31.4,74.5,40.2,63.8,49c-3.1,2.5-6.2,5.1-9.3,7.6c-0.8,0.6-1.4,0.8-2.4,0.4c-4.5-1.5-9-2.9-13.5-4.4 c-0.8-0.3-1.4-0.2-2.2,0.3c-8.6,5.5-17.2,10.9-25.8,16.3c-0.3,0.2-0.6,0.3-0.8,0.6c1.1-1.2,2.2-2.5,3.4-3.7 C19.2,60.6,25.1,55,31,49.5c4.3-4,8.6-8,12.8-12c0.6-0.6,1-0.5,1.5,0.1c2.4,2.7,4.8,5.4,7.2,8.1c0.7,0.8,1.1,0.7,1.7,0 C66.5,33.3,78.8,21,91.1,8.7c0.2-0.2,0.4-0.5,0.6-0.7C91.9,8,92,8,92.2,8z" />
-            </svg>
-          </div> */}
         </div>
 
 

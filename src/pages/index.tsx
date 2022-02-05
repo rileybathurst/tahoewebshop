@@ -26,11 +26,11 @@ function EbptGrab() {
   );
 }
 
-function SnowledgeGrab() {
+function JSWCGrab() {
   return (
     <StaticImage
-      src="https://tahoewebshop.s3.us-west-1.amazonaws.com/snowledge-netlify-screengrab.png"
-      alt="emerald bay physical therapy website"
+      src="https://tahoewebshop.s3.us-west-1.amazonaws.com/Jarrod_Semmens_Window_Cleaning.png"
+      alt="jarrod semmens window cleaning website"
     />
   );
 }
@@ -39,7 +39,7 @@ function CmsfGrab() {
   return (
     <StaticImage
       src="https://tahoewebshop.s3.us-west-1.amazonaws.com/cmsf-screengrab.png"
-      alt="emerald bay physical therapy website"
+      alt="cordell bay marine sanctuary foundation"
     />
   );
 }
@@ -133,7 +133,7 @@ const IndexPage = () => {
             <Link to="/portfolio#ebpt" className="project__thumbnail">
               <EbptGrab />
             </Link>
-            <a href="https://emeraldbay.physio/" target="_blank" rel='noreferrer'>
+            <a href="https://emeraldbay.physio/" target="_blank" rel='noreferrer noopener'>
               View the site
             </a>
           </section>
@@ -147,7 +147,7 @@ const IndexPage = () => {
             <Link to="/portfolio#cmsf" className="project__thumbnail">
               <CmsfGrab />
             </Link>
-            <a href="https://cordellfoundation.org/" target="_blank" rel='noreferrer'>
+            <a href="https://cordellfoundation.org/" target="_blank" rel='noreferrer noopener'>
               View the site
             </a>
 
@@ -156,12 +156,12 @@ const IndexPage = () => {
 
           <section className="portfolio__card">
             <h3 className="project__title clamped-3">
-              <Link to="/portfolio">Snowledge.co</Link>
+              <Link to="/portfolio">Jarrod Semmens</Link>
             </h3>
-            <Link to="/portfolio#snowledge" className="project__thumbnail">
-              <SnowledgeGrab />
+            <Link to="/portfolio#jswc" className="project__thumbnail">
+              <JSWCGrab />
             </Link>
-            <a href="https://snowledge.netlify.app/" target="_blank" rel='noreferrer'>
+            <a href="https://jarrodsemmenswindowcleaning/" target="_blank" rel='noreferrer noopener'>
               View the site
             </a>
           </section>
