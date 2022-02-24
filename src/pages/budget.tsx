@@ -9,7 +9,7 @@ import Label from "../components/label";
 import Pop from "../components/pop";
 
 // markup
-const NotFoundPage = () => {
+const BudgetPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
       <div id="top" className="three">
@@ -226,4 +226,4 @@ const NotFoundPage = () => {
   );
 };
 
-export default NotFoundPage;
+export default BudgetPage;

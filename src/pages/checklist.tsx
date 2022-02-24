@@ -10,7 +10,7 @@ import Backup from "../components/back-up";
 import Layout from "../components/layout";
 
 // markup
-const NotFoundPage = () => {
+const ChecklistPage = () => {
   return (
     <Layout>
       <div className="three">
@@ -73,4 +73,4 @@ const NotFoundPage = () => {
   );
 };
 
-export default NotFoundPage;
+export default ChecklistPage;
