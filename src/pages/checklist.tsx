@@ -65,6 +65,12 @@ const ChecklistPage = () => {
           <div>{/* stay gold */}</div>
         </div>
 
+        <article>
+          <h3>Profiles</h3>
+          <p>Let's check through all profiles, make sure there is a findable list, preferably a bookmark set to open all.</p>
+          <p>If any don't have any activity in the past year take a strong look to see if they are working for or against the company.</p>
+        </article>
+
         <Backup />
       </section>
 

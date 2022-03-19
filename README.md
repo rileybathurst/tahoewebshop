@@ -28,3 +28,7 @@ its a decent amount of maintinece, a strapi setup and a mongodb
 as thats kinda halfway between a cms?
 except relationships
 not yet
+
+#### Styleguide
+
+[Tahoe Web Shop Styleguide](https://styleguidetahoewebshopmain.gatsbyjs.io/)

@@ -119,6 +119,27 @@ const FeaturesPage = () => {
         <Backup />
       </section>
 
+      <section id="seo" className="three">
+        <Label docket="Rank on Google" />
+
+        <div>
+          <div>{/* stay gold */}</div>
+          <div>
+            <h3 className="clamped-3">S.E.O.</h3>
+            <p>
+              There is a lot to being on the first page, work with search engine's not against them.
+            </p>
+            <h4 className="clamped-4">Test your security with Google's tool</h4>
+            <a href="https://search.google.com/test/rich-results" target='_blank' rel='noreferrer noopener'>Google Rich Test Results</a>
+          </div>
+
+          {/* I know its not white I'm happy with this not to be */}
+          <svg enable-background="new 0 0 515.2 522.9" viewBox="0 0 515.2 522.9" xmlns="http://www.w3.org/2000/svg"><circle cx="257.6" cy="265.3" fill="#fefefe" r="257.6" /><path d="m105.7 188.6c25.1-49.6 64.7-81.4 118.8-93.2 54.7-12 104.4.8 148.1 35.8 1.4 1.1 2.7 2.4 3.8 3.4-17 17-33.7 33.7-50.8 50.8-10.5-8.3-22.4-14.9-35.9-18.7-52.3-14.6-106.2 13.3-124.5 64.5-.2.6-.5 1.2-.8 1.8-1-.6-2.1-1-3-1.7-18.6-14.3-37.2-28.5-55.7-42.7z" fill="#e94335" /><path d="m164.4 298.4c7.1 19.1 18 35.4 34.2 48.1 33.4 26.1 81.9 29.5 118.7 8.1.9-.5 1.8-.9 2.6-1.4 5.8 4.4 11.5 8.8 17.3 13.3 12.7 10 25.4 20 38.1 30-25.6 23.9-56.1 37.6-90.7 41.8-49.6 6.2-94.2-6.4-133.1-37.8-19.5-15.7-34.8-35.1-45.7-57.8 2-1.4 4.1-2.8 6-4.3 17.6-13.3 35.1-26.7 52.6-40z" fill="#35a853" /><path d="m375.3 396.5c-12.7-10-25.4-20-38.1-30-5.7-4.5-11.5-8.9-17.3-13.3 15.1-10.4 26.2-23.8 32.1-41.3 1-3 1.8-6 2.6-9.1.2-.6 0-1.3 0-2.4-30.7 0-61.4 0-92.4 0 0-22.3 0-44.2 0-66.5h163c7.5 61.8-3.4 117.5-49.9 162.6z" fill="#4285f3" /><path d="m164.4 298.4c-17.5 13.4-35 26.7-52.5 40.1-2 1.5-4 2.9-6 4.3-24.1-51.4-24.1-102.7-.1-154.1 18.6 14.2 37.1 28.4 55.7 42.6.9.7 2 1.2 3 1.7-6.9 21.7-6.8 43.6-.1 65.4z" fill="#fabb06" /></svg>
+        </div>
+
+        <Backup />
+      </section>
+
       <section id="a11y" className="three">
         <Label docket="Everyone can use this" />
 
