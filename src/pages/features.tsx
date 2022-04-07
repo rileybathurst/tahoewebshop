@@ -211,7 +211,7 @@ const FeaturesPage = () => {
               Your domain is the end of your website name, the dot something, it's not just .com there are over 300 domains avaliable there are some really cool branding things that can be done with these.
             </p>
             <p>If you want to hold onto that, great, if we do it for you that's no problem it's yours at any time.</p>
-            <p>Preferably let's get you off Go Daddy, if you are with them theres a good chance you are over paying.</p>
+            <p>Preferably let's get you off Go Daddy or Crazy Domains if you are with them theres a good chance you are over paying or getting a terrible experience.</p>
             <p>Budget depends on which domain but these often cost twenty to thirty dollars per year.</p>
           </div>
 

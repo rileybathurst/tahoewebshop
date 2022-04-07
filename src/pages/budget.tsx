@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "gatsby";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
@@ -181,7 +182,7 @@ const BudgetPage = () => {
         <div>
           <div>{/* stay gold */}</div>
           <div>
-            <h3 className="clamped-3">Domains.</h3>
+            <h3 className="clamped-3"><Link to="/domains">Domains</Link></h3>
             <p>
               We pass on direct costs of domains,
               we use <a href="https://www.hover.com/domain-pricing" target="_blank">hover pricing is reflected here.</a>
