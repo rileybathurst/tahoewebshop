@@ -7,7 +7,13 @@ import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 
 // Im not sure what the rules on what goes here vs in the array?
-const SEO = ({ title, description, image, lang }) => {
+const SEO = ({
+  title,
+  description,
+  image,
+  itemScope,
+  itemType,
+}) => {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
   const {
@@ -43,6 +49,8 @@ const SEO = ({ title, description, image, lang }) => {
     postalCode: location.address.postalCode,
     slogan: slogan,
     gsv: gsv,
+    itemScope: itemScope,
+    itemType: itemType
   };
 
   return (
@@ -51,6 +59,8 @@ const SEO = ({ title, description, image, lang }) => {
       titleTemplate={titleTemplate}
       htmlAttributes={{
         lang: "en-US",
+        itemScope: `${seo.itemScope}`, // this seems to be working
+        itemType: `${seo.itemType}`,
       }}
     >
       <meta name="description" content={seo.description} />
@@ -95,7 +105,7 @@ const SEO = ({ title, description, image, lang }) => {
       {/* <meta name="google-site-verification" content={seo.gsv} /> */}
 
       {/* <link rel="stylesheet" href="https://use.typekit.net/vgk8lss.css"></link> */}
-    
+
       <meta name="theme-color" content="#1cb5e0" />
 
     </Helmet>
@@ -121,6 +131,8 @@ SEO.propTypes = {
 
 SEO.defaultProps = {
   lang: `en`,
+  itemType: `https://schema.org/LocalBusiness`,
+  itemScope: false,
   title: null,
   description: null,
   // image: null,
@@ -156,6 +168,8 @@ const query = graphql`
           }
         }
         slogan
+
+        itemType
       }
     }
   }

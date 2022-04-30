@@ -21,6 +21,7 @@ module.exports = {
       }
     },
     slogan: 'Building & Maintaining your web presence.',
+    itemType: 'LocalBusiness', // ? https://schema.org/
   },
   plugins: [
     "gatsby-plugin-sass",

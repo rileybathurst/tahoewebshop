@@ -9,8 +9,8 @@ import Seo from "../components/seo";
 
 import RotatingTitle from "../components/rotating-title";
 
-import "@fontsource/josefin-sans/variable.css";
-import "../styles/index.scss";
+// import "@fontsource/josefin-sans/variable.css";
+// import "../styles/index.scss";
 import Backup from "../components/back-up";
 import Contact from "../components/contact";
 import Label from "../components/label";
