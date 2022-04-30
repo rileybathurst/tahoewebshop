@@ -22,6 +22,8 @@ function EbptGrab() {
     <StaticImage
       src="https://tahoewebshop.s3.us-west-1.amazonaws.com/emeraldbay-screengrab.png"
       alt="emerald bay physical therapy website"
+      breakpoints={[330, 660, 990]}
+      width={330}
     />
   );
 }
@@ -31,6 +33,8 @@ function JSWCGrab() {
     <StaticImage
       src="https://tahoewebshop.s3.us-west-1.amazonaws.com/Jarrod_Semmens_Window_Cleaning.png"
       alt="jarrod semmens window cleaning website"
+      breakpoints={[330, 660, 990]}
+      width={330}
     />
   );
 }
@@ -40,6 +44,8 @@ function CmsfGrab() {
     <StaticImage
       src="https://tahoewebshop.s3.us-west-1.amazonaws.com/cmsf-screengrab.png"
       alt="cordell bay marine sanctuary foundation"
+      breakpoints={[330, 660, 990]}
+      width={330}
     />
   );
 }
@@ -50,6 +56,8 @@ const IndexPage = () => {
     <Layout>
       <Seo
         title="Tahoe Web Shop"
+      // description={} // TODO: add description
+      // image={} // TODO: add image
       />
       <header id="top" className="three">
         {/* <title>Home Page</title> */}
