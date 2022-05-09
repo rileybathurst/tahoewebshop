@@ -203,6 +203,7 @@ const BudgetPage = () => {
           <div>
             <h3 className="clamped-3">Hosting.</h3>
             <p>We start hosting at $100 per year depending on needs.</p>
+            <p>Monthly $10 with a 2 month discount for a year paid in full</p>
           </div>
           <div>{/* stay gold */}</div>
         </div>

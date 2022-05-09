@@ -79,7 +79,9 @@ const FeaturesPage = () => {
             </p>
             <h4 className="clamped-4">Test your site with Google's tool</h4>
             <a href="https://web.dev/" target='_blank' rel='noreferrer noopener'>Check it out on web.dev</a>
-
+            <h5>Refences</h5>
+            <p><a href='https://web.dev/why-speed-matters/' target='_blank' rel='norefferer noopener'>Google - Why does speed matter?</a></p>
+            <p><a href='https://www.pingdom.com/blog/page-load-time-really-affect-bounce-rate/' target='_blank' rel='norefferer noopener'>Pingdom - Does Page Load Time Really Affect Bounce Rate?</a></p>
           </div>
 
           <svg
