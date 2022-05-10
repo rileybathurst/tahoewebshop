@@ -5,14 +5,12 @@ import Seo from "../components/seo";
 import Nav from "../components/nav";
 import Layout from "../components/layout";
 
-// markup
-const PatternLabPage = () => {
+const WixPage = () => {
   return (
     <Layout>
       <main className="three screen-high">
         <Seo
           title="Wix"
-          // description="Sometimes it's easier in person, come by the studio in Tahoe City to say hi."
           description="Thoughts on using the Wix website platform."
         />
         <header id="top">
@@ -51,4 +49,4 @@ const PatternLabPage = () => {
   );
 };
 
-export default PatternLabPage;
+export default WixPage;

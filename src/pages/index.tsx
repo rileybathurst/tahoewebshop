@@ -1,3 +1,5 @@
+// TODO as soon as this is working on google structure data it needs a CMS
+
 import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";

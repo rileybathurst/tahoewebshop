@@ -73,7 +73,7 @@ const ToolsPage = () => {
         <div>
           <div>{/* stay gold */}</div>
           <div>
-            <h3 className="clamped-3">A custom Content Management System.</h3>
+            <h3 className="clamped-3">A Custom Content Management System.</h3>
             <p>
               Every site needs different content <a href="https://strapi.io/" target='_blank' rel='noreferrer noopener'>Strapi</a> if you build your CMS from scratch it can tailorr perfeectly to your needs including relational models to connect the dots.
             </p>
