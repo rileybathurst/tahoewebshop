@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "description": "tahoewebshop",
-  "author": "Riley Bathurst",
+  "author": {
+    "name": "Riley Bathurst",
+    "email": "riley@rileybathurst.com",
+    "url": "https://rileybathurst.com"
+  },
+  "homepage": "https://tahoewebshop.com",
+  "repository": "github:rileybathurst/tahoewebshop",
   "keywords": [
     "gatsby"
   ],
