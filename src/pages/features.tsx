@@ -131,8 +131,22 @@ const FeaturesPage = () => {
             <p>
               There is a lot to being on the first page, work with search engine's not against them.
             </p>
-            <h4 className="clamped-4">Test your security with Google's tool</h4>
+            <p>By creating custom data of the right size and shape for each page the content you want comes through.</p>
+            <h4 className="clamped-4">Test your security with Google's tool looking for rich data in these key areas.</h4>
             <a href="https://search.google.com/test/rich-results" target='_blank' rel='noreferrer noopener'>Google Rich Test Results</a>
+            <ul>
+              <li key="business">Local Business</li>
+              <li key="article">Article</li>
+              <li key="breadcrumb">Breadcrumb</li>
+              <li key="event">Event</li>
+              <li key="faq">FAQ</li>
+              <li key="job">Job Posting</li>
+              <li key="logo">Logo</li>
+              <li key="product">Product</li>
+              <li key="review">Review snippet</li>
+              <li key="search">Sitelinks search box</li>
+              <li key="video">Video</li>
+            </ul>
           </div>
 
           {/* I know its not white I'm happy with this not to be */}
