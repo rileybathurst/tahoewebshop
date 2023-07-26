@@ -23,6 +23,7 @@
   "dependencies": {
     "@fontsource/cabin": "^5.0.5",
     "@fontsource/josefin-sans": "^5.0.5",
+    "@netlify/plugin-gatsby": "^3.7.0",
     "@types/react-helmet": "^6.1.6",
     "gatsby": "^5.11.0",
     "gatsby-plugin-csp": "^1.1.4",
