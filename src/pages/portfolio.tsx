@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 import Backup from "../components/back-up";
 import Contact from "../components/contact";
 import Pop from "../components/pop";
@@ -45,14 +45,11 @@ function CmsfGrab() {
   );
 }
 
-// markup
+
 const PortfolioPage = () => {
   return (
     <MouseTracker>
-      <Seo
-        title="Portfolio"
-        description="A few of the favourite works from Tahoe Web Shop"
-      />
+
 
       <header id="top" className="three">
         <Nav />
@@ -331,3 +328,10 @@ const PortfolioPage = () => {
 };
 
 export default PortfolioPage;
+
+export const head = () => (
+  <SEO
+    title="Portfolio | Tahoe Web Shop"
+    description="A few of the favourite works from Tahoe Web Shop"
+  />
+)

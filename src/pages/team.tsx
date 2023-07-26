@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 import CircleTextPath from "../components/circle-textpath";
 import DroneSelfie from "../images/droneSelfie";
 
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 import TwitterSvg from "../components/twitter";
 import InstagramSvg from "../components/instagram";
 import GithubSvg from "../components/github";
@@ -16,14 +16,11 @@ import Backup from "../components/back-up";
 
 // this page is gonna need some changes when I add team members but thats a latter problem
 
-// markup
+
 const TeamPage = () => {
   return (
     <Layout>
-      <Seo
-        title="Team"
-        description="Who works on your website at Tahoe Web Shop"
-      />
+
       <div className="three">
         <header id="top">
           <Nav />
@@ -103,3 +100,10 @@ const TeamPage = () => {
 };
 
 export default TeamPage;
+
+export const Head = () => (
+  <SEO
+    title="Team | Tahoe Web Shop"
+    description="Who works on your website at Tahoe Web Shop"
+  />
+)

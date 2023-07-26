@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Seo from "../../components/seo";
+import SEO from "../../components/seo";
 import Nav from "../../components/nav";
 import Layout from "../../components/layout";
 
@@ -9,10 +9,7 @@ const LocalPage = () => {
   return (
     <Layout>
       <main className="three screen-high">
-        <Seo
-          title="Local"
-          description="We are on the doorstep."
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -56,3 +53,10 @@ const LocalPage = () => {
 };
 
 export default LocalPage;
+
+export const Head = () => (
+  <SEO
+    title="Local"
+    description="We are on the doorstep."
+  />
+)

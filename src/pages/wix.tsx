@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 import Nav from "../components/nav";
 import Layout from "../components/layout";
 
@@ -9,10 +9,7 @@ const WixPage = () => {
   return (
     <Layout>
       <main className="three screen-high">
-        <Seo
-          title="Wix"
-          description="Thoughts on using the Wix website platform."
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -50,3 +47,10 @@ const WixPage = () => {
 };
 
 export default WixPage;
+
+export const Head = () => (
+  <SEO
+    title="Wix | Tahoe Web Shop"
+    description="Thoughts on using the Wix website platform."
+  />
+)

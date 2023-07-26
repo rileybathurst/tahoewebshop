@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Seo from "../../components/seo";
+import SEO from "../../components/seo";
 import Nav from "../../components/nav";
 import Layout from "../../components/layout";
 
@@ -9,10 +9,7 @@ const SeoPage = () => {
   return (
     <Layout>
       <main className="three screen-high">
-        <Seo
-          title="SEO"
-          description="There is a lot to being on the first page, work with search engine's not against them."
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -44,3 +41,10 @@ const SeoPage = () => {
 };
 
 export default SeoPage;
+
+export const Head = () => (
+  <SEO
+    title="SEO | Tahoe Web Shop"
+    description="There is a lot to being on the first page, work with search engine's not against them."
+  />
+)

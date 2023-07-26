@@ -3,19 +3,16 @@ import { Link } from "gatsby";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 import Contact from "../components/contact";
 import Layout from "../components/layout";
 
-// markup
+
 const NotFoundPage = () => {
   return (
     <Layout>
       <div className="three">
-        <Seo
-          title="Terms"
-          description="Standard terms of use and conditions for Tahoe Web Shop."
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -45,3 +42,10 @@ const NotFoundPage = () => {
 };
 
 export default NotFoundPage;
+
+export const Head = () => (
+  <SEO
+    title="Terms | Tahoe Web Shop"
+    description="Standard terms of use and conditions for Tahoe Web Shop."
+  />
+)

@@ -3,21 +3,18 @@ import * as React from "react";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 import Backup from "../components/back-up";
 import Contact from "../components/contact";
 import Pop from "../components/pop";
 import Label from "../components/label";
 import Layout from "../components/layout";
 
-// markup
+
 const ToolsPage = () => {
   return (
     <Layout>
-      <Seo
-        title="Tools"
-        description="What we use to build your website."
-      />
+
       <header id="top" className="three">
         <Nav />
 
@@ -164,3 +161,10 @@ const ToolsPage = () => {
 };
 
 export default ToolsPage;
+
+export const head = () => (
+  <SEO
+    title="Tools | Tahoe Web Shop"
+    description="What we use to build your website."
+  />
+)

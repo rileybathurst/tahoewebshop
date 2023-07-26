@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Seo from "../../components/seo";
+import SEO from "../../components/seo";
 import Nav from "../../components/nav";
 import Layout from "../../components/layout";
 
@@ -9,10 +9,7 @@ const AdaptPage = () => {
   return (
     <Layout>
       <main className="three screen-high">
-        <Seo
-          title="Adaptability"
-          description="When a client is looking at your website with their device in dark mode they expect your website to respect that."
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -47,3 +44,10 @@ const AdaptPage = () => {
 };
 
 export default AdaptPage;
+
+export const Head = () => (
+  <SEO
+    title="Adaptability | Tahoe Web Shop"
+    description="When a client is looking at your website with their device in dark mode they expect your website to respect that."
+  />
+)

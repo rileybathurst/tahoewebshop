@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Seo from "../../components/seo";
+import SEO from "../../components/seo";
 import Nav from "../../components/nav";
 import Layout from "../../components/layout";
 
@@ -9,11 +9,7 @@ const PerformancePage = () => {
   return (
     <Layout>
       <main className="three screen-high">
-        <Seo
-          title="Performance"
-          description="Performance runs deeper than how fast does the website load in the
-          best conditions."
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -53,3 +49,11 @@ const PerformancePage = () => {
 };
 
 export default PerformancePage;
+
+export const Head = () => (
+  <SEO
+    title="Performance | Tahoe Web Shop"
+    description="Performance runs deeper than how fast does the website load in the
+  best conditions."
+  />
+)

@@ -3,21 +3,18 @@ import { Link } from "gatsby";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 import Contact from "../components/contact";
 import Backup from "../components/back-up";
 import Label from "../components/label";
 import Pop from "../components/pop";
 
-// markup
+
 const BudgetPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
       <div id="top" className="three">
-        <Seo
-          title="Budget"
-          description="A look into how much a website costs from Tahoe Web Shop."
-        />
+
         <header >
           <Nav />
         </header>
@@ -229,3 +226,10 @@ const BudgetPage = () => {
 };
 
 export default BudgetPage;
+
+export const head = () => (
+  <SEO
+    title="Budget | Tahoe Web Shop"
+    description="A look into how much a website costs from Tahoe Web Shop."
+  />
+)

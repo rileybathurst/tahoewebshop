@@ -7,7 +7,7 @@ import { StaticImage } from "gatsby-plugin-image";
 // import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
 import TahoeSvg from "../components/tahoe";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 
 import RotatingTitle from "../components/rotating-title";
 
@@ -52,15 +52,10 @@ function CmsfGrab() {
   );
 }
 
-// markup
+
 const IndexPage = () => {
   return (
     <Layout>
-      <Seo
-        title="Tahoe Web Shop"
-      // description={} // TODO: add description
-      // image={} // TODO: add image
-      />
       <header id="top" className="three">
         {/* <title>Home Page</title> */}
 
@@ -186,3 +181,9 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const Head = () => (
+  <SEO
+    title="Tahoe Web Shop | Web Design and Development"
+  />
+)

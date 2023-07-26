@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Seo from "../../components/seo";
+import SEO from "../../components/seo";
 import Nav from "../../components/nav";
 import Layout from "../../components/layout";
 
@@ -9,10 +9,7 @@ const A11yPage = () => {
   return (
     <Layout>
       <main className="three screen-high">
-        <Seo
-          title="Accessibility"
-          description="Accessibility helps everyone, not only those with a dissability."
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -47,3 +44,10 @@ const A11yPage = () => {
 };
 
 export default A11yPage;
+
+export const Head = () => (
+  <SEO
+    title="Accessibility | Tahoe Web Shop"
+    description="Accessibility helps everyone, not only those with a dissability."
+  />
+)

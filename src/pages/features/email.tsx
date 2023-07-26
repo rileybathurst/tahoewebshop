@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Seo from "../../components/seo";
+import SEO from "../../components/seo";
 import Nav from "../../components/nav";
 import Layout from "../../components/layout";
 
@@ -9,10 +9,7 @@ const EmailPage = () => {
   return (
     <Layout>
       <main className="three screen-high">
-        <Seo
-          title="email"
-          description="We can set you up with Gmail, Office 365, the apps you want on your phone computer, tablet to be ready to go whenever you want."
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -46,3 +43,10 @@ const EmailPage = () => {
 };
 
 export default EmailPage;
+
+export const Head = () => (
+  <SEO
+    title="email | Tahoe Web Shop"
+    description="We can set you up with Gmail, Office 365, the apps you want on your phone computer, tablet to be ready to go whenever you want."
+  />
+)

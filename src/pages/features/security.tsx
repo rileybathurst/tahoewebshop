@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Seo from "../../components/seo";
+import SEO from "../../components/seo";
 import Nav from "../../components/nav";
 import Layout from "../../components/layout";
 
@@ -9,10 +9,7 @@ const SecurityPage = () => {
   return (
     <Layout>
       <main className="three screen-high">
-        <Seo
-          title="Security"
-          description="Keep it safe."
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -50,3 +47,10 @@ const SecurityPage = () => {
 };
 
 export default SecurityPage;
+
+export const Head = () => (
+  <SEO
+    title="Security | Tahoe Web Shop"
+    description="Keep it safe."
+  />
+)

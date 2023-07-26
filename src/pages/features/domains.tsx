@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Seo from "../../components/seo";
+import SEO from "../../components/seo";
 import Nav from "../../components/nav";
 import Layout from "../../components/layout";
 
@@ -9,10 +9,7 @@ const DomainsPage = () => {
   return (
     <Layout>
       <main className="three screen-high">
-        <Seo
-          title="Domains"
-          description="Your domain is the end of your website name, the dot something, it's not just .com there are over 300 domains avaliable there are some really cool branding things that can be done with these." // TODO this is way too long
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -48,3 +45,10 @@ const DomainsPage = () => {
 };
 
 export default DomainsPage;
+
+export const Head = () => (
+  <SEO
+    title="Domains"
+    description="Your domain is the end of your website name, the dot something, it's not just .com there are over 300 domains avaliable there are some really cool branding things that can be done with these." // TODO this is way too long
+  />
+)

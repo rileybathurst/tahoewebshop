@@ -3,20 +3,16 @@ import { Link } from "gatsby";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 import Contact from "../components/contact";
 
 import Layout from "../components/layout";
 
-// markup
 const NotFoundPage = () => {
   return (
     <Layout>
       <div className="three">
-        <Seo
-          title="404"
-          description="Page not found"
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -26,6 +22,7 @@ const NotFoundPage = () => {
           {/* row */}
           <div>{/* stay gold */}</div>
           <div>
+            {/* // TODO: do the TCK variable here */}
             <h1>404</h1>
             <p>We are lost.</p>
             <Link to="/">Go Home</Link>
@@ -42,3 +39,9 @@ const NotFoundPage = () => {
 };
 
 export default NotFoundPage;
+
+export const Head = () => (
+  <SEO
+    title="404 | Tahoe Web Shop"
+  />
+)

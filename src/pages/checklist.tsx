@@ -6,21 +6,18 @@ import { Link } from "gatsby";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 import Contact from "../components/contact";
 import Label from "../components/label";
 import Backup from "../components/back-up";
 import Layout from "../components/layout";
 
-// markup
+
 const ChecklistPage = () => {
   return (
     <Layout>
       <div className="three">
-        <Seo
-          title="Checklist"
-          description="Page not found"
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -89,3 +86,10 @@ const ChecklistPage = () => {
 };
 
 export default ChecklistPage;
+
+export const Head = () => (
+  <SEO
+    title="Checklist | Tahoe Web Shop"
+    description="Page not found"
+  />
+)

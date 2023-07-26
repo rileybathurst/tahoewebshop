@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Seo from "../../components/seo";
+import SEO from "../../components/seo";
 import Nav from "../../components/nav";
 import Layout from "../../components/layout";
 
@@ -9,10 +9,7 @@ const HostingPage = () => {
   return (
     <Layout>
       <main className="three screen-high">
-        <Seo
-          title="Hosting"
-          description="The files that are your website have to be somewhere."
-        />
+
         <header id="top">
           <Nav />
         </header>
@@ -45,3 +42,10 @@ const HostingPage = () => {
 };
 
 export default HostingPage;
+
+export const Head = () => (
+  <SEO
+    title="Hosting | Tahoe Web Shop"
+    description="The files that are your website have to be somewhere."
+  />
+)

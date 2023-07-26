@@ -2,21 +2,18 @@ import * as React from "react";
 
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 import Contact from "../components/contact";
 import Backup from "../components/back-up";
 import Label from "../components/label";
 import Pop from "../components/pop";
 
-// markup
+
 const BudgetPage = () => {
   return (
     <div className="y-scroll-snapping" dir="ltr">
       <div id="top" className="three">
-        <Seo
-          title="Domains"
-          description="the dot com of a dot com"
-        />
+
         <header >
           <Nav />
         </header>
@@ -93,3 +90,10 @@ const BudgetPage = () => {
 };
 
 export default BudgetPage;
+
+export const head = () => (
+  <SEO
+    title="Domains | Tahoe Web Shop"
+    description="the dot com of a dot com"
+  />
+)

@@ -3,21 +3,18 @@ import * as React from "react";
 import Nav from "../components/nav";
 import Pedestal from "../components/pedestal";
 import Contact from "../components/contact";
-import Seo from "../components/seo";
+import SEO from "../components/seo";
 import Backup from "../components/back-up";
 import TahoeSvg from "../components/tahoe";
 import Label from "../components/label";
 import Pop from "../components/pop";
 import Layout from "../components/layout";
 
-// markup
+
 const FeaturesPage = () => {
   return (
     <Layout>
-      <Seo
-        title="Features"
-        description="Some of the ways we work on Websites here at Tahoe Web Shop."
-      />
+
       <header id="top" className="three">
         <Nav />
 
@@ -261,3 +258,10 @@ const FeaturesPage = () => {
 };
 
 export default FeaturesPage;
+
+export const head = () => (
+  <SEO
+    title="Features | Tahoe Web Shop"
+    description="Some of the ways we work on Websites here at Tahoe Web Shop."
+  />
+)
